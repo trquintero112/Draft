@@ -1,0 +1,1847 @@
+{
+  "generated": "2026-08-14",
+  "source": "Seed board plus editable Supabase data",
+  "players": [
+    {
+      "id": "bijan-robinson",
+      "name": "Bijan Robinson",
+      "team": "ATL",
+      "pos": "RB",
+      "rank": 1,
+      "custom_rank": 1,
+      "tier": 1,
+      "sources": {
+        "FantasyPros Seed": 1,
+        "FantasyPros": 2,
+        "Draft Sharks": 2,
+        "SportsLine ADP": 2
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jahmyr-gibbs",
+      "name": "Jahmyr Gibbs",
+      "team": "DET",
+      "pos": "RB",
+      "rank": 2,
+      "custom_rank": 2,
+      "tier": 1,
+      "sources": {
+        "FantasyPros Seed": 2,
+        "FantasyPros": 1,
+        "Draft Sharks": 1,
+        "SportsLine ADP": 1
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "ja-marr-chase",
+      "name": "Ja'Marr Chase",
+      "team": "CIN",
+      "pos": "WR",
+      "rank": 3,
+      "custom_rank": 3,
+      "tier": 1,
+      "sources": {
+        "FantasyPros Seed": 3,
+        "FantasyPros": 3,
+        "Draft Sharks": 4,
+        "SportsLine ADP": 3
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "puka-nacua",
+      "name": "Puka Nacua",
+      "team": "LAR",
+      "pos": "WR",
+      "rank": 4,
+      "custom_rank": 4,
+      "tier": 1,
+      "sources": {
+        "FantasyPros Seed": 4,
+        "FantasyPros": 4,
+        "Draft Sharks": 3
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jaxon-smith-njigba",
+      "name": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "pos": "WR",
+      "rank": 5,
+      "custom_rank": 5,
+      "tier": 1,
+      "sources": {
+        "FantasyPros Seed": 5,
+        "FantasyPros": 5,
+        "Draft Sharks": 5
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "amon-ra-st--brown",
+      "name": "Amon-Ra St. Brown",
+      "team": "DET",
+      "pos": "WR",
+      "rank": 6,
+      "custom_rank": 6,
+      "tier": 2,
+      "sources": {
+        "FantasyPros Seed": 6,
+        "Draft Sharks": 10
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "christian-mccaffrey",
+      "name": "Christian McCaffrey",
+      "team": "SF",
+      "pos": "RB",
+      "rank": 7,
+      "custom_rank": 7,
+      "tier": 2,
+      "sources": {
+        "FantasyPros Seed": 7,
+        "Draft Sharks": 7
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "ceedee-lamb",
+      "name": "CeeDee Lamb",
+      "team": "DAL",
+      "pos": "WR",
+      "rank": 8,
+      "custom_rank": 8,
+      "tier": 2,
+      "sources": {
+        "FantasyPros Seed": 8,
+        "Draft Sharks": 11
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jonathan-taylor",
+      "name": "Jonathan Taylor",
+      "team": "IND",
+      "pos": "RB",
+      "rank": 9,
+      "custom_rank": 9,
+      "tier": 2,
+      "sources": {
+        "FantasyPros Seed": 9,
+        "Draft Sharks": 8
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "justin-jefferson",
+      "name": "Justin Jefferson",
+      "team": "MIN",
+      "pos": "WR",
+      "rank": 10,
+      "custom_rank": 10,
+      "tier": 2,
+      "sources": {
+        "FantasyPros Seed": 10,
+        "Draft Sharks": 12
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "james-cook-iii",
+      "name": "James Cook III",
+      "team": "BUF",
+      "pos": "RB",
+      "rank": 11,
+      "custom_rank": 11,
+      "tier": 2,
+      "sources": {
+        "FantasyPros Seed": 11,
+        "Draft Sharks": 6
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "drake-london",
+      "name": "Drake London",
+      "team": "ATL",
+      "pos": "WR",
+      "rank": 12,
+      "custom_rank": 12,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 12,
+        "Draft Sharks": 18
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "ashton-jeanty",
+      "name": "Ashton Jeanty",
+      "team": "LV",
+      "pos": "RB",
+      "rank": 13,
+      "custom_rank": 13,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 13,
+        "Draft Sharks": 14
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "de-von-achane",
+      "name": "De'Von Achane",
+      "team": "MIA",
+      "pos": "RB",
+      "rank": 14,
+      "custom_rank": 14,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 14
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "nico-collins",
+      "name": "Nico Collins",
+      "team": "HOU",
+      "pos": "WR",
+      "rank": 15,
+      "custom_rank": 15,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 15,
+        "Draft Sharks": 15
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "brock-bowers",
+      "name": "Brock Bowers",
+      "team": "LV",
+      "pos": "TE",
+      "rank": 16,
+      "custom_rank": 16,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 16
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "chase-brown",
+      "name": "Chase Brown",
+      "team": "CIN",
+      "pos": "RB",
+      "rank": 17,
+      "custom_rank": 17,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 17
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "saquon-barkley",
+      "name": "Saquon Barkley",
+      "team": "PHI",
+      "pos": "RB",
+      "rank": 18,
+      "custom_rank": 18,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 18,
+        "Draft Sharks": 13
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "a-j--brown",
+      "name": "A.J. Brown",
+      "team": "NE",
+      "pos": "WR",
+      "rank": 19,
+      "custom_rank": 19,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 19,
+        "Draft Sharks": 20
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "george-pickens",
+      "name": "George Pickens",
+      "team": "DAL",
+      "pos": "WR",
+      "rank": 20,
+      "custom_rank": 20,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 20,
+        "Draft Sharks": 19
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "omarion-hampton",
+      "name": "Omarion Hampton",
+      "team": "LAC",
+      "pos": "RB",
+      "rank": 21,
+      "custom_rank": 21,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 21
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "trey-mcbride",
+      "name": "Trey McBride",
+      "team": "ARI",
+      "pos": "TE",
+      "rank": 22,
+      "custom_rank": 22,
+      "tier": 3,
+      "sources": {
+        "FantasyPros Seed": 22
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "chris-olave",
+      "name": "Chris Olave",
+      "team": "NO",
+      "pos": "WR",
+      "rank": 23,
+      "custom_rank": 23,
+      "tier": 4,
+      "sources": {
+        "FantasyPros Seed": 23
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "derrick-henry",
+      "name": "Derrick Henry",
+      "team": "BAL",
+      "pos": "RB",
+      "rank": 24,
+      "custom_rank": 24,
+      "tier": 4,
+      "sources": {
+        "FantasyPros Seed": 24,
+        "Draft Sharks": 9
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kenneth-walker-iii",
+      "name": "Kenneth Walker III",
+      "team": "KC",
+      "pos": "RB",
+      "rank": 25,
+      "custom_rank": 25,
+      "tier": 4,
+      "sources": {
+        "FantasyPros Seed": 25,
+        "Draft Sharks": 17
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "josh-allen",
+      "name": "Josh Allen",
+      "team": "BUF",
+      "pos": "QB",
+      "rank": 26,
+      "custom_rank": 26,
+      "tier": 4,
+      "sources": {
+        "FantasyPros Seed": 26,
+        "Draft Sharks": 16
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rashee-rice",
+      "name": "Rashee Rice",
+      "team": "KC",
+      "pos": "WR",
+      "rank": 27,
+      "custom_rank": 27,
+      "tier": 4,
+      "sources": {
+        "FantasyPros Seed": 27
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tetairoa-mcmillan",
+      "name": "Tetairoa McMillan",
+      "team": "CAR",
+      "pos": "WR",
+      "rank": 28,
+      "custom_rank": 28,
+      "tier": 4,
+      "sources": {
+        "FantasyPros Seed": 28
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "devonta-smith",
+      "name": "DeVonta Smith",
+      "team": "PHI",
+      "pos": "WR",
+      "rank": 29,
+      "custom_rank": 29,
+      "tier": 4,
+      "sources": {
+        "FantasyPros Seed": 29
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "malik-nabers",
+      "name": "Malik Nabers",
+      "team": "NYG",
+      "pos": "WR",
+      "rank": 30,
+      "custom_rank": 30,
+      "tier": 4,
+      "sources": {
+        "FantasyPros Seed": 30
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tee-higgins",
+      "name": "Tee Higgins",
+      "team": "CIN",
+      "pos": "WR",
+      "rank": 31,
+      "custom_rank": 31,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 31
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jeremiyah-love",
+      "name": "Jeremiyah Love",
+      "team": "ARI",
+      "pos": "RB",
+      "rank": 32,
+      "custom_rank": 32,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 32
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "lamar-jackson",
+      "name": "Lamar Jackson",
+      "team": "BAL",
+      "pos": "QB",
+      "rank": 33,
+      "custom_rank": 33,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 33
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "drake-maye",
+      "name": "Drake Maye",
+      "team": "NE",
+      "pos": "QB",
+      "rank": 34,
+      "custom_rank": 34,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 34
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kyren-williams",
+      "name": "Kyren Williams",
+      "team": "LAR",
+      "pos": "RB",
+      "rank": 35,
+      "custom_rank": 35,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 35
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "zay-flowers",
+      "name": "Zay Flowers",
+      "team": "BAL",
+      "pos": "WR",
+      "rank": 36,
+      "custom_rank": 36,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 36
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "breece-hall",
+      "name": "Breece Hall",
+      "team": "NYJ",
+      "pos": "RB",
+      "rank": 37,
+      "custom_rank": 37,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 37
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "garrett-wilson",
+      "name": "Garrett Wilson",
+      "team": "NYJ",
+      "pos": "WR",
+      "rank": 38,
+      "custom_rank": 38,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 38
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "josh-jacobs",
+      "name": "Josh Jacobs",
+      "team": "GB",
+      "pos": "RB",
+      "rank": 39,
+      "custom_rank": 39,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 39
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "ladd-mcconkey",
+      "name": "Ladd McConkey",
+      "team": "LAC",
+      "pos": "WR",
+      "rank": 40,
+      "custom_rank": 40,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 40
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "colston-loveland",
+      "name": "Colston Loveland",
+      "team": "CHI",
+      "pos": "TE",
+      "rank": 41,
+      "custom_rank": 41,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 41
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "javonte-williams",
+      "name": "Javonte Williams",
+      "team": "DAL",
+      "pos": "RB",
+      "rank": 42,
+      "custom_rank": 42,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 42
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "travis-etienne-jr",
+      "name": "Travis Etienne Jr.",
+      "team": "NO",
+      "pos": "RB",
+      "rank": 43,
+      "custom_rank": 43,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 43
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "terry-mclaurin",
+      "name": "Terry McLaurin",
+      "team": "WAS",
+      "pos": "WR",
+      "rank": 44,
+      "custom_rank": 44,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 44
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "joe-burrow",
+      "name": "Joe Burrow",
+      "team": "CIN",
+      "pos": "QB",
+      "rank": 45,
+      "custom_rank": 45,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 45
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "emeka-egbuka",
+      "name": "Emeka Egbuka",
+      "team": "TB",
+      "pos": "WR",
+      "rank": 46,
+      "custom_rank": 46,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 46
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jaylen-waddle",
+      "name": "Jaylen Waddle",
+      "team": "DEN",
+      "pos": "WR",
+      "rank": 47,
+      "custom_rank": 47,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 47
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "davante-adams",
+      "name": "Davante Adams",
+      "team": "LAR",
+      "pos": "WR",
+      "rank": 48,
+      "custom_rank": 48,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 48
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "luther-burden-iii",
+      "name": "Luther Burden III",
+      "team": "CHI",
+      "pos": "WR",
+      "rank": 49,
+      "custom_rank": 49,
+      "tier": 5,
+      "sources": {
+        "FantasyPros Seed": 49
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jameson-williams",
+      "name": "Jameson Williams",
+      "team": "DET",
+      "pos": "WR",
+      "rank": 50,
+      "custom_rank": 50,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 50
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "cam-skattebo",
+      "name": "Cam Skattebo",
+      "team": "NYG",
+      "pos": "RB",
+      "rank": 51,
+      "custom_rank": 51,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 51
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "bucky-irving",
+      "name": "Bucky Irving",
+      "team": "TB",
+      "pos": "RB",
+      "rank": 52,
+      "custom_rank": 52,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 52
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "mike-evans",
+      "name": "Mike Evans",
+      "team": "SF",
+      "pos": "WR",
+      "rank": 53,
+      "custom_rank": 53,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 53
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "quinshon-judkins",
+      "name": "Quinshon Judkins",
+      "team": "CLE",
+      "pos": "RB",
+      "rank": 54,
+      "custom_rank": 54,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 54
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "christian-watson",
+      "name": "Christian Watson",
+      "team": "GB",
+      "pos": "WR",
+      "rank": 55,
+      "custom_rank": 55,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 55
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "d-andre-swift",
+      "name": "D'Andre Swift",
+      "team": "CHI",
+      "pos": "RB",
+      "rank": 56,
+      "custom_rank": 56,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 56
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jayden-daniels",
+      "name": "Jayden Daniels",
+      "team": "WAS",
+      "pos": "QB",
+      "rank": 57,
+      "custom_rank": 57,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 57
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "treveyon-henderson",
+      "name": "TreVeyon Henderson",
+      "team": "NE",
+      "pos": "RB",
+      "rank": 58,
+      "custom_rank": 58,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 58
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jalen-hurts",
+      "name": "Jalen Hurts",
+      "team": "PHI",
+      "pos": "QB",
+      "rank": 59,
+      "custom_rank": 59,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 59
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tyler-warren",
+      "name": "Tyler Warren",
+      "team": "IND",
+      "pos": "TE",
+      "rank": 60,
+      "custom_rank": 60,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 60
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rome-odunze",
+      "name": "Rome Odunze",
+      "team": "CHI",
+      "pos": "WR",
+      "rank": 61,
+      "custom_rank": 61,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 61
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dj-moore",
+      "name": "DJ Moore",
+      "team": "BUF",
+      "pos": "WR",
+      "rank": 62,
+      "custom_rank": 62,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 62
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "david-montgomery",
+      "name": "David Montgomery",
+      "team": "HOU",
+      "pos": "RB",
+      "rank": 63,
+      "custom_rank": 63,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 63
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tucker-kraft",
+      "name": "Tucker Kraft",
+      "team": "GB",
+      "pos": "TE",
+      "rank": 64,
+      "custom_rank": 64,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 64
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "bhayshul-tuten",
+      "name": "Bhayshul Tuten",
+      "team": "JAC",
+      "pos": "RB",
+      "rank": 65,
+      "custom_rank": 65,
+      "tier": 6,
+      "sources": {
+        "FantasyPros Seed": 65
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "carnell-tate",
+      "name": "Carnell Tate",
+      "team": "TEN",
+      "pos": "WR",
+      "rank": 66,
+      "custom_rank": 66,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 66
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "justin-herbert",
+      "name": "Justin Herbert",
+      "team": "LAC",
+      "pos": "QB",
+      "rank": 67,
+      "custom_rank": 67,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 67
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jadarian-price",
+      "name": "Jadarian Price",
+      "team": "SEA",
+      "pos": "RB",
+      "rank": 68,
+      "custom_rank": 68,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 68
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "caleb-williams",
+      "name": "Caleb Williams",
+      "team": "CHI",
+      "pos": "QB",
+      "rank": 69,
+      "custom_rank": 69,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 69
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jaylen-warren",
+      "name": "Jaylen Warren",
+      "team": "PIT",
+      "pos": "RB",
+      "rank": 70,
+      "custom_rank": 70,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 70
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "alec-pierce",
+      "name": "Alec Pierce",
+      "team": "IND",
+      "pos": "WR",
+      "rank": 71,
+      "custom_rank": 71,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 71
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "marvin-harrison-jr",
+      "name": "Marvin Harrison Jr.",
+      "team": "ARI",
+      "pos": "WR",
+      "rank": 72,
+      "custom_rank": 72,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 72
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dk-metcalf",
+      "name": "DK Metcalf",
+      "team": "PIT",
+      "pos": "WR",
+      "rank": 73,
+      "custom_rank": 73,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 73
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "chuba-hubbard",
+      "name": "Chuba Hubbard",
+      "team": "CAR",
+      "pos": "RB",
+      "rank": 74,
+      "custom_rank": 74,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 74
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "courtland-sutton",
+      "name": "Courtland Sutton",
+      "team": "DEN",
+      "pos": "WR",
+      "rank": 75,
+      "custom_rank": 75,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 75
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "harold-fannin-jr",
+      "name": "Harold Fannin Jr.",
+      "team": "CLE",
+      "pos": "TE",
+      "rank": 76,
+      "custom_rank": 76,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 76
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "trevor-lawrence",
+      "name": "Trevor Lawrence",
+      "team": "JAC",
+      "pos": "QB",
+      "rank": 77,
+      "custom_rank": 77,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 77
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rhamondre-stevenson",
+      "name": "Rhamondre Stevenson",
+      "team": "NE",
+      "pos": "RB",
+      "rank": 78,
+      "custom_rank": 78,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 78
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rico-dowdle",
+      "name": "Rico Dowdle",
+      "team": "PIT",
+      "pos": "RB",
+      "rank": 79,
+      "custom_rank": 79,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 79
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tony-pollard",
+      "name": "Tony Pollard",
+      "team": "TEN",
+      "pos": "RB",
+      "rank": 80,
+      "custom_rank": 80,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 80
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jaxson-dart",
+      "name": "Jaxson Dart",
+      "team": "NYG",
+      "pos": "QB",
+      "rank": 81,
+      "custom_rank": 81,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 81
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dak-prescott",
+      "name": "Dak Prescott",
+      "team": "DAL",
+      "pos": "QB",
+      "rank": 82,
+      "custom_rank": 82,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 82
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "brian-thomas-jr",
+      "name": "Brian Thomas Jr.",
+      "team": "JAC",
+      "pos": "WR",
+      "rank": 83,
+      "custom_rank": 83,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 83
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "sam-laporta",
+      "name": "Sam LaPorta",
+      "team": "DET",
+      "pos": "TE",
+      "rank": 84,
+      "custom_rank": 84,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 84
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kyle-pitts-sr",
+      "name": "Kyle Pitts Sr.",
+      "team": "ATL",
+      "pos": "TE",
+      "rank": 85,
+      "custom_rank": 85,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 85
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rj-harvey",
+      "name": "RJ Harvey",
+      "team": "DEN",
+      "pos": "RB",
+      "rank": 86,
+      "custom_rank": 86,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 86
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "chris-godwin-jr",
+      "name": "Chris Godwin Jr.",
+      "team": "TB",
+      "pos": "WR",
+      "rank": 87,
+      "custom_rank": 87,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 87
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "michael-wilson",
+      "name": "Michael Wilson",
+      "team": "ARI",
+      "pos": "WR",
+      "rank": 88,
+      "custom_rank": 88,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 88
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jordyn-tyson",
+      "name": "Jordyn Tyson",
+      "team": "NO",
+      "pos": "WR",
+      "rank": 89,
+      "custom_rank": 89,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 89
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kyle-monangai",
+      "name": "Kyle Monangai",
+      "team": "CHI",
+      "pos": "RB",
+      "rank": 90,
+      "custom_rank": 90,
+      "tier": 7,
+      "sources": {
+        "FantasyPros Seed": 90
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "brock-purdy",
+      "name": "Brock Purdy",
+      "team": "SF",
+      "pos": "QB",
+      "rank": 91,
+      "custom_rank": 91,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 91
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "makai-lemon",
+      "name": "Makai Lemon",
+      "team": "PHI",
+      "pos": "WR",
+      "rank": 92,
+      "custom_rank": 92,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 92
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "parker-washington",
+      "name": "Parker Washington",
+      "team": "JAC",
+      "pos": "WR",
+      "rank": 93,
+      "custom_rank": 93,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 93
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "blake-corum",
+      "name": "Blake Corum",
+      "team": "LAR",
+      "pos": "RB",
+      "rank": 94,
+      "custom_rank": 94,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 94
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jakobi-meyers",
+      "name": "Jakobi Meyers",
+      "team": "JAC",
+      "pos": "WR",
+      "rank": 95,
+      "custom_rank": 95,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 95
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "michael-pittman-jr",
+      "name": "Michael Pittman Jr.",
+      "team": "PIT",
+      "pos": "WR",
+      "rank": 96,
+      "custom_rank": 96,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 96
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "j-k--dobbins",
+      "name": "J.K. Dobbins",
+      "team": "DEN",
+      "pos": "RB",
+      "rank": 97,
+      "custom_rank": 97,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 97
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "patrick-mahomes-ii",
+      "name": "Patrick Mahomes II",
+      "team": "KC",
+      "pos": "QB",
+      "rank": 98,
+      "custom_rank": 98,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 98
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "bo-nix",
+      "name": "Bo Nix",
+      "team": "DEN",
+      "pos": "QB",
+      "rank": 99,
+      "custom_rank": 99,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 99
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "wan-dale-robinson",
+      "name": "Wan'Dale Robinson",
+      "team": "TEN",
+      "pos": "WR",
+      "rank": 100,
+      "custom_rank": 100,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 100
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "matthew-stafford",
+      "name": "Matthew Stafford",
+      "team": "LAR",
+      "pos": "QB",
+      "rank": 101,
+      "custom_rank": 101,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 101
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "travis-kelce",
+      "name": "Travis Kelce",
+      "team": "KC",
+      "pos": "TE",
+      "rank": 102,
+      "custom_rank": 102,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 102
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "ricky-pearsall",
+      "name": "Ricky Pearsall",
+      "team": "SF",
+      "pos": "WR",
+      "rank": 103,
+      "custom_rank": 103,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 103
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kenneth-gainwell",
+      "name": "Kenneth Gainwell",
+      "team": "TB",
+      "pos": "RB",
+      "rank": 104,
+      "custom_rank": 104,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 104
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jordan-addison",
+      "name": "Jordan Addison",
+      "team": "MIN",
+      "pos": "WR",
+      "rank": 105,
+      "custom_rank": 105,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 105
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "aaron-jones-sr",
+      "name": "Aaron Jones Sr.",
+      "team": "MIN",
+      "pos": "RB",
+      "rank": 106,
+      "custom_rank": 106,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 106
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dalton-kincaid",
+      "name": "Dalton Kincaid",
+      "team": "BUF",
+      "pos": "TE",
+      "rank": 107,
+      "custom_rank": 107,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 107
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "quentin-johnston",
+      "name": "Quentin Johnston",
+      "team": "LAC",
+      "pos": "WR",
+      "rank": 108,
+      "custom_rank": 108,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 108
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jared-goff",
+      "name": "Jared Goff",
+      "team": "DET",
+      "pos": "QB",
+      "rank": 109,
+      "custom_rank": 109,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 109
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kyler-murray",
+      "name": "Kyler Murray",
+      "team": "MIN",
+      "pos": "QB",
+      "rank": 110,
+      "custom_rank": 110,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 110
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jayden-reed",
+      "name": "Jayden Reed",
+      "team": "GB",
+      "pos": "WR",
+      "rank": 111,
+      "custom_rank": 111,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 111
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jacory-croskey-merritt",
+      "name": "Jacory Croskey-Merritt",
+      "team": "WAS",
+      "pos": "RB",
+      "rank": 112,
+      "custom_rank": 112,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 112
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jake-ferguson",
+      "name": "Jake Ferguson",
+      "team": "DAL",
+      "pos": "TE",
+      "rank": 113,
+      "custom_rank": 113,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 113
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "josh-downs",
+      "name": "Josh Downs",
+      "team": "IND",
+      "pos": "WR",
+      "rank": 114,
+      "custom_rank": 114,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 114
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "george-kittle",
+      "name": "George Kittle",
+      "team": "SF",
+      "pos": "TE",
+      "rank": 115,
+      "custom_rank": 115,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 115
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rachaad-white",
+      "name": "Rachaad White",
+      "team": "WAS",
+      "pos": "RB",
+      "rank": 116,
+      "custom_rank": 116,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 116
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dallas-goedert",
+      "name": "Dallas Goedert",
+      "team": "PHI",
+      "pos": "TE",
+      "rank": 117,
+      "custom_rank": 117,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 117
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "isaiah-likely",
+      "name": "Isaiah Likely",
+      "team": "NYG",
+      "pos": "TE",
+      "rank": 118,
+      "custom_rank": 118,
+      "tier": 8,
+      "sources": {
+        "FantasyPros Seed": 118
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jordan-love",
+      "name": "Jordan Love",
+      "team": "GB",
+      "pos": "QB",
+      "rank": 119,
+      "custom_rank": 119,
+      "tier": 9,
+      "sources": {
+        "FantasyPros Seed": 119
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "baker-mayfield",
+      "name": "Baker Mayfield",
+      "team": "TB",
+      "pos": "QB",
+      "rank": 120,
+      "custom_rank": 120,
+      "tier": 9,
+      "sources": {
+        "FantasyPros Seed": 120
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    }
+  ],
+  "supported_sources": [
+    "FantasyPros",
+    "Draft Sharks",
+    "ESPN",
+    "CBS/SportsLine",
+    "Yahoo",
+    "Sleeper",
+    "RotoBaller",
+    "Footballguys",
+    "RotoWire",
+    "Establish The Run",
+    "Custom Sheet"
+  ]
+}
