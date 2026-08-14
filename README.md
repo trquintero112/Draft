@@ -37,9 +37,9 @@ Use columns:
 Each import source is stored in the `sources` object and contributes to the Consensus column.
 
 
-### Latest layout changes
-- Draft Sources moved to a collapsible panel at the bottom of the page.
-- Recommendation card now only displays the recommendation until you select Choose Player.
-- Removed Export JSON, Export Excel, and Import Save buttons from the UI.
-- Mobile cards now show the player name first in large bold type.
-- Added sourced RotoBaller rank values from available public search results and kept FantasyPros, Draft Sharks, and CBS/SportsLine values where verifiable.
+### Latest v5 updates
+- Draft Board is collapsible with an arrow, matching the My Draft style.
+- Best recommendation auto-refreshes after every pick, undo, rank edit, tier edit, source refresh, and SuperFlex toggle.
+- Recommendation logic now accounts for current roster composition and SuperFlex mode.
+- Added K and DST support in filters, editor, scarcity tiles, and seed data.
+- Added a SuperFlex toggle and QB-heavy recommendation logic when enabled.
