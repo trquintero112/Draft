@@ -11,7 +11,12 @@
       "custom_rank": 1,
       "tier": 1,
       "sources": {
-        "FantasyPros seed": 1
+        "FantasyPros Seed": 1,
+        "FantasyPros": 2,
+        "Draft Sharks": 2,
+        "CBS/SportsLine": 2,
+        "RotoBaller Half-PPR Aug 8": 2,
+        "RotoBaller PPR Jul 13": 3
       },
       "notes": "",
       "drafted": false,
@@ -26,7 +31,12 @@
       "custom_rank": 2,
       "tier": 1,
       "sources": {
-        "FantasyPros seed": 2
+        "FantasyPros Seed": 2,
+        "FantasyPros": 1,
+        "Draft Sharks": 1,
+        "CBS/SportsLine": 1,
+        "RotoBaller Half-PPR Aug 8": 1,
+        "RotoBaller PPR Jul 13": 1
       },
       "notes": "",
       "drafted": false,
@@ -41,7 +51,12 @@
       "custom_rank": 3,
       "tier": 1,
       "sources": {
-        "FantasyPros seed": 3
+        "FantasyPros Seed": 3,
+        "FantasyPros": 3,
+        "Draft Sharks": 4,
+        "CBS/SportsLine": 3,
+        "RotoBaller Half-PPR Aug 8": 3,
+        "RotoBaller PPR Jul 13": 5
       },
       "notes": "",
       "drafted": false,
@@ -56,7 +71,11 @@
       "custom_rank": 4,
       "tier": 1,
       "sources": {
-        "FantasyPros seed": 4
+        "FantasyPros Seed": 4,
+        "FantasyPros": 4,
+        "Draft Sharks": 3,
+        "RotoBaller Half-PPR Aug 8": 4,
+        "RotoBaller PPR Jul 13": 2
       },
       "notes": "",
       "drafted": false,
@@ -71,7 +90,11 @@
       "custom_rank": 5,
       "tier": 1,
       "sources": {
-        "FantasyPros seed": 5
+        "FantasyPros Seed": 5,
+        "FantasyPros": 5,
+        "Draft Sharks": 5,
+        "RotoBaller Half-PPR Aug 8": 6,
+        "RotoBaller PPR Jul 13": 7
       },
       "notes": "",
       "drafted": false,
@@ -86,7 +109,10 @@
       "custom_rank": 6,
       "tier": 2,
       "sources": {
-        "FantasyPros seed": 6
+        "FantasyPros Seed": 6,
+        "Draft Sharks": 10,
+        "RotoBaller Half-PPR Aug 8": 8,
+        "RotoBaller PPR Jul 13": 9
       },
       "notes": "",
       "drafted": false,
@@ -101,7 +127,10 @@
       "custom_rank": 7,
       "tier": 2,
       "sources": {
-        "FantasyPros seed": 7
+        "FantasyPros Seed": 7,
+        "Draft Sharks": 7,
+        "RotoBaller Half-PPR Aug 8": 5,
+        "RotoBaller PPR Jul 13": 4
       },
       "notes": "",
       "drafted": false,
@@ -116,7 +145,10 @@
       "custom_rank": 8,
       "tier": 2,
       "sources": {
-        "FantasyPros seed": 8
+        "FantasyPros Seed": 8,
+        "Draft Sharks": 11,
+        "RotoBaller Half-PPR Aug 8": 9,
+        "RotoBaller PPR Jul 13": 6
       },
       "notes": "",
       "drafted": false,
@@ -131,7 +163,10 @@
       "custom_rank": 9,
       "tier": 2,
       "sources": {
-        "FantasyPros seed": 9
+        "FantasyPros Seed": 9,
+        "Draft Sharks": 8,
+        "RotoBaller Half-PPR Aug 8": 7,
+        "RotoBaller PPR Jul 13": 8
       },
       "notes": "",
       "drafted": false,
@@ -146,7 +181,10 @@
       "custom_rank": 10,
       "tier": 2,
       "sources": {
-        "FantasyPros seed": 10
+        "FantasyPros Seed": 10,
+        "Draft Sharks": 12,
+        "RotoBaller Half-PPR Aug 8": 11,
+        "RotoBaller PPR Jul 13": 10
       },
       "notes": "",
       "drafted": false,
@@ -161,7 +199,10 @@
       "custom_rank": 11,
       "tier": 2,
       "sources": {
-        "FantasyPros seed": 11
+        "FantasyPros Seed": 11,
+        "Draft Sharks": 6,
+        "RotoBaller Half-PPR Aug 8": 10,
+        "RotoBaller PPR Jul 13": 11
       },
       "notes": "",
       "drafted": false,
@@ -176,7 +217,10 @@
       "custom_rank": 12,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 12
+        "FantasyPros Seed": 12,
+        "Draft Sharks": 18,
+        "RotoBaller Half-PPR Aug 8": 17,
+        "RotoBaller PPR Jul 13": 12
       },
       "notes": "",
       "drafted": false,
@@ -191,7 +235,10 @@
       "custom_rank": 13,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 13
+        "FantasyPros Seed": 13,
+        "Draft Sharks": 14,
+        "RotoBaller Half-PPR Aug 8": 15,
+        "RotoBaller PPR Jul 13": 14
       },
       "notes": "",
       "drafted": false,
@@ -206,7 +253,9 @@
       "custom_rank": 14,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 14
+        "FantasyPros Seed": 14,
+        "RotoBaller Half-PPR Aug 8": 19,
+        "RotoBaller PPR Jul 13": 17
       },
       "notes": "",
       "drafted": false,
@@ -221,7 +270,10 @@
       "custom_rank": 15,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 15
+        "FantasyPros Seed": 15,
+        "Draft Sharks": 15,
+        "RotoBaller Half-PPR Aug 8": 23,
+        "RotoBaller PPR Jul 13": 21
       },
       "notes": "",
       "drafted": false,
@@ -236,7 +288,9 @@
       "custom_rank": 16,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 16
+        "FantasyPros Seed": 16,
+        "RotoBaller Half-PPR Aug 8": 20,
+        "RotoBaller PPR Jul 13": 22
       },
       "notes": "",
       "drafted": false,
@@ -251,7 +305,9 @@
       "custom_rank": 17,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 17
+        "FantasyPros Seed": 17,
+        "RotoBaller Half-PPR Aug 8": 16,
+        "RotoBaller PPR Jul 13": 18
       },
       "notes": "",
       "drafted": false,
@@ -266,7 +322,10 @@
       "custom_rank": 18,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 18
+        "FantasyPros Seed": 18,
+        "Draft Sharks": 13,
+        "RotoBaller Half-PPR Aug 8": 12,
+        "RotoBaller PPR Jul 13": 13
       },
       "notes": "",
       "drafted": false,
@@ -281,7 +340,10 @@
       "custom_rank": 19,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 19
+        "FantasyPros Seed": 19,
+        "Draft Sharks": 20,
+        "RotoBaller Half-PPR Aug 8": 22,
+        "RotoBaller PPR Jul 13": 24
       },
       "notes": "",
       "drafted": false,
@@ -296,7 +358,10 @@
       "custom_rank": 20,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 20
+        "FantasyPros Seed": 20,
+        "Draft Sharks": 19,
+        "RotoBaller Half-PPR Aug 8": 21,
+        "RotoBaller PPR Jul 13": 16
       },
       "notes": "",
       "drafted": false,
@@ -311,7 +376,9 @@
       "custom_rank": 21,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 21
+        "FantasyPros Seed": 21,
+        "RotoBaller Half-PPR Aug 8": 18,
+        "RotoBaller PPR Jul 13": 19
       },
       "notes": "",
       "drafted": false,
@@ -326,7 +393,9 @@
       "custom_rank": 22,
       "tier": 3,
       "sources": {
-        "FantasyPros seed": 22
+        "FantasyPros Seed": 22,
+        "RotoBaller Half-PPR Aug 8": 30,
+        "RotoBaller PPR Jul 13": 27
       },
       "notes": "",
       "drafted": false,
@@ -341,7 +410,9 @@
       "custom_rank": 23,
       "tier": 4,
       "sources": {
-        "FantasyPros seed": 23
+        "FantasyPros Seed": 23,
+        "RotoBaller Half-PPR Aug 8": 24,
+        "RotoBaller PPR Jul 13": 23
       },
       "notes": "",
       "drafted": false,
@@ -356,7 +427,10 @@
       "custom_rank": 24,
       "tier": 4,
       "sources": {
-        "FantasyPros seed": 24
+        "FantasyPros Seed": 24,
+        "Draft Sharks": 9,
+        "RotoBaller Half-PPR Aug 8": 13,
+        "RotoBaller PPR Jul 13": 20
       },
       "notes": "",
       "drafted": false,
@@ -371,7 +445,10 @@
       "custom_rank": 25,
       "tier": 4,
       "sources": {
-        "FantasyPros seed": 25
+        "FantasyPros Seed": 25,
+        "Draft Sharks": 17,
+        "RotoBaller Half-PPR Aug 8": 14,
+        "RotoBaller PPR Jul 13": 15
       },
       "notes": "",
       "drafted": false,
@@ -386,7 +463,10 @@
       "custom_rank": 26,
       "tier": 4,
       "sources": {
-        "FantasyPros seed": 26
+        "FantasyPros Seed": 26,
+        "Draft Sharks": 16,
+        "RotoBaller Half-PPR Aug 8": 28,
+        "RotoBaller PPR Jul 13": 29
       },
       "notes": "",
       "drafted": false,
@@ -401,7 +481,7 @@
       "custom_rank": 27,
       "tier": 4,
       "sources": {
-        "FantasyPros seed": 27
+        "FantasyPros Seed": 27
       },
       "notes": "",
       "drafted": false,
@@ -416,7 +496,7 @@
       "custom_rank": 28,
       "tier": 4,
       "sources": {
-        "FantasyPros seed": 28
+        "FantasyPros Seed": 28
       },
       "notes": "",
       "drafted": false,
@@ -431,7 +511,9 @@
       "custom_rank": 29,
       "tier": 4,
       "sources": {
-        "FantasyPros seed": 29
+        "FantasyPros Seed": 29,
+        "RotoBaller Half-PPR Aug 8": 31,
+        "RotoBaller PPR Jul 13": 26
       },
       "notes": "",
       "drafted": false,
@@ -446,7 +528,8 @@
       "custom_rank": 30,
       "tier": 4,
       "sources": {
-        "FantasyPros seed": 30
+        "FantasyPros Seed": 30,
+        "RotoBaller Half-PPR Aug 8": 29
       },
       "notes": "",
       "drafted": false,
@@ -461,7 +544,8 @@
       "custom_rank": 31,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 31
+        "FantasyPros Seed": 31,
+        "RotoBaller PPR Jul 13": 30
       },
       "notes": "",
       "drafted": false,
@@ -476,7 +560,9 @@
       "custom_rank": 32,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 32
+        "FantasyPros Seed": 32,
+        "RotoBaller Half-PPR Aug 8": 27,
+        "RotoBaller PPR Jul 13": 25
       },
       "notes": "",
       "drafted": false,
@@ -491,7 +577,7 @@
       "custom_rank": 33,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 33
+        "FantasyPros Seed": 33
       },
       "notes": "",
       "drafted": false,
@@ -506,7 +592,7 @@
       "custom_rank": 34,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 34
+        "FantasyPros Seed": 34
       },
       "notes": "",
       "drafted": false,
@@ -521,7 +607,9 @@
       "custom_rank": 35,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 35
+        "FantasyPros Seed": 35,
+        "RotoBaller Half-PPR Aug 8": 25,
+        "RotoBaller PPR Jul 13": 28
       },
       "notes": "",
       "drafted": false,
@@ -536,7 +624,7 @@
       "custom_rank": 36,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 36
+        "FantasyPros Seed": 36
       },
       "notes": "",
       "drafted": false,
@@ -551,7 +639,7 @@
       "custom_rank": 37,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 37
+        "FantasyPros Seed": 37
       },
       "notes": "",
       "drafted": false,
@@ -566,7 +654,7 @@
       "custom_rank": 38,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 38
+        "FantasyPros Seed": 38
       },
       "notes": "",
       "drafted": false,
@@ -581,7 +669,8 @@
       "custom_rank": 39,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 39
+        "FantasyPros Seed": 39,
+        "RotoBaller Half-PPR Aug 8": 32
       },
       "notes": "",
       "drafted": false,
@@ -596,7 +685,7 @@
       "custom_rank": 40,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 40
+        "FantasyPros Seed": 40
       },
       "notes": "",
       "drafted": false,
@@ -611,7 +700,7 @@
       "custom_rank": 41,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 41
+        "FantasyPros Seed": 41
       },
       "notes": "",
       "drafted": false,
@@ -626,7 +715,9 @@
       "custom_rank": 42,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 42
+        "FantasyPros Seed": 42,
+        "RotoBaller Half-PPR Aug 8": 26,
+        "RotoBaller PPR Jul 13": 31
       },
       "notes": "",
       "drafted": false,
@@ -641,7 +732,9 @@
       "custom_rank": 43,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 43
+        "FantasyPros Seed": 43,
+        "RotoBaller Half-PPR Aug 8": 33,
+        "RotoBaller PPR Jul 13": 32
       },
       "notes": "",
       "drafted": false,
@@ -656,7 +749,7 @@
       "custom_rank": 44,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 44
+        "FantasyPros Seed": 44
       },
       "notes": "",
       "drafted": false,
@@ -671,7 +764,7 @@
       "custom_rank": 45,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 45
+        "FantasyPros Seed": 45
       },
       "notes": "",
       "drafted": false,
@@ -686,7 +779,7 @@
       "custom_rank": 46,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 46
+        "FantasyPros Seed": 46
       },
       "notes": "",
       "drafted": false,
@@ -701,7 +794,7 @@
       "custom_rank": 47,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 47
+        "FantasyPros Seed": 47
       },
       "notes": "",
       "drafted": false,
@@ -716,7 +809,7 @@
       "custom_rank": 48,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 48
+        "FantasyPros Seed": 48
       },
       "notes": "",
       "drafted": false,
@@ -731,7 +824,7 @@
       "custom_rank": 49,
       "tier": 5,
       "sources": {
-        "FantasyPros seed": 49
+        "FantasyPros Seed": 49
       },
       "notes": "",
       "drafted": false,
@@ -746,7 +839,7 @@
       "custom_rank": 50,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 50
+        "FantasyPros Seed": 50
       },
       "notes": "",
       "drafted": false,
@@ -761,7 +854,7 @@
       "custom_rank": 51,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 51
+        "FantasyPros Seed": 51
       },
       "notes": "",
       "drafted": false,
@@ -776,7 +869,7 @@
       "custom_rank": 52,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 52
+        "FantasyPros Seed": 52
       },
       "notes": "",
       "drafted": false,
@@ -791,7 +884,7 @@
       "custom_rank": 53,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 53
+        "FantasyPros Seed": 53
       },
       "notes": "",
       "drafted": false,
@@ -806,7 +899,7 @@
       "custom_rank": 54,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 54
+        "FantasyPros Seed": 54
       },
       "notes": "",
       "drafted": false,
@@ -821,7 +914,7 @@
       "custom_rank": 55,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 55
+        "FantasyPros Seed": 55
       },
       "notes": "",
       "drafted": false,
@@ -836,7 +929,7 @@
       "custom_rank": 56,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 56
+        "FantasyPros Seed": 56
       },
       "notes": "",
       "drafted": false,
@@ -851,7 +944,7 @@
       "custom_rank": 57,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 57
+        "FantasyPros Seed": 57
       },
       "notes": "",
       "drafted": false,
@@ -866,7 +959,7 @@
       "custom_rank": 58,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 58
+        "FantasyPros Seed": 58
       },
       "notes": "",
       "drafted": false,
@@ -881,7 +974,7 @@
       "custom_rank": 59,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 59
+        "FantasyPros Seed": 59
       },
       "notes": "",
       "drafted": false,
@@ -896,7 +989,7 @@
       "custom_rank": 60,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 60
+        "FantasyPros Seed": 60
       },
       "notes": "",
       "drafted": false,
@@ -911,7 +1004,7 @@
       "custom_rank": 61,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 61
+        "FantasyPros Seed": 61
       },
       "notes": "",
       "drafted": false,
@@ -926,7 +1019,7 @@
       "custom_rank": 62,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 62
+        "FantasyPros Seed": 62
       },
       "notes": "",
       "drafted": false,
@@ -941,7 +1034,7 @@
       "custom_rank": 63,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 63
+        "FantasyPros Seed": 63
       },
       "notes": "",
       "drafted": false,
@@ -956,7 +1049,7 @@
       "custom_rank": 64,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 64
+        "FantasyPros Seed": 64
       },
       "notes": "",
       "drafted": false,
@@ -971,7 +1064,7 @@
       "custom_rank": 65,
       "tier": 6,
       "sources": {
-        "FantasyPros seed": 65
+        "FantasyPros Seed": 65
       },
       "notes": "",
       "drafted": false,
@@ -986,7 +1079,7 @@
       "custom_rank": 66,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 66
+        "FantasyPros Seed": 66
       },
       "notes": "",
       "drafted": false,
@@ -1001,7 +1094,7 @@
       "custom_rank": 67,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 67
+        "FantasyPros Seed": 67
       },
       "notes": "",
       "drafted": false,
@@ -1016,7 +1109,7 @@
       "custom_rank": 68,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 68
+        "FantasyPros Seed": 68
       },
       "notes": "",
       "drafted": false,
@@ -1031,7 +1124,7 @@
       "custom_rank": 69,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 69
+        "FantasyPros Seed": 69
       },
       "notes": "",
       "drafted": false,
@@ -1046,7 +1139,7 @@
       "custom_rank": 70,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 70
+        "FantasyPros Seed": 70
       },
       "notes": "",
       "drafted": false,
@@ -1061,7 +1154,7 @@
       "custom_rank": 71,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 71
+        "FantasyPros Seed": 71
       },
       "notes": "",
       "drafted": false,
@@ -1076,7 +1169,7 @@
       "custom_rank": 72,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 72
+        "FantasyPros Seed": 72
       },
       "notes": "",
       "drafted": false,
@@ -1091,7 +1184,7 @@
       "custom_rank": 73,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 73
+        "FantasyPros Seed": 73
       },
       "notes": "",
       "drafted": false,
@@ -1106,7 +1199,7 @@
       "custom_rank": 74,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 74
+        "FantasyPros Seed": 74
       },
       "notes": "",
       "drafted": false,
@@ -1121,7 +1214,7 @@
       "custom_rank": 75,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 75
+        "FantasyPros Seed": 75
       },
       "notes": "",
       "drafted": false,
@@ -1136,7 +1229,7 @@
       "custom_rank": 76,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 76
+        "FantasyPros Seed": 76
       },
       "notes": "",
       "drafted": false,
@@ -1151,7 +1244,7 @@
       "custom_rank": 77,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 77
+        "FantasyPros Seed": 77
       },
       "notes": "",
       "drafted": false,
@@ -1166,7 +1259,7 @@
       "custom_rank": 78,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 78
+        "FantasyPros Seed": 78
       },
       "notes": "",
       "drafted": false,
@@ -1181,7 +1274,7 @@
       "custom_rank": 79,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 79
+        "FantasyPros Seed": 79
       },
       "notes": "",
       "drafted": false,
@@ -1196,7 +1289,7 @@
       "custom_rank": 80,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 80
+        "FantasyPros Seed": 80
       },
       "notes": "",
       "drafted": false,
@@ -1211,7 +1304,7 @@
       "custom_rank": 81,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 81
+        "FantasyPros Seed": 81
       },
       "notes": "",
       "drafted": false,
@@ -1226,7 +1319,7 @@
       "custom_rank": 82,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 82
+        "FantasyPros Seed": 82
       },
       "notes": "",
       "drafted": false,
@@ -1241,7 +1334,7 @@
       "custom_rank": 83,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 83
+        "FantasyPros Seed": 83
       },
       "notes": "",
       "drafted": false,
@@ -1256,7 +1349,7 @@
       "custom_rank": 84,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 84
+        "FantasyPros Seed": 84
       },
       "notes": "",
       "drafted": false,
@@ -1271,7 +1364,7 @@
       "custom_rank": 85,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 85
+        "FantasyPros Seed": 85
       },
       "notes": "",
       "drafted": false,
@@ -1286,7 +1379,7 @@
       "custom_rank": 86,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 86
+        "FantasyPros Seed": 86
       },
       "notes": "",
       "drafted": false,
@@ -1301,7 +1394,7 @@
       "custom_rank": 87,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 87
+        "FantasyPros Seed": 87
       },
       "notes": "",
       "drafted": false,
@@ -1316,7 +1409,7 @@
       "custom_rank": 88,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 88
+        "FantasyPros Seed": 88
       },
       "notes": "",
       "drafted": false,
@@ -1331,7 +1424,7 @@
       "custom_rank": 89,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 89
+        "FantasyPros Seed": 89
       },
       "notes": "",
       "drafted": false,
@@ -1346,7 +1439,7 @@
       "custom_rank": 90,
       "tier": 7,
       "sources": {
-        "FantasyPros seed": 90
+        "FantasyPros Seed": 90
       },
       "notes": "",
       "drafted": false,
@@ -1361,7 +1454,7 @@
       "custom_rank": 91,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 91
+        "FantasyPros Seed": 91
       },
       "notes": "",
       "drafted": false,
@@ -1376,7 +1469,7 @@
       "custom_rank": 92,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 92
+        "FantasyPros Seed": 92
       },
       "notes": "",
       "drafted": false,
@@ -1391,7 +1484,7 @@
       "custom_rank": 93,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 93
+        "FantasyPros Seed": 93
       },
       "notes": "",
       "drafted": false,
@@ -1406,7 +1499,7 @@
       "custom_rank": 94,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 94
+        "FantasyPros Seed": 94
       },
       "notes": "",
       "drafted": false,
@@ -1421,7 +1514,7 @@
       "custom_rank": 95,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 95
+        "FantasyPros Seed": 95
       },
       "notes": "",
       "drafted": false,
@@ -1436,7 +1529,7 @@
       "custom_rank": 96,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 96
+        "FantasyPros Seed": 96
       },
       "notes": "",
       "drafted": false,
@@ -1451,7 +1544,7 @@
       "custom_rank": 97,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 97
+        "FantasyPros Seed": 97
       },
       "notes": "",
       "drafted": false,
@@ -1466,7 +1559,7 @@
       "custom_rank": 98,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 98
+        "FantasyPros Seed": 98
       },
       "notes": "",
       "drafted": false,
@@ -1481,7 +1574,7 @@
       "custom_rank": 99,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 99
+        "FantasyPros Seed": 99
       },
       "notes": "",
       "drafted": false,
@@ -1496,7 +1589,7 @@
       "custom_rank": 100,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 100
+        "FantasyPros Seed": 100
       },
       "notes": "",
       "drafted": false,
@@ -1511,7 +1604,7 @@
       "custom_rank": 101,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 101
+        "FantasyPros Seed": 101
       },
       "notes": "",
       "drafted": false,
@@ -1526,7 +1619,7 @@
       "custom_rank": 102,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 102
+        "FantasyPros Seed": 102
       },
       "notes": "",
       "drafted": false,
@@ -1541,7 +1634,7 @@
       "custom_rank": 103,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 103
+        "FantasyPros Seed": 103
       },
       "notes": "",
       "drafted": false,
@@ -1556,7 +1649,7 @@
       "custom_rank": 104,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 104
+        "FantasyPros Seed": 104
       },
       "notes": "",
       "drafted": false,
@@ -1571,7 +1664,7 @@
       "custom_rank": 105,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 105
+        "FantasyPros Seed": 105
       },
       "notes": "",
       "drafted": false,
@@ -1586,7 +1679,7 @@
       "custom_rank": 106,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 106
+        "FantasyPros Seed": 106
       },
       "notes": "",
       "drafted": false,
@@ -1601,7 +1694,7 @@
       "custom_rank": 107,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 107
+        "FantasyPros Seed": 107
       },
       "notes": "",
       "drafted": false,
@@ -1616,7 +1709,7 @@
       "custom_rank": 108,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 108
+        "FantasyPros Seed": 108
       },
       "notes": "",
       "drafted": false,
@@ -1631,7 +1724,7 @@
       "custom_rank": 109,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 109
+        "FantasyPros Seed": 109
       },
       "notes": "",
       "drafted": false,
@@ -1646,7 +1739,7 @@
       "custom_rank": 110,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 110
+        "FantasyPros Seed": 110
       },
       "notes": "",
       "drafted": false,
@@ -1661,7 +1754,7 @@
       "custom_rank": 111,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 111
+        "FantasyPros Seed": 111
       },
       "notes": "",
       "drafted": false,
@@ -1676,7 +1769,7 @@
       "custom_rank": 112,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 112
+        "FantasyPros Seed": 112
       },
       "notes": "",
       "drafted": false,
@@ -1691,7 +1784,7 @@
       "custom_rank": 113,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 113
+        "FantasyPros Seed": 113
       },
       "notes": "",
       "drafted": false,
@@ -1706,7 +1799,7 @@
       "custom_rank": 114,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 114
+        "FantasyPros Seed": 114
       },
       "notes": "",
       "drafted": false,
@@ -1721,7 +1814,7 @@
       "custom_rank": 115,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 115
+        "FantasyPros Seed": 115
       },
       "notes": "",
       "drafted": false,
@@ -1736,7 +1829,7 @@
       "custom_rank": 116,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 116
+        "FantasyPros Seed": 116
       },
       "notes": "",
       "drafted": false,
@@ -1751,7 +1844,7 @@
       "custom_rank": 117,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 117
+        "FantasyPros Seed": 117
       },
       "notes": "",
       "drafted": false,
@@ -1766,7 +1859,7 @@
       "custom_rank": 118,
       "tier": 8,
       "sources": {
-        "FantasyPros seed": 118
+        "FantasyPros Seed": 118
       },
       "notes": "",
       "drafted": false,
@@ -1781,7 +1874,7 @@
       "custom_rank": 119,
       "tier": 9,
       "sources": {
-        "FantasyPros seed": 119
+        "FantasyPros Seed": 119
       },
       "notes": "",
       "drafted": false,
@@ -1796,11 +1889,24 @@
       "custom_rank": 120,
       "tier": 9,
       "sources": {
-        "FantasyPros seed": 120
+        "FantasyPros Seed": 120
       },
       "notes": "",
       "drafted": false,
       "draftedBy": ""
     }
+  ],
+  "supported_sources": [
+    "FantasyPros",
+    "Draft Sharks",
+    "ESPN",
+    "CBS/SportsLine",
+    "Yahoo",
+    "Sleeper",
+    "RotoBaller",
+    "Footballguys",
+    "RotoWire",
+    "Establish The Run",
+    "Custom Sheet"
   ]
 }

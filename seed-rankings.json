@@ -14,7 +14,9 @@
         "FantasyPros Seed": 1,
         "FantasyPros": 2,
         "Draft Sharks": 2,
-        "SportsLine ADP": 2
+        "CBS/SportsLine": 2,
+        "RotoBaller Half-PPR Aug 8": 2,
+        "RotoBaller PPR Jul 13": 3
       },
       "notes": "",
       "drafted": false,
@@ -32,7 +34,9 @@
         "FantasyPros Seed": 2,
         "FantasyPros": 1,
         "Draft Sharks": 1,
-        "SportsLine ADP": 1
+        "CBS/SportsLine": 1,
+        "RotoBaller Half-PPR Aug 8": 1,
+        "RotoBaller PPR Jul 13": 1
       },
       "notes": "",
       "drafted": false,
@@ -50,7 +54,9 @@
         "FantasyPros Seed": 3,
         "FantasyPros": 3,
         "Draft Sharks": 4,
-        "SportsLine ADP": 3
+        "CBS/SportsLine": 3,
+        "RotoBaller Half-PPR Aug 8": 3,
+        "RotoBaller PPR Jul 13": 5
       },
       "notes": "",
       "drafted": false,
@@ -67,7 +73,9 @@
       "sources": {
         "FantasyPros Seed": 4,
         "FantasyPros": 4,
-        "Draft Sharks": 3
+        "Draft Sharks": 3,
+        "RotoBaller Half-PPR Aug 8": 4,
+        "RotoBaller PPR Jul 13": 2
       },
       "notes": "",
       "drafted": false,
@@ -84,7 +92,9 @@
       "sources": {
         "FantasyPros Seed": 5,
         "FantasyPros": 5,
-        "Draft Sharks": 5
+        "Draft Sharks": 5,
+        "RotoBaller Half-PPR Aug 8": 6,
+        "RotoBaller PPR Jul 13": 7
       },
       "notes": "",
       "drafted": false,
@@ -100,7 +110,9 @@
       "tier": 2,
       "sources": {
         "FantasyPros Seed": 6,
-        "Draft Sharks": 10
+        "Draft Sharks": 10,
+        "RotoBaller Half-PPR Aug 8": 8,
+        "RotoBaller PPR Jul 13": 9
       },
       "notes": "",
       "drafted": false,
@@ -116,7 +128,9 @@
       "tier": 2,
       "sources": {
         "FantasyPros Seed": 7,
-        "Draft Sharks": 7
+        "Draft Sharks": 7,
+        "RotoBaller Half-PPR Aug 8": 5,
+        "RotoBaller PPR Jul 13": 4
       },
       "notes": "",
       "drafted": false,
@@ -132,7 +146,9 @@
       "tier": 2,
       "sources": {
         "FantasyPros Seed": 8,
-        "Draft Sharks": 11
+        "Draft Sharks": 11,
+        "RotoBaller Half-PPR Aug 8": 9,
+        "RotoBaller PPR Jul 13": 6
       },
       "notes": "",
       "drafted": false,
@@ -148,7 +164,9 @@
       "tier": 2,
       "sources": {
         "FantasyPros Seed": 9,
-        "Draft Sharks": 8
+        "Draft Sharks": 8,
+        "RotoBaller Half-PPR Aug 8": 7,
+        "RotoBaller PPR Jul 13": 8
       },
       "notes": "",
       "drafted": false,
@@ -164,7 +182,9 @@
       "tier": 2,
       "sources": {
         "FantasyPros Seed": 10,
-        "Draft Sharks": 12
+        "Draft Sharks": 12,
+        "RotoBaller Half-PPR Aug 8": 11,
+        "RotoBaller PPR Jul 13": 10
       },
       "notes": "",
       "drafted": false,
@@ -180,7 +200,9 @@
       "tier": 2,
       "sources": {
         "FantasyPros Seed": 11,
-        "Draft Sharks": 6
+        "Draft Sharks": 6,
+        "RotoBaller Half-PPR Aug 8": 10,
+        "RotoBaller PPR Jul 13": 11
       },
       "notes": "",
       "drafted": false,
@@ -196,7 +218,9 @@
       "tier": 3,
       "sources": {
         "FantasyPros Seed": 12,
-        "Draft Sharks": 18
+        "Draft Sharks": 18,
+        "RotoBaller Half-PPR Aug 8": 17,
+        "RotoBaller PPR Jul 13": 12
       },
       "notes": "",
       "drafted": false,
@@ -212,7 +236,9 @@
       "tier": 3,
       "sources": {
         "FantasyPros Seed": 13,
-        "Draft Sharks": 14
+        "Draft Sharks": 14,
+        "RotoBaller Half-PPR Aug 8": 15,
+        "RotoBaller PPR Jul 13": 14
       },
       "notes": "",
       "drafted": false,
@@ -227,7 +253,9 @@
       "custom_rank": 14,
       "tier": 3,
       "sources": {
-        "FantasyPros Seed": 14
+        "FantasyPros Seed": 14,
+        "RotoBaller Half-PPR Aug 8": 19,
+        "RotoBaller PPR Jul 13": 17
       },
       "notes": "",
       "drafted": false,
@@ -243,7 +271,9 @@
       "tier": 3,
       "sources": {
         "FantasyPros Seed": 15,
-        "Draft Sharks": 15
+        "Draft Sharks": 15,
+        "RotoBaller Half-PPR Aug 8": 23,
+        "RotoBaller PPR Jul 13": 21
       },
       "notes": "",
       "drafted": false,
@@ -258,7 +288,9 @@
       "custom_rank": 16,
       "tier": 3,
       "sources": {
-        "FantasyPros Seed": 16
+        "FantasyPros Seed": 16,
+        "RotoBaller Half-PPR Aug 8": 20,
+        "RotoBaller PPR Jul 13": 22
       },
       "notes": "",
       "drafted": false,
@@ -273,7 +305,9 @@
       "custom_rank": 17,
       "tier": 3,
       "sources": {
-        "FantasyPros Seed": 17
+        "FantasyPros Seed": 17,
+        "RotoBaller Half-PPR Aug 8": 16,
+        "RotoBaller PPR Jul 13": 18
       },
       "notes": "",
       "drafted": false,
@@ -289,7 +323,9 @@
       "tier": 3,
       "sources": {
         "FantasyPros Seed": 18,
-        "Draft Sharks": 13
+        "Draft Sharks": 13,
+        "RotoBaller Half-PPR Aug 8": 12,
+        "RotoBaller PPR Jul 13": 13
       },
       "notes": "",
       "drafted": false,
@@ -305,7 +341,9 @@
       "tier": 3,
       "sources": {
         "FantasyPros Seed": 19,
-        "Draft Sharks": 20
+        "Draft Sharks": 20,
+        "RotoBaller Half-PPR Aug 8": 22,
+        "RotoBaller PPR Jul 13": 24
       },
       "notes": "",
       "drafted": false,
@@ -321,7 +359,9 @@
       "tier": 3,
       "sources": {
         "FantasyPros Seed": 20,
-        "Draft Sharks": 19
+        "Draft Sharks": 19,
+        "RotoBaller Half-PPR Aug 8": 21,
+        "RotoBaller PPR Jul 13": 16
       },
       "notes": "",
       "drafted": false,
@@ -336,7 +376,9 @@
       "custom_rank": 21,
       "tier": 3,
       "sources": {
-        "FantasyPros Seed": 21
+        "FantasyPros Seed": 21,
+        "RotoBaller Half-PPR Aug 8": 18,
+        "RotoBaller PPR Jul 13": 19
       },
       "notes": "",
       "drafted": false,
@@ -351,7 +393,9 @@
       "custom_rank": 22,
       "tier": 3,
       "sources": {
-        "FantasyPros Seed": 22
+        "FantasyPros Seed": 22,
+        "RotoBaller Half-PPR Aug 8": 30,
+        "RotoBaller PPR Jul 13": 27
       },
       "notes": "",
       "drafted": false,
@@ -366,7 +410,9 @@
       "custom_rank": 23,
       "tier": 4,
       "sources": {
-        "FantasyPros Seed": 23
+        "FantasyPros Seed": 23,
+        "RotoBaller Half-PPR Aug 8": 24,
+        "RotoBaller PPR Jul 13": 23
       },
       "notes": "",
       "drafted": false,
@@ -382,7 +428,9 @@
       "tier": 4,
       "sources": {
         "FantasyPros Seed": 24,
-        "Draft Sharks": 9
+        "Draft Sharks": 9,
+        "RotoBaller Half-PPR Aug 8": 13,
+        "RotoBaller PPR Jul 13": 20
       },
       "notes": "",
       "drafted": false,
@@ -398,7 +446,9 @@
       "tier": 4,
       "sources": {
         "FantasyPros Seed": 25,
-        "Draft Sharks": 17
+        "Draft Sharks": 17,
+        "RotoBaller Half-PPR Aug 8": 14,
+        "RotoBaller PPR Jul 13": 15
       },
       "notes": "",
       "drafted": false,
@@ -414,7 +464,9 @@
       "tier": 4,
       "sources": {
         "FantasyPros Seed": 26,
-        "Draft Sharks": 16
+        "Draft Sharks": 16,
+        "RotoBaller Half-PPR Aug 8": 28,
+        "RotoBaller PPR Jul 13": 29
       },
       "notes": "",
       "drafted": false,
@@ -459,7 +511,9 @@
       "custom_rank": 29,
       "tier": 4,
       "sources": {
-        "FantasyPros Seed": 29
+        "FantasyPros Seed": 29,
+        "RotoBaller Half-PPR Aug 8": 31,
+        "RotoBaller PPR Jul 13": 26
       },
       "notes": "",
       "drafted": false,
@@ -474,7 +528,8 @@
       "custom_rank": 30,
       "tier": 4,
       "sources": {
-        "FantasyPros Seed": 30
+        "FantasyPros Seed": 30,
+        "RotoBaller Half-PPR Aug 8": 29
       },
       "notes": "",
       "drafted": false,
@@ -489,7 +544,8 @@
       "custom_rank": 31,
       "tier": 5,
       "sources": {
-        "FantasyPros Seed": 31
+        "FantasyPros Seed": 31,
+        "RotoBaller PPR Jul 13": 30
       },
       "notes": "",
       "drafted": false,
@@ -504,7 +560,9 @@
       "custom_rank": 32,
       "tier": 5,
       "sources": {
-        "FantasyPros Seed": 32
+        "FantasyPros Seed": 32,
+        "RotoBaller Half-PPR Aug 8": 27,
+        "RotoBaller PPR Jul 13": 25
       },
       "notes": "",
       "drafted": false,
@@ -549,7 +607,9 @@
       "custom_rank": 35,
       "tier": 5,
       "sources": {
-        "FantasyPros Seed": 35
+        "FantasyPros Seed": 35,
+        "RotoBaller Half-PPR Aug 8": 25,
+        "RotoBaller PPR Jul 13": 28
       },
       "notes": "",
       "drafted": false,
@@ -609,7 +669,8 @@
       "custom_rank": 39,
       "tier": 5,
       "sources": {
-        "FantasyPros Seed": 39
+        "FantasyPros Seed": 39,
+        "RotoBaller Half-PPR Aug 8": 32
       },
       "notes": "",
       "drafted": false,
@@ -654,7 +715,9 @@
       "custom_rank": 42,
       "tier": 5,
       "sources": {
-        "FantasyPros Seed": 42
+        "FantasyPros Seed": 42,
+        "RotoBaller Half-PPR Aug 8": 26,
+        "RotoBaller PPR Jul 13": 31
       },
       "notes": "",
       "drafted": false,
@@ -669,7 +732,9 @@
       "custom_rank": 43,
       "tier": 5,
       "sources": {
-        "FantasyPros Seed": 43
+        "FantasyPros Seed": 43,
+        "RotoBaller Half-PPR Aug 8": 33,
+        "RotoBaller PPR Jul 13": 32
       },
       "notes": "",
       "drafted": false,
