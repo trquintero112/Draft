@@ -1,0 +1,2391 @@
+{
+  "generated": "2026-08-14",
+  "source": "FantasyPros public 2026 rankings/tier table, plus user-editable local data",
+  "players": [
+    {
+      "id": "bijan-robinson",
+      "rank": 1,
+      "tier": 1,
+      "name": "Bijan Robinson",
+      "team": "ATL",
+      "pos": "RB",
+      "posRank": "RB1",
+      "sources": {
+        "FantasyPros": 1
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jahmyr-gibbs",
+      "rank": 2,
+      "tier": 1,
+      "name": "Jahmyr Gibbs",
+      "team": "DET",
+      "pos": "RB",
+      "posRank": "RB2",
+      "sources": {
+        "FantasyPros": 2
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jamarr-chase",
+      "rank": 3,
+      "tier": 1,
+      "name": "Ja'Marr Chase",
+      "team": "CIN",
+      "pos": "WR",
+      "posRank": "WR1",
+      "sources": {
+        "FantasyPros": 3
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "puka-nacua",
+      "rank": 4,
+      "tier": 1,
+      "name": "Puka Nacua",
+      "team": "LAR",
+      "pos": "WR",
+      "posRank": "WR2",
+      "sources": {
+        "FantasyPros": 4
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jaxon-smith-njigba",
+      "rank": 5,
+      "tier": 1,
+      "name": "Jaxon Smith-Njigba",
+      "team": "SEA",
+      "pos": "WR",
+      "posRank": "WR3",
+      "sources": {
+        "FantasyPros": 5
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "amon-ra-st-brown",
+      "rank": 6,
+      "tier": 2,
+      "name": "Amon-Ra St. Brown",
+      "team": "DET",
+      "pos": "WR",
+      "posRank": "WR4",
+      "sources": {
+        "FantasyPros": 6
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "christian-mccaffrey",
+      "rank": 7,
+      "tier": 2,
+      "name": "Christian McCaffrey",
+      "team": "SF",
+      "pos": "RB",
+      "posRank": "RB3",
+      "sources": {
+        "FantasyPros": 7
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "ceedee-lamb",
+      "rank": 8,
+      "tier": 2,
+      "name": "CeeDee Lamb",
+      "team": "DAL",
+      "pos": "WR",
+      "posRank": "WR5",
+      "sources": {
+        "FantasyPros": 8
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jonathan-taylor",
+      "rank": 9,
+      "tier": 2,
+      "name": "Jonathan Taylor",
+      "team": "IND",
+      "pos": "RB",
+      "posRank": "RB4",
+      "sources": {
+        "FantasyPros": 9
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "justin-jefferson",
+      "rank": 10,
+      "tier": 2,
+      "name": "Justin Jefferson",
+      "team": "MIN",
+      "pos": "WR",
+      "posRank": "WR6",
+      "sources": {
+        "FantasyPros": 10
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "james-cook-iii",
+      "rank": 11,
+      "tier": 2,
+      "name": "James Cook III",
+      "team": "BUF",
+      "pos": "RB",
+      "posRank": "RB5",
+      "sources": {
+        "FantasyPros": 11
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "drake-london",
+      "rank": 12,
+      "tier": 3,
+      "name": "Drake London",
+      "team": "ATL",
+      "pos": "WR",
+      "posRank": "WR7",
+      "sources": {
+        "FantasyPros": 12
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "ashton-jeanty",
+      "rank": 13,
+      "tier": 3,
+      "name": "Ashton Jeanty",
+      "team": "LV",
+      "pos": "RB",
+      "posRank": "RB6",
+      "sources": {
+        "FantasyPros": 13
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "devon-achane",
+      "rank": 14,
+      "tier": 3,
+      "name": "De'Von Achane",
+      "team": "MIA",
+      "pos": "RB",
+      "posRank": "RB7",
+      "sources": {
+        "FantasyPros": 14
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "nico-collins",
+      "rank": 15,
+      "tier": 3,
+      "name": "Nico Collins",
+      "team": "HOU",
+      "pos": "WR",
+      "posRank": "WR8",
+      "sources": {
+        "FantasyPros": 15
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "brock-bowers",
+      "rank": 16,
+      "tier": 3,
+      "name": "Brock Bowers",
+      "team": "LV",
+      "pos": "TE",
+      "posRank": "TE1",
+      "sources": {
+        "FantasyPros": 16
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "chase-brown",
+      "rank": 17,
+      "tier": 3,
+      "name": "Chase Brown",
+      "team": "CIN",
+      "pos": "RB",
+      "posRank": "RB8",
+      "sources": {
+        "FantasyPros": 17
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "saquon-barkley",
+      "rank": 18,
+      "tier": 3,
+      "name": "Saquon Barkley",
+      "team": "PHI",
+      "pos": "RB",
+      "posRank": "RB9",
+      "sources": {
+        "FantasyPros": 18
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "aj-brown",
+      "rank": 19,
+      "tier": 3,
+      "name": "A.J. Brown",
+      "team": "NE",
+      "pos": "WR",
+      "posRank": "WR9",
+      "sources": {
+        "FantasyPros": 19
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "george-pickens",
+      "rank": 20,
+      "tier": 3,
+      "name": "George Pickens",
+      "team": "DAL",
+      "pos": "WR",
+      "posRank": "WR10",
+      "sources": {
+        "FantasyPros": 20
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "omarion-hampton",
+      "rank": 21,
+      "tier": 3,
+      "name": "Omarion Hampton",
+      "team": "LAC",
+      "pos": "RB",
+      "posRank": "RB10",
+      "sources": {
+        "FantasyPros": 21
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "trey-mcbride",
+      "rank": 22,
+      "tier": 3,
+      "name": "Trey McBride",
+      "team": "ARI",
+      "pos": "TE",
+      "posRank": "TE2",
+      "sources": {
+        "FantasyPros": 22
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "chris-olave",
+      "rank": 23,
+      "tier": 4,
+      "name": "Chris Olave",
+      "team": "NO",
+      "pos": "WR",
+      "posRank": "WR11",
+      "sources": {
+        "FantasyPros": 23
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "derrick-henry",
+      "rank": 24,
+      "tier": 4,
+      "name": "Derrick Henry",
+      "team": "BAL",
+      "pos": "RB",
+      "posRank": "RB11",
+      "sources": {
+        "FantasyPros": 24
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kenneth-walker-iii",
+      "rank": 25,
+      "tier": 4,
+      "name": "Kenneth Walker III",
+      "team": "KC",
+      "pos": "RB",
+      "posRank": "RB12",
+      "sources": {
+        "FantasyPros": 25
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "josh-allen",
+      "rank": 26,
+      "tier": 4,
+      "name": "Josh Allen",
+      "team": "BUF",
+      "pos": "QB",
+      "posRank": "QB1",
+      "sources": {
+        "FantasyPros": 26
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rashee-rice",
+      "rank": 27,
+      "tier": 4,
+      "name": "Rashee Rice",
+      "team": "KC",
+      "pos": "WR",
+      "posRank": "WR12",
+      "sources": {
+        "FantasyPros": 27
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tetairoa-mcmillan",
+      "rank": 28,
+      "tier": 4,
+      "name": "Tetairoa McMillan",
+      "team": "CAR",
+      "pos": "WR",
+      "posRank": "WR13",
+      "sources": {
+        "FantasyPros": 28
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "devonta-smith",
+      "rank": 29,
+      "tier": 4,
+      "name": "DeVonta Smith",
+      "team": "PHI",
+      "pos": "WR",
+      "posRank": "WR14",
+      "sources": {
+        "FantasyPros": 29
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "malik-nabers",
+      "rank": 30,
+      "tier": 4,
+      "name": "Malik Nabers",
+      "team": "NYG",
+      "pos": "WR",
+      "posRank": "WR15",
+      "sources": {
+        "FantasyPros": 30
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tee-higgins",
+      "rank": 31,
+      "tier": 5,
+      "name": "Tee Higgins",
+      "team": "CIN",
+      "pos": "WR",
+      "posRank": "WR16",
+      "sources": {
+        "FantasyPros": 31
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jeremiyah-love",
+      "rank": 32,
+      "tier": 5,
+      "name": "Jeremiyah Love",
+      "team": "ARI",
+      "pos": "RB",
+      "posRank": "RB13",
+      "sources": {
+        "FantasyPros": 32
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "lamar-jackson",
+      "rank": 33,
+      "tier": 5,
+      "name": "Lamar Jackson",
+      "team": "BAL",
+      "pos": "QB",
+      "posRank": "QB2",
+      "sources": {
+        "FantasyPros": 33
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "drake-maye",
+      "rank": 34,
+      "tier": 5,
+      "name": "Drake Maye",
+      "team": "NE",
+      "pos": "QB",
+      "posRank": "QB3",
+      "sources": {
+        "FantasyPros": 34
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kyren-williams",
+      "rank": 35,
+      "tier": 5,
+      "name": "Kyren Williams",
+      "team": "LAR",
+      "pos": "RB",
+      "posRank": "RB14",
+      "sources": {
+        "FantasyPros": 35
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "zay-flowers",
+      "rank": 36,
+      "tier": 5,
+      "name": "Zay Flowers",
+      "team": "BAL",
+      "pos": "WR",
+      "posRank": "WR17",
+      "sources": {
+        "FantasyPros": 36
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "breece-hall",
+      "rank": 37,
+      "tier": 5,
+      "name": "Breece Hall",
+      "team": "NYJ",
+      "pos": "RB",
+      "posRank": "RB15",
+      "sources": {
+        "FantasyPros": 37
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "garrett-wilson",
+      "rank": 38,
+      "tier": 5,
+      "name": "Garrett Wilson",
+      "team": "NYJ",
+      "pos": "WR",
+      "posRank": "WR18",
+      "sources": {
+        "FantasyPros": 38
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "josh-jacobs",
+      "rank": 39,
+      "tier": 5,
+      "name": "Josh Jacobs",
+      "team": "GB",
+      "pos": "RB",
+      "posRank": "RB16",
+      "sources": {
+        "FantasyPros": 39
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "ladd-mcconkey",
+      "rank": 40,
+      "tier": 5,
+      "name": "Ladd McConkey",
+      "team": "LAC",
+      "pos": "WR",
+      "posRank": "WR19",
+      "sources": {
+        "FantasyPros": 40
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "colston-loveland",
+      "rank": 41,
+      "tier": 5,
+      "name": "Colston Loveland",
+      "team": "CHI",
+      "pos": "TE",
+      "posRank": "TE3",
+      "sources": {
+        "FantasyPros": 41
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "javonte-williams",
+      "rank": 42,
+      "tier": 5,
+      "name": "Javonte Williams",
+      "team": "DAL",
+      "pos": "RB",
+      "posRank": "RB17",
+      "sources": {
+        "FantasyPros": 42
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "travis-etienne-jr",
+      "rank": 43,
+      "tier": 5,
+      "name": "Travis Etienne Jr.",
+      "team": "NO",
+      "pos": "RB",
+      "posRank": "RB18",
+      "sources": {
+        "FantasyPros": 43
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "terry-mclaurin",
+      "rank": 44,
+      "tier": 5,
+      "name": "Terry McLaurin",
+      "team": "WAS",
+      "pos": "WR",
+      "posRank": "WR20",
+      "sources": {
+        "FantasyPros": 44
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "joe-burrow",
+      "rank": 45,
+      "tier": 5,
+      "name": "Joe Burrow",
+      "team": "CIN",
+      "pos": "QB",
+      "posRank": "QB4",
+      "sources": {
+        "FantasyPros": 45
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "emeka-egbuka",
+      "rank": 46,
+      "tier": 5,
+      "name": "Emeka Egbuka",
+      "team": "TB",
+      "pos": "WR",
+      "posRank": "WR21",
+      "sources": {
+        "FantasyPros": 46
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jaylen-waddle",
+      "rank": 47,
+      "tier": 5,
+      "name": "Jaylen Waddle",
+      "team": "DEN",
+      "pos": "WR",
+      "posRank": "WR22",
+      "sources": {
+        "FantasyPros": 47
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "davante-adams",
+      "rank": 48,
+      "tier": 5,
+      "name": "Davante Adams",
+      "team": "LAR",
+      "pos": "WR",
+      "posRank": "WR23",
+      "sources": {
+        "FantasyPros": 48
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "luther-burden-iii",
+      "rank": 49,
+      "tier": 5,
+      "name": "Luther Burden III",
+      "team": "CHI",
+      "pos": "WR",
+      "posRank": "WR24",
+      "sources": {
+        "FantasyPros": 49
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jameson-williams",
+      "rank": 50,
+      "tier": 6,
+      "name": "Jameson Williams",
+      "team": "DET",
+      "pos": "WR",
+      "posRank": "WR25",
+      "sources": {
+        "FantasyPros": 50
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "cam-skattebo",
+      "rank": 51,
+      "tier": 6,
+      "name": "Cam Skattebo",
+      "team": "NYG",
+      "pos": "RB",
+      "posRank": "RB19",
+      "sources": {
+        "FantasyPros": 51
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "bucky-irving",
+      "rank": 52,
+      "tier": 6,
+      "name": "Bucky Irving",
+      "team": "TB",
+      "pos": "RB",
+      "posRank": "RB20",
+      "sources": {
+        "FantasyPros": 52
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "mike-evans",
+      "rank": 53,
+      "tier": 6,
+      "name": "Mike Evans",
+      "team": "SF",
+      "pos": "WR",
+      "posRank": "WR26",
+      "sources": {
+        "FantasyPros": 53
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "quinshon-judkins",
+      "rank": 54,
+      "tier": 6,
+      "name": "Quinshon Judkins",
+      "team": "CLE",
+      "pos": "RB",
+      "posRank": "RB21",
+      "sources": {
+        "FantasyPros": 54
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "christian-watson",
+      "rank": 55,
+      "tier": 6,
+      "name": "Christian Watson",
+      "team": "GB",
+      "pos": "WR",
+      "posRank": "WR27",
+      "sources": {
+        "FantasyPros": 55
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dandre-swift",
+      "rank": 56,
+      "tier": 6,
+      "name": "D'Andre Swift",
+      "team": "CHI",
+      "pos": "RB",
+      "posRank": "RB22",
+      "sources": {
+        "FantasyPros": 56
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jayden-daniels",
+      "rank": 57,
+      "tier": 6,
+      "name": "Jayden Daniels",
+      "team": "WAS",
+      "pos": "QB",
+      "posRank": "QB5",
+      "sources": {
+        "FantasyPros": 57
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "treveyon-henderson",
+      "rank": 58,
+      "tier": 6,
+      "name": "TreVeyon Henderson",
+      "team": "NE",
+      "pos": "RB",
+      "posRank": "RB23",
+      "sources": {
+        "FantasyPros": 58
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jalen-hurts",
+      "rank": 59,
+      "tier": 6,
+      "name": "Jalen Hurts",
+      "team": "PHI",
+      "pos": "QB",
+      "posRank": "QB6",
+      "sources": {
+        "FantasyPros": 59
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tyler-warren",
+      "rank": 60,
+      "tier": 6,
+      "name": "Tyler Warren",
+      "team": "IND",
+      "pos": "TE",
+      "posRank": "TE4",
+      "sources": {
+        "FantasyPros": 60
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rome-odunze",
+      "rank": 61,
+      "tier": 6,
+      "name": "Rome Odunze",
+      "team": "CHI",
+      "pos": "WR",
+      "posRank": "WR28",
+      "sources": {
+        "FantasyPros": 61
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dj-moore",
+      "rank": 62,
+      "tier": 6,
+      "name": "DJ Moore",
+      "team": "BUF",
+      "pos": "WR",
+      "posRank": "WR29",
+      "sources": {
+        "FantasyPros": 62
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "david-montgomery",
+      "rank": 63,
+      "tier": 6,
+      "name": "David Montgomery",
+      "team": "HOU",
+      "pos": "RB",
+      "posRank": "RB24",
+      "sources": {
+        "FantasyPros": 63
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tucker-kraft",
+      "rank": 64,
+      "tier": 6,
+      "name": "Tucker Kraft",
+      "team": "GB",
+      "pos": "TE",
+      "posRank": "TE5",
+      "sources": {
+        "FantasyPros": 64
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "bhayshul-tuten",
+      "rank": 65,
+      "tier": 6,
+      "name": "Bhayshul Tuten",
+      "team": "JAC",
+      "pos": "RB",
+      "posRank": "RB25",
+      "sources": {
+        "FantasyPros": 65
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "carnell-tate",
+      "rank": 66,
+      "tier": 7,
+      "name": "Carnell Tate",
+      "team": "TEN",
+      "pos": "WR",
+      "posRank": "WR30",
+      "sources": {
+        "FantasyPros": 66
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "justin-herbert",
+      "rank": 67,
+      "tier": 7,
+      "name": "Justin Herbert",
+      "team": "LAC",
+      "pos": "QB",
+      "posRank": "QB7",
+      "sources": {
+        "FantasyPros": 67
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jadarian-price",
+      "rank": 68,
+      "tier": 7,
+      "name": "Jadarian Price",
+      "team": "SEA",
+      "pos": "RB",
+      "posRank": "RB26",
+      "sources": {
+        "FantasyPros": 68
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "caleb-williams",
+      "rank": 69,
+      "tier": 7,
+      "name": "Caleb Williams",
+      "team": "CHI",
+      "pos": "QB",
+      "posRank": "QB8",
+      "sources": {
+        "FantasyPros": 69
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jaylen-warren",
+      "rank": 70,
+      "tier": 7,
+      "name": "Jaylen Warren",
+      "team": "PIT",
+      "pos": "RB",
+      "posRank": "RB27",
+      "sources": {
+        "FantasyPros": 70
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "alec-pierce",
+      "rank": 71,
+      "tier": 7,
+      "name": "Alec Pierce",
+      "team": "IND",
+      "pos": "WR",
+      "posRank": "WR31",
+      "sources": {
+        "FantasyPros": 71
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "marvin-harrison-jr",
+      "rank": 72,
+      "tier": 7,
+      "name": "Marvin Harrison Jr.",
+      "team": "ARI",
+      "pos": "WR",
+      "posRank": "WR32",
+      "sources": {
+        "FantasyPros": 72
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dk-metcalf",
+      "rank": 73,
+      "tier": 7,
+      "name": "DK Metcalf",
+      "team": "PIT",
+      "pos": "WR",
+      "posRank": "WR33",
+      "sources": {
+        "FantasyPros": 73
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "chuba-hubbard",
+      "rank": 74,
+      "tier": 7,
+      "name": "Chuba Hubbard",
+      "team": "CAR",
+      "pos": "RB",
+      "posRank": "RB28",
+      "sources": {
+        "FantasyPros": 74
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "courtland-sutton",
+      "rank": 75,
+      "tier": 7,
+      "name": "Courtland Sutton",
+      "team": "DEN",
+      "pos": "WR",
+      "posRank": "WR34",
+      "sources": {
+        "FantasyPros": 75
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "harold-fannin-jr",
+      "rank": 76,
+      "tier": 7,
+      "name": "Harold Fannin Jr.",
+      "team": "CLE",
+      "pos": "TE",
+      "posRank": "TE6",
+      "sources": {
+        "FantasyPros": 76
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "trevor-lawrence",
+      "rank": 77,
+      "tier": 7,
+      "name": "Trevor Lawrence",
+      "team": "JAC",
+      "pos": "QB",
+      "posRank": "QB9",
+      "sources": {
+        "FantasyPros": 77
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rhamondre-stevenson",
+      "rank": 78,
+      "tier": 7,
+      "name": "Rhamondre Stevenson",
+      "team": "NE",
+      "pos": "RB",
+      "posRank": "RB29",
+      "sources": {
+        "FantasyPros": 78
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rico-dowdle",
+      "rank": 79,
+      "tier": 7,
+      "name": "Rico Dowdle",
+      "team": "PIT",
+      "pos": "RB",
+      "posRank": "RB30",
+      "sources": {
+        "FantasyPros": 79
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tony-pollard",
+      "rank": 80,
+      "tier": 7,
+      "name": "Tony Pollard",
+      "team": "TEN",
+      "pos": "RB",
+      "posRank": "RB31",
+      "sources": {
+        "FantasyPros": 80
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jaxson-dart",
+      "rank": 81,
+      "tier": 7,
+      "name": "Jaxson Dart",
+      "team": "NYG",
+      "pos": "QB",
+      "posRank": "QB10",
+      "sources": {
+        "FantasyPros": 81
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dak-prescott",
+      "rank": 82,
+      "tier": 7,
+      "name": "Dak Prescott",
+      "team": "DAL",
+      "pos": "QB",
+      "posRank": "QB11",
+      "sources": {
+        "FantasyPros": 82
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "brian-thomas-jr",
+      "rank": 83,
+      "tier": 7,
+      "name": "Brian Thomas Jr.",
+      "team": "JAC",
+      "pos": "WR",
+      "posRank": "WR35",
+      "sources": {
+        "FantasyPros": 83
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "sam-laporta",
+      "rank": 84,
+      "tier": 7,
+      "name": "Sam LaPorta",
+      "team": "DET",
+      "pos": "TE",
+      "posRank": "TE7",
+      "sources": {
+        "FantasyPros": 84
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kyle-pitts-sr",
+      "rank": 85,
+      "tier": 7,
+      "name": "Kyle Pitts Sr.",
+      "team": "ATL",
+      "pos": "TE",
+      "posRank": "TE8",
+      "sources": {
+        "FantasyPros": 85
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rj-harvey",
+      "rank": 86,
+      "tier": 7,
+      "name": "RJ Harvey",
+      "team": "DEN",
+      "pos": "RB",
+      "posRank": "RB32",
+      "sources": {
+        "FantasyPros": 86
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "chris-godwin-jr",
+      "rank": 87,
+      "tier": 7,
+      "name": "Chris Godwin Jr.",
+      "team": "TB",
+      "pos": "WR",
+      "posRank": "WR36",
+      "sources": {
+        "FantasyPros": 87
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "michael-wilson",
+      "rank": 88,
+      "tier": 7,
+      "name": "Michael Wilson",
+      "team": "ARI",
+      "pos": "WR",
+      "posRank": "WR37",
+      "sources": {
+        "FantasyPros": 88
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jordyn-tyson",
+      "rank": 89,
+      "tier": 7,
+      "name": "Jordyn Tyson",
+      "team": "NO",
+      "pos": "WR",
+      "posRank": "WR38",
+      "sources": {
+        "FantasyPros": 89
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kyle-monangai",
+      "rank": 90,
+      "tier": 7,
+      "name": "Kyle Monangai",
+      "team": "CHI",
+      "pos": "RB",
+      "posRank": "RB33",
+      "sources": {
+        "FantasyPros": 90
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "brock-purdy",
+      "rank": 91,
+      "tier": 8,
+      "name": "Brock Purdy",
+      "team": "SF",
+      "pos": "QB",
+      "posRank": "QB12",
+      "sources": {
+        "FantasyPros": 91
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "makai-lemon",
+      "rank": 92,
+      "tier": 8,
+      "name": "Makai Lemon",
+      "team": "PHI",
+      "pos": "WR",
+      "posRank": "WR39",
+      "sources": {
+        "FantasyPros": 92
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "parker-washington",
+      "rank": 93,
+      "tier": 8,
+      "name": "Parker Washington",
+      "team": "JAC",
+      "pos": "WR",
+      "posRank": "WR40",
+      "sources": {
+        "FantasyPros": 93
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "blake-corum",
+      "rank": 94,
+      "tier": 8,
+      "name": "Blake Corum",
+      "team": "LAR",
+      "pos": "RB",
+      "posRank": "RB34",
+      "sources": {
+        "FantasyPros": 94
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jakobi-meyers",
+      "rank": 95,
+      "tier": 8,
+      "name": "Jakobi Meyers",
+      "team": "JAC",
+      "pos": "WR",
+      "posRank": "WR41",
+      "sources": {
+        "FantasyPros": 95
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "michael-pittman-jr",
+      "rank": 96,
+      "tier": 8,
+      "name": "Michael Pittman Jr.",
+      "team": "PIT",
+      "pos": "WR",
+      "posRank": "WR42",
+      "sources": {
+        "FantasyPros": 96
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jk-dobbins",
+      "rank": 97,
+      "tier": 8,
+      "name": "J.K. Dobbins",
+      "team": "DEN",
+      "pos": "RB",
+      "posRank": "RB35",
+      "sources": {
+        "FantasyPros": 97
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "patrick-mahomes-ii",
+      "rank": 98,
+      "tier": 8,
+      "name": "Patrick Mahomes II",
+      "team": "KC",
+      "pos": "QB",
+      "posRank": "QB13",
+      "sources": {
+        "FantasyPros": 98
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "bo-nix",
+      "rank": 99,
+      "tier": 8,
+      "name": "Bo Nix",
+      "team": "DEN",
+      "pos": "QB",
+      "posRank": "QB14",
+      "sources": {
+        "FantasyPros": 99
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "wandale-robinson",
+      "rank": 100,
+      "tier": 8,
+      "name": "Wan'Dale Robinson",
+      "team": "TEN",
+      "pos": "WR",
+      "posRank": "WR43",
+      "sources": {
+        "FantasyPros": 100
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "matthew-stafford",
+      "rank": 101,
+      "tier": 8,
+      "name": "Matthew Stafford",
+      "team": "LAR",
+      "pos": "QB",
+      "posRank": "QB15",
+      "sources": {
+        "FantasyPros": 101
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "travis-kelce",
+      "rank": 102,
+      "tier": 8,
+      "name": "Travis Kelce",
+      "team": "KC",
+      "pos": "TE",
+      "posRank": "TE9",
+      "sources": {
+        "FantasyPros": 102
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "ricky-pearsall",
+      "rank": 103,
+      "tier": 8,
+      "name": "Ricky Pearsall",
+      "team": "SF",
+      "pos": "WR",
+      "posRank": "WR44",
+      "sources": {
+        "FantasyPros": 103
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kenneth-gainwell",
+      "rank": 104,
+      "tier": 8,
+      "name": "Kenneth Gainwell",
+      "team": "TB",
+      "pos": "RB",
+      "posRank": "RB36",
+      "sources": {
+        "FantasyPros": 104
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jordan-addison",
+      "rank": 105,
+      "tier": 8,
+      "name": "Jordan Addison",
+      "team": "MIN",
+      "pos": "WR",
+      "posRank": "WR45",
+      "sources": {
+        "FantasyPros": 105
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "aaron-jones-sr",
+      "rank": 106,
+      "tier": 8,
+      "name": "Aaron Jones Sr.",
+      "team": "MIN",
+      "pos": "RB",
+      "posRank": "RB37",
+      "sources": {
+        "FantasyPros": 106
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dalton-kincaid",
+      "rank": 107,
+      "tier": 8,
+      "name": "Dalton Kincaid",
+      "team": "BUF",
+      "pos": "TE",
+      "posRank": "TE10",
+      "sources": {
+        "FantasyPros": 107
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "quentin-johnston",
+      "rank": 108,
+      "tier": 8,
+      "name": "Quentin Johnston",
+      "team": "LAC",
+      "pos": "WR",
+      "posRank": "WR46",
+      "sources": {
+        "FantasyPros": 108
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jared-goff",
+      "rank": 109,
+      "tier": 8,
+      "name": "Jared Goff",
+      "team": "DET",
+      "pos": "QB",
+      "posRank": "QB16",
+      "sources": {
+        "FantasyPros": 109
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kyler-murray",
+      "rank": 110,
+      "tier": 8,
+      "name": "Kyler Murray",
+      "team": "MIN",
+      "pos": "QB",
+      "posRank": "QB17",
+      "sources": {
+        "FantasyPros": 110
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jayden-reed",
+      "rank": 111,
+      "tier": 8,
+      "name": "Jayden Reed",
+      "team": "GB",
+      "pos": "WR",
+      "posRank": "WR47",
+      "sources": {
+        "FantasyPros": 111
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jacory-croskey-merritt",
+      "rank": 112,
+      "tier": 8,
+      "name": "Jacory Croskey-Merritt",
+      "team": "WAS",
+      "pos": "RB",
+      "posRank": "RB38",
+      "sources": {
+        "FantasyPros": 112
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jake-ferguson",
+      "rank": 113,
+      "tier": 8,
+      "name": "Jake Ferguson",
+      "team": "DAL",
+      "pos": "TE",
+      "posRank": "TE11",
+      "sources": {
+        "FantasyPros": 113
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "josh-downs",
+      "rank": 114,
+      "tier": 8,
+      "name": "Josh Downs",
+      "team": "IND",
+      "pos": "WR",
+      "posRank": "WR48",
+      "sources": {
+        "FantasyPros": 114
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "george-kittle",
+      "rank": 115,
+      "tier": 8,
+      "name": "George Kittle",
+      "team": "SF",
+      "pos": "TE",
+      "posRank": "TE12",
+      "sources": {
+        "FantasyPros": 115
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rachaad-white",
+      "rank": 116,
+      "tier": 8,
+      "name": "Rachaad White",
+      "team": "WAS",
+      "pos": "RB",
+      "posRank": "RB39",
+      "sources": {
+        "FantasyPros": 116
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dallas-goedert",
+      "rank": 117,
+      "tier": 8,
+      "name": "Dallas Goedert",
+      "team": "PHI",
+      "pos": "TE",
+      "posRank": "TE13",
+      "sources": {
+        "FantasyPros": 117
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "isaiah-likely",
+      "rank": 118,
+      "tier": 8,
+      "name": "Isaiah Likely",
+      "team": "NYG",
+      "pos": "TE",
+      "posRank": "TE14",
+      "sources": {
+        "FantasyPros": 118
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jordan-love",
+      "rank": 119,
+      "tier": 9,
+      "name": "Jordan Love",
+      "team": "GB",
+      "pos": "QB",
+      "posRank": "QB18",
+      "sources": {
+        "FantasyPros": 119
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "baker-mayfield",
+      "rank": 120,
+      "tier": 9,
+      "name": "Baker Mayfield",
+      "team": "TB",
+      "pos": "QB",
+      "posRank": "QB19",
+      "sources": {
+        "FantasyPros": 120
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "xavier-worthy",
+      "rank": 121,
+      "tier": 9,
+      "name": "Xavier Worthy",
+      "team": "KC",
+      "pos": "WR",
+      "posRank": "WR49",
+      "sources": {
+        "FantasyPros": 121
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jayden-higgins",
+      "rank": 122,
+      "tier": 9,
+      "name": "Jayden Higgins",
+      "team": "HOU",
+      "pos": "WR",
+      "posRank": "WR50",
+      "sources": {
+        "FantasyPros": 122
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tyrone-tracy-jr",
+      "rank": 123,
+      "tier": 9,
+      "name": "Tyrone Tracy Jr.",
+      "team": "NYG",
+      "pos": "RB",
+      "posRank": "RB40",
+      "sources": {
+        "FantasyPros": 123
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jordan-mason",
+      "rank": 124,
+      "tier": 9,
+      "name": "Jordan Mason",
+      "team": "MIN",
+      "pos": "RB",
+      "posRank": "RB41",
+      "sources": {
+        "FantasyPros": 124
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tyler-shough",
+      "rank": 125,
+      "tier": 9,
+      "name": "Tyler Shough",
+      "team": "NO",
+      "pos": "QB",
+      "posRank": "QB20",
+      "sources": {
+        "FantasyPros": 125
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "khalil-shakir",
+      "rank": 126,
+      "tier": 9,
+      "name": "Khalil Shakir",
+      "team": "BUF",
+      "pos": "WR",
+      "posRank": "WR51",
+      "sources": {
+        "FantasyPros": 126
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jonathon-brooks",
+      "rank": 127,
+      "tier": 9,
+      "name": "Jonathon Brooks",
+      "team": "CAR",
+      "pos": "RB",
+      "posRank": "RB42",
+      "sources": {
+        "FantasyPros": 127
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "mark-andrews",
+      "rank": 128,
+      "tier": 9,
+      "name": "Mark Andrews",
+      "team": "BAL",
+      "pos": "TE",
+      "posRank": "TE15",
+      "sources": {
+        "FantasyPros": 128
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tyler-allgeier",
+      "rank": 129,
+      "tier": 9,
+      "name": "Tyler Allgeier",
+      "team": "ARI",
+      "pos": "RB",
+      "posRank": "RB43",
+      "sources": {
+        "FantasyPros": 129
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "woody-marks",
+      "rank": 130,
+      "tier": 9,
+      "name": "Woody Marks",
+      "team": "HOU",
+      "pos": "RB",
+      "posRank": "RB44",
+      "sources": {
+        "FantasyPros": 130
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "chris-rodriguez-jr",
+      "rank": 131,
+      "tier": 9,
+      "name": "Chris Rodriguez Jr.",
+      "team": "JAC",
+      "pos": "RB",
+      "posRank": "RB45",
+      "sources": {
+        "FantasyPros": 131
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "zach-charbonnet",
+      "rank": 132,
+      "tier": 9,
+      "name": "Zach Charbonnet",
+      "team": "SEA",
+      "pos": "RB",
+      "posRank": "RB46",
+      "sources": {
+        "FantasyPros": 132
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "malik-willis",
+      "rank": 133,
+      "tier": 9,
+      "name": "Malik Willis",
+      "team": "MIA",
+      "pos": "QB",
+      "posRank": "QB21",
+      "sources": {
+        "FantasyPros": 133
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "kc-concepcion",
+      "rank": 134,
+      "tier": 9,
+      "name": "KC Concepcion",
+      "team": "CLE",
+      "pos": "WR",
+      "posRank": "WR52",
+      "sources": {
+        "FantasyPros": 134
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "romeo-doubs",
+      "rank": 135,
+      "tier": 9,
+      "name": "Romeo Doubs",
+      "team": "NE",
+      "pos": "WR",
+      "posRank": "WR53",
+      "sources": {
+        "FantasyPros": 135
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jalen-coker",
+      "rank": 136,
+      "tier": 9,
+      "name": "Jalen Coker",
+      "team": "CAR",
+      "pos": "WR",
+      "posRank": "WR54",
+      "sources": {
+        "FantasyPros": 136
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "isiah-pacheco",
+      "rank": 137,
+      "tier": 9,
+      "name": "Isiah Pacheco",
+      "team": "DET",
+      "pos": "RB",
+      "posRank": "RB47",
+      "sources": {
+        "FantasyPros": 137
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "matthew-golden",
+      "rank": 138,
+      "tier": 9,
+      "name": "Matthew Golden",
+      "team": "GB",
+      "pos": "WR",
+      "posRank": "WR55",
+      "sources": {
+        "FantasyPros": 138
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tyjae-spears",
+      "rank": 139,
+      "tier": 9,
+      "name": "Tyjae Spears",
+      "team": "TEN",
+      "pos": "RB",
+      "posRank": "RB48",
+      "sources": {
+        "FantasyPros": 139
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "juwan-johnson",
+      "rank": 140,
+      "tier": 9,
+      "name": "Juwan Johnson",
+      "team": "NO",
+      "pos": "TE",
+      "posRank": "TE16",
+      "sources": {
+        "FantasyPros": 140
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "cj-stroud",
+      "rank": 141,
+      "tier": 9,
+      "name": "C.J. Stroud",
+      "team": "HOU",
+      "pos": "QB",
+      "posRank": "QB22",
+      "sources": {
+        "FantasyPros": 141
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "dylan-sampson",
+      "rank": 142,
+      "tier": 9,
+      "name": "Dylan Sampson",
+      "team": "CLE",
+      "pos": "RB",
+      "posRank": "RB49",
+      "sources": {
+        "FantasyPros": 142
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "oronde-gadsden-ii",
+      "rank": 143,
+      "tier": 9,
+      "name": "Oronde Gadsden II",
+      "team": "LAC",
+      "pos": "TE",
+      "posRank": "TE17",
+      "sources": {
+        "FantasyPros": 143
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "sam-darnold",
+      "rank": 144,
+      "tier": 9,
+      "name": "Sam Darnold",
+      "team": "SEA",
+      "pos": "QB",
+      "posRank": "QB23",
+      "sources": {
+        "FantasyPros": 144
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "alvin-kamara",
+      "rank": 145,
+      "tier": 9,
+      "name": "Alvin Kamara",
+      "team": "NO",
+      "pos": "RB",
+      "posRank": "RB50",
+      "sources": {
+        "FantasyPros": 145
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "rashid-shaheed",
+      "rank": 146,
+      "tier": 9,
+      "name": "Rashid Shaheed",
+      "team": "SEA",
+      "pos": "WR",
+      "posRank": "WR56",
+      "sources": {
+        "FantasyPros": 146
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "brenton-strange",
+      "rank": 147,
+      "tier": 9,
+      "name": "Brenton Strange",
+      "team": "JAC",
+      "pos": "TE",
+      "posRank": "TE18",
+      "sources": {
+        "FantasyPros": 147
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "hunter-henry",
+      "rank": 148,
+      "tier": 9,
+      "name": "Hunter Henry",
+      "team": "NE",
+      "pos": "TE",
+      "posRank": "TE19",
+      "sources": {
+        "FantasyPros": 148
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "keaton-mitchell",
+      "rank": 149,
+      "tier": 9,
+      "name": "Keaton Mitchell",
+      "team": "LAC",
+      "pos": "RB",
+      "posRank": "RB51",
+      "sources": {
+        "FantasyPros": 149
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "cam-ward",
+      "rank": 150,
+      "tier": 9,
+      "name": "Cam Ward",
+      "team": "TEN",
+      "pos": "QB",
+      "posRank": "QB24",
+      "sources": {
+        "FantasyPros": 150
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "brian-robinson-jr",
+      "rank": 151,
+      "tier": 9,
+      "name": "Brian Robinson Jr.",
+      "team": "ATL",
+      "pos": "RB",
+      "posRank": "RB52",
+      "sources": {
+        "FantasyPros": 151
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jerry-jeudy",
+      "rank": 152,
+      "tier": 10,
+      "name": "Jerry Jeudy",
+      "team": "CLE",
+      "pos": "WR",
+      "posRank": "WR57",
+      "sources": {
+        "FantasyPros": 152
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jauan-jennings",
+      "rank": 153,
+      "tier": 10,
+      "name": "Jauan Jennings",
+      "team": "MIN",
+      "pos": "WR",
+      "posRank": "WR58",
+      "sources": {
+        "FantasyPros": 153
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jonah-coleman",
+      "rank": 154,
+      "tier": 10,
+      "name": "Jonah Coleman",
+      "team": "DEN",
+      "pos": "RB",
+      "posRank": "RB53",
+      "sources": {
+        "FantasyPros": 154
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "omar-cooper-jr",
+      "rank": 155,
+      "tier": 10,
+      "name": "Omar Cooper Jr.",
+      "team": "NYJ",
+      "pos": "WR",
+      "posRank": "WR59",
+      "sources": {
+        "FantasyPros": 155
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "denzel-boston",
+      "rank": 156,
+      "tier": 10,
+      "name": "Denzel Boston",
+      "team": "CLE",
+      "pos": "WR",
+      "posRank": "WR60",
+      "sources": {
+        "FantasyPros": 156
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tank-bigsby",
+      "rank": 157,
+      "tier": 10,
+      "name": "Tank Bigsby",
+      "team": "PHI",
+      "pos": "RB",
+      "posRank": "RB54",
+      "sources": {
+        "FantasyPros": 157
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "braelon-allen",
+      "rank": 158,
+      "tier": 10,
+      "name": "Braelon Allen",
+      "team": "NYJ",
+      "pos": "RB",
+      "posRank": "RB55",
+      "sources": {
+        "FantasyPros": 158
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "james-conner",
+      "rank": 159,
+      "tier": 10,
+      "name": "James Conner",
+      "team": "ARI",
+      "pos": "RB",
+      "posRank": "RB56",
+      "sources": {
+        "FantasyPros": 159
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    }
+  ]
+}
