@@ -11,77 +11,83 @@
     <div>
       <p class="eyebrow">2026/2027 NFL Fantasy Draft</p>
       <h1>Fantasy Draft War Room</h1>
-      <p class="sub">Live board, editable ranks and tiers, drafted-player tracking, source imports, and persistent local saves for GitHub Pages.</p>
+      <p class="sub">Shared Supabase draft board with editable custom rankings, tiers, drafted-player tracking, and live updates for everyone on the site.</p>
     </div>
     <div class="hero-card">
       <div class="stat"><span id="availableCount">0</span><label>Available</label></div>
-      <div class="stat"><span id="myCount">0</span><label>My Team</label></div>
+      <div class="stat"><span id="myCount">0</span><label>Custom Team</label></div>
       <div class="stat"><span id="draftedCount">0</span><label>Drafted</label></div>
     </div>
   </header>
 
-  <main class="layout">
-    <aside class="panel controls">
-      <h2>Controls</h2>
-      <label>Search player/team</label>
-      <input id="search" type="search" placeholder="Bijan, BUF, TE..." />
-      <label>Position</label>
-      <div class="chips" id="positionChips"></div>
-      <label>Show</label>
-      <select id="statusFilter"><option value="available">Available only</option><option value="all">All players</option><option value="mine">My team</option><option value="drafted">Drafted by anyone</option></select>
-      <label>Sort</label>
-      <select id="sortBy"><option value="rank">My rank</option><option value="tier">Tier then rank</option><option value="adp">Consensus/source rank</option><option value="pos">Position</option></select>
-      <div class="button-grid">
+  <main class="page">
+    <section class="panel controls-top">
+      <div class="control-group wide">
+        <label>Search player/team</label>
+        <input id="search" type="search" placeholder="Bijan, BUF, TE..." />
+      </div>
+      <div class="control-group">
+        <label>Position</label>
+        <div class="chips" id="positionChips"></div>
+      </div>
+      <div class="control-group">
+        <label>Show</label>
+        <select id="statusFilter"><option value="available">Available only</option><option value="all">All players</option><option value="mine">My team</option><option value="drafted">Drafted by anyone</option></select>
+      </div>
+      <div class="control-group">
+        <label>Sort</label>
+        <select id="sortBy"><option value="custom_rank">Custom Ranking</option><option value="tier">Tier then Custom Ranking</option><option value="adp">Consensus/source rank</option><option value="pos">Position</option></select>
+      </div>
+      <div class="control-buttons">
+        <button id="seedSupabaseBtn" title="Loads starter board into Supabase if your table is empty">Seed Supabase</button>
         <button id="exportBtn">Export Save</button>
         <label class="file-btn">Import Save<input id="importJson" type="file" accept="application/json" hidden /></label>
         <label class="file-btn">Import CSV<input id="importCsv" type="file" accept=".csv,text/csv" hidden /></label>
-        <button id="resetBtn" class="danger">Reset</button>
+        <button id="resetBtn" class="danger">Local Reset</button>
       </div>
-      <p class="hint">All rank, tier, notes, and draft choices save automatically in this browser via localStorage.</p>
-      <details><summary>CSV import columns</summary><p>Use: name, team, pos, rank, tier, source, notes. Source rankings get blended into each player's consensus.</p></details>
-    </aside>
-
-    <section class="panel board-wrap">
-      <div class="toolbar">
-        <h2>Draft Board</h2>
-        <div class="mini"><span id="lastSaved">Not saved yet</span></div>
-      </div>
-      <div class="table-wrap">
-        <table id="board"><thead><tr><th>Rank</th><th>Tier</th><th>Player</th><th>Pos</th><th>Team</th><th>Sources</th><th>Notes</th><th>Action</th></tr></thead><tbody></tbody></table>
-      </div>
+      <div id="syncStatus" class="sync-status">Checking Supabase connection...</div>
     </section>
 
-    <aside class="panel my-team">
-      <h2>My Draft</h2>
-      <ol id="myTeam"></ol>
-      <h2>Drafted Log</h2>
-      <ol id="draftedLog"></ol>
-    </aside>
+    <section class="content-grid">
+      <section class="panel board-wrap">
+        <div class="toolbar">
+          <h2>Draft Board</h2>
+          <div class="mini"><span id="lastSaved">Not saved yet</span></div>
+        </div>
+        <div class="table-wrap">
+          <table id="board"><thead><tr><th>Custom Ranking</th><th>Tier</th><th>Player</th><th>Pos</th><th>Team</th><th>Sources</th><th>Notes</th><th>Action</th></tr></thead><tbody></tbody></table>
+        </div>
+      </section>
+      <aside class="panel my-team">
+        <details open>
+          <summary>My Draft</summary>
+          <ol id="myTeam"></ol>
+        </details>
+        <details open>
+          <summary>Drafted Log</summary>
+          <ol id="draftedLog"></ol>
+        </details>
+      </aside>
+    </section>
   </main>
-
-  <section class="panel source-panel">
-    <h2>Source Strategy</h2>
-    <p>This static GitHub version ships with a 2026 seed board and lets you import rankings from FantasyPros, ESPN, RotoBaller, Draft Sharks, CBS/SportsLine, Footballguys, Yahoo, Sleeper exports, or your own sheet as CSV. Browser security/CORS and paid-site terms usually prevent a GitHub Pages site from scraping those sites automatically, so this version is designed for clean source imports plus full local persistence.</p>
-    <ul>
-      <li>Use <strong>Import CSV</strong> to add or overwrite rankings from another site.</li>
-      <li>Edit any row directly with the Rank/Tier buttons.</li>
-      <li>Select <strong>Mine</strong> when you draft a player, or <strong>Gone</strong> when another manager drafts him.</li>
-    </ul>
-  </section>
 
   <dialog id="editDialog">
     <form method="dialog" id="editForm">
       <h2>Edit Player</h2>
+      <p class="hint">Rank, tier, notes, and draft status save to Supabase when configured, so everyone sees the update.</p>
       <input type="hidden" id="editId" />
       <label>Name<input id="editName" /></label>
       <label>Team<input id="editTeam" /></label>
       <label>Position<select id="editPos"><option>QB</option><option>RB</option><option>WR</option><option>TE</option><option>DST</option><option>K</option></select></label>
-      <label>Rank<input id="editRank" type="number" min="1" /></label>
+      <label>Custom Ranking<input id="editRank" type="number" min="1" /></label>
       <label>Tier<input id="editTier" type="number" min="1" /></label>
       <label>Notes<textarea id="editNotes" rows="4"></textarea></label>
       <div class="dialog-actions"><button value="cancel" type="button" id="cancelEdit">Cancel</button><button value="save" id="saveEdit">Save</button></div>
     </form>
   </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
