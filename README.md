@@ -15,3 +15,9 @@
 - Built from the v9 simplified build to avoid reintroducing older changes.
 - Normalized mobile panel widths so Best Rec, Roster Scarcity, Search/Filters, Draft Board, and player cards share the same left/right edges.
 - Did not change HTML structure or app logic.
+
+
+### v21 ranking editor drag improvements
+- Added long-press drag activation on the handle only.
+- Added live row movement while dragging, undo last change, and text-selection prevention on handle/rank.
+- Kept scrolling available when touching non-handle areas like player/team text.

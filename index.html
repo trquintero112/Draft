@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fantasy Draft War Room 2026</title>
-  <link rel="stylesheet" href="styles.css?v=20" />
+  <link rel="stylesheet" href="styles.css?v=21" />
 </head>
 <body>
   <header class="hero">
@@ -39,9 +39,12 @@
       <div class="rank-editor-head">
         <div>
           <h2>Edit Custom Rankings</h2>
-          <p>Use the position tabs, then drag names into the order you want. Tier can be typed directly.</p>
+          <p>Hard-press the handle, then drag a player into the order you want. Tier can be typed directly.</p>
         </div>
-        <button id="backToDraftBtn" class="danger">Back to Draft Board</button>
+        <div class="rank-editor-actions-top">
+          <button id="undoRankChangeBtn">Undo Last Change</button>
+          <button id="backToDraftBtn" class="danger">Back to Draft Board</button>
+        </div>
       </div>
       <div id="rankEditorTabs" class="rank-tabs"></div>
       <div class="rank-grid-head"><div>Rank</div><div>Player</div><div>Team</div><div>Tier</div></div>
