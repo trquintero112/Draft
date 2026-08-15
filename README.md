@@ -13,7 +13,7 @@
 - Persists the merged notes JSON back to Supabase so FantasyPros ECR through Key Player Notes survive refreshes and devices.
 
 
-### v29 draft board notes icon
-- Replaced Draft Board hard-press notes with a visible 📝 icon on the player-name line.
-- Added forced source/player-info hydration from data/seed-rankings.json for both local storage and existing Supabase rows.
-- Notes popup now pulls FantasyPros ECR through Key Player Notes & Analysis directly from hydrated player_info.
+### v30 Excel-only seed source
+- Rebuilt seed-rankings.json and data/seed-rankings.json directly from Fantasy_Football_2026_27_Draft_Kit.xlsx, sheet All Players Ranking.
+- Added a seed-source fallback map so player info popups always read FantasyPros ECR through Key Player Notes directly from the Excel-generated seed, even when Supabase/local rows are older.
+- Seed Supabase now publishes the Excel file as the source of truth while preserving current custom rank, tier, drafted state, and pick values when possible.
