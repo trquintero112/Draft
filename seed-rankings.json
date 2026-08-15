@@ -1,5 +1,5 @@
 {
-  "seed_version": "v34-excel-only",
+  "seed_version": "v41-full-integrated",
   "source_workbook": "Fantasy_Football_2026_27_Draft_Kit.xlsx",
   "source_sheet": "All Players Ranking",
   "players": [
@@ -187,9 +187,9 @@
         "Draft Sharks (3D)": 6,
         "Rotoworld Top 200": 6,
         "Avg ADP": 6.4,
-        "Key Player Notes & Analysis": "Unmatched PPR ceiling when fully healthy; elite goal-line & receiving share"
+        "Key Player Notes & Analysis": "Unmatched PPR ceiling when fully healthy; elite goal-line and receiving share"
       },
-      "notes": "{\"Consensus Rank\": 6, \"Player Name\": \"Christian McCaffrey\", \"Pos\": \"RB\", \"Team\": \"SF\", \"Consensus Tier\": \"Tier 2: Elite Workhorse\", \"FantasyPros ECR\": 7, \"Draft Sharks (3D)\": 6, \"Rotoworld Top 200\": 6, \"Avg ADP\": 6.4, \"Key Player Notes & Analysis\": \"Unmatched PPR ceiling when fully healthy; elite goal-line & receiving share\"}",
+      "notes": "{\"Consensus Rank\": 6, \"Player Name\": \"Christian McCaffrey\", \"Pos\": \"RB\", \"Team\": \"SF\", \"Consensus Tier\": \"Tier 2: Elite Workhorse\", \"FantasyPros ECR\": 7, \"Draft Sharks (3D)\": 6, \"Rotoworld Top 200\": 6, \"Avg ADP\": 6.4, \"Key Player Notes & Analysis\": \"Unmatched PPR ceiling when fully healthy; elite goal-line and receiving share\"}",
       "drafted": false,
       "draftedBy": "",
       "drafted_by": "",
@@ -1467,9 +1467,9 @@
         "Draft Sharks (3D)": 46,
         "Rotoworld Top 200": 46,
         "Avg ADP": 46.1,
-        "Key Player Notes & Analysis": "Perennial 1,000-yard & double-digit TD threat"
+        "Key Player Notes & Analysis": "Perennial 1,000-yard and double-digit TD threat"
       },
-      "notes": "{\"Consensus Rank\": 46, \"Player Name\": \"Mike Evans\", \"Pos\": \"WR\", \"Team\": \"TB\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 46, \"Draft Sharks (3D)\": 46, \"Rotoworld Top 200\": 46, \"Avg ADP\": 46.1, \"Key Player Notes & Analysis\": \"Perennial 1,000-yard & double-digit TD threat\"}",
+      "notes": "{\"Consensus Rank\": 46, \"Player Name\": \"Mike Evans\", \"Pos\": \"WR\", \"Team\": \"TB\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 46, \"Draft Sharks (3D)\": 46, \"Rotoworld Top 200\": 46, \"Avg ADP\": 46.1, \"Key Player Notes & Analysis\": \"Perennial 1,000-yard and double-digit TD threat\"}",
       "drafted": false,
       "draftedBy": "",
       "drafted_by": "",
@@ -3483,9 +3483,9 @@
         "Draft Sharks (3D)": 9,
         "Rotoworld Top 200": 9,
         "Avg ADP": 158,
-        "Key Player Notes & Analysis": "High extra-point floor attached to Baltimore's high-scoring offense"
+        "Key Player Notes & Analysis": "High extra-point floor attached to Baltimore high-scoring offense"
       },
-      "notes": "{\"Consensus Rank\": 109, \"Player Name\": \"Tyler Loop\", \"Pos\": \"K\", \"Team\": \"BAL\", \"Consensus Tier\": \"Tier 3: Streamer K\", \"FantasyPros ECR\": 9, \"Draft Sharks (3D)\": 9, \"Rotoworld Top 200\": 9, \"Avg ADP\": 158, \"Key Player Notes & Analysis\": \"High extra-point floor attached to Baltimore's high-scoring offense\"}",
+      "notes": "{\"Consensus Rank\": 109, \"Player Name\": \"Tyler Loop\", \"Pos\": \"K\", \"Team\": \"BAL\", \"Consensus Tier\": \"Tier 3: Streamer K\", \"FantasyPros ECR\": 9, \"Draft Sharks (3D)\": 9, \"Rotoworld Top 200\": 9, \"Avg ADP\": 158, \"Key Player Notes & Analysis\": \"High extra-point floor attached to Baltimore high-scoring offense\"}",
       "drafted": false,
       "draftedBy": "",
       "drafted_by": "",
@@ -3843,11 +3843,5 @@
       "drafted_by": "",
       "pick": null
     }
-  ],
-  "supported_sources": [
-    "FantasyPros ECR",
-    "Draft Sharks (3D)",
-    "Rotoworld Top 200",
-    "Avg ADP"
   ]
 }
