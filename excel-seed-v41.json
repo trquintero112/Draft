@@ -1,7 +1,5 @@
 {
-  "seed_version": "v41-full-integrated",
-  "source_workbook": "Fantasy_Football_2026_27_Draft_Kit.xlsx",
-  "source_sheet": "All Players Ranking",
+  "seed_version": "v43-v38-format-rebuild",
   "players": [
     {
       "id": "jahmyr-gibbs",
