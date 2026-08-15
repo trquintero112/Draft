@@ -1,0 +1,6 @@
+Upload all three files over the current site folder:
+- index.html
+- v51-edit-rankings-view-fix.js
+- v51-edit-rankings-view-fix.css
+
+This keeps the v50 drag/drop functionality and only fixes the Edit Rankings visual layout: 4 columns, aligned headers, and no duplicated position column.
