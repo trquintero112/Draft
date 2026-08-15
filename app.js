@@ -101,3 +101,21 @@ async function seedSupabase(){
   if(!$('#rankEditorView')?.hidden)renderRankEditor();
   refreshBestRecommendation();
 }
+
+
+/* v28 selection guard */
+(function(){
+  function isSearchTarget(el){return !!(el && el.closest && el.closest('#search'));}
+  document.addEventListener('selectstart',function(e){
+    if(!isSearchTarget(e.target)) e.preventDefault();
+  },true);
+  document.addEventListener('copy',function(e){
+    if(!isSearchTarget(e.target)) e.preventDefault();
+  },true);
+  document.addEventListener('cut',function(e){
+    if(!isSearchTarget(e.target)) e.preventDefault();
+  },true);
+  document.addEventListener('contextmenu',function(e){
+    if(!isSearchTarget(e.target)) e.preventDefault();
+  },true);
+})();

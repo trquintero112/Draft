@@ -11,3 +11,9 @@
 ## v27 Supabase hydration fix
 - Merges draft-kit player_info from data/seed-rankings.json into existing Supabase rows by id/name.
 - Persists the merged notes JSON back to Supabase so FantasyPros ECR through Key Player Notes survive refreshes and devices.
+
+
+### v28 selection lock
+- Disabled text selection/copy/callout across the mobile app UX.
+- The only selectable text field is the Search bar.
+- This prevents player names, notes, ranks, and tiles from being treated like copyable text during hard-press and drag interactions.
