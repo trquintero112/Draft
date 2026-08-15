@@ -21,3 +21,9 @@
 - Added long-press drag activation on the handle only.
 - Added live row movement while dragging, undo last change, and text-selection prevention on handle/rank.
 - Kept scrolling available when touching non-handle areas like player/team text.
+
+
+### v22 drag polish
+- Fixed Undo Last Change wiring.
+- Added a floating ghost tile while dragging and a gold drop line/placeholder.
+- Kept live row movement while hard-pressing, with scrolling preserved outside the handle.
