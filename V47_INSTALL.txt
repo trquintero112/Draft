@@ -1,0 +1,6 @@
+Upload these three files over the current v45/v46 folder:
+- index.html
+- v47-edit-rankings-headers-drag.js
+- v47-edit-rankings-headers-drag.css
+
+The new index already loads the overlay. No manual edits needed.
