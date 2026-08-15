@@ -13,6 +13,9 @@
 - Persists the merged notes JSON back to Supabase so FantasyPros ECR through Key Player Notes survive refreshes and devices.
 
 
-### v31 Supabase config
-- Included the supplied Supabase Project URL, publishable key, and fantasy_players table in config.js.
-- Added connection diagnostics so the status bar shows whether Supabase connected, the library failed to load, or the app fell back to local browser storage.
+### v32 final repair
+- Rebuilt app.js cleanly so Draft Board always shows the 📝 notes icon on the player-name line.
+- Removed hard-press notes behavior from Draft Board.
+- Player info popup now falls back to the Excel-generated seed by player id/name, so FantasyPros ECR through Key Player Notes show even when Supabase rows are older.
+- Reapplied no-text-selection behavior sitewide except for the Search bar.
+- Included the supplied Supabase URL/key in config.js.
