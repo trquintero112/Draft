@@ -72,7 +72,6 @@ function download(blob,name){const a=document.createElement('a');a.href=URL.crea
 function importAny(file){if(!file)return; const r=new FileReader(); r.onload=async()=>{const text=r.result.trim(); try{ if(file.name.toLowerCase().endsWith('.json')||text.startsWith('{')||text.startsWith('[')){const obj=JSON.parse(text); const incoming=Array.isArray(obj)?obj:(obj.players||[]); if(!incoming.length)throw new Error('No players found in JSON'); state.players=normalizeRows(incoming); } else {mergeCsv(text)} await persistMany(state.players); render(); refreshBestRecommendation(); setStatus('Import complete.','ok')}catch(err){alert('Import failed: '+err.message)} }; r.readAsText(file)}
 function parseCsv(text){const rows=[];let row=[],cur='',q=false;for(let i=0;i<text.length;i++){const c=text[i],n=text[i+1];if(c==='"'&&q&&n==='"'){cur+='"';i++}else if(c==='"'){q=!q}else if(c===','&&!q){row.push(cur);cur=''}else if((c==='\n'||c==='\r')&&!q){if(cur||row.length){row.push(cur);rows.push(row);row=[];cur=''}if(c==='\r'&&n==='\n')i++}else cur+=c}if(cur||row.length){row.push(cur);rows.push(row)}return rows}
 function mergeCsv(text){const rows=parseCsv(text).filter(r=>r.length); const headers=rows.shift().map(h=>h.trim().toLowerCase()); const idx=h=>headers.indexOf(h); rows.forEach(r=>{const name=r[idx('name')]||r[idx('player')]||''; if(!name)return; const id=uid(name); let p=state.players.find(x=>x.id===id||x.name.toLowerCase()===name.toLowerCase()); if(!p){p={id,name,team:'',pos:'RB',custom_rank:999,tier:99,sources:{},drafted:false,draftedBy:'',pick:null}; state.players.push(p)} const source=r[idx('source')]||'Imported'; const rankVal=(idx('custom_rank')>-1?r[idx('custom_rank')]:r[idx('rank')]); if(rankVal){p.sources=p.sources||{}; p.sources[source]=+rankVal; p.custom_rank=+rankVal} if(idx('tier')>-1&&r[idx('tier')])p.tier=+r[idx('tier')]; if(idx('team')>-1&&r[idx('team')])p.team=r[idx('team')]; if(idx('pos')>-1&&r[idx('pos')])p.pos=r[idx('pos')];}); state.players.sort((a,b)=>a.custom_rank-b.custom_rank)}
-init();
 
 /* v18 drag/drop ranking editor */
 const rankEditorState={activePos:'RB',dragId:null};
@@ -84,7 +83,7 @@ function setupRankEditor(){
     const panel=document.createElement('section');
     panel.id='rankEditorPanel';
     panel.className='panel rank-editor-panel';
-    panel.innerHTML=`<div class="rank-editor-header"><div><h2>Edit Custom Rankings</h2><div class="rank-editor-sub">Drag rows to reorder within each position. Tier is editable manually. Changes save back to Custom Ranking.</div></div><div class="rank-editor-actions"><button id="closeRankEditorBtn" class="danger">Close Editor</button></div></div><div id="rankTabs" class="rank-tabs"></div><div class="rank-editor-wrap"><table class="rank-editor-table"><thead><tr><th></th><th>Custom Rank</th><th>Player</th><th>Tier</th></tr></thead><tbody id="rankEditorBody"></tbody></table></div><div class="rank-editor-note">Position tabs keep the same custom-rank slots for that position and reorder the players within those slots. The All tab recalculates overall rank 1 through all players.</div>`;
+    panel.innerHTML=`<div class="rank-editor-header"><div><h2>Edit Custom Rankings</h2><div class="rank-editor-sub">Drag rows to reorder. Tier is editable manually. Changes save back to Custom Ranking.</div></div><div class="rank-editor-actions"><button id="closeRankEditorBtn" class="danger">Close Editor</button></div></div><div id="rankTabs" class="rank-tabs"></div><div class="rank-editor-wrap"><table class="rank-editor-table"><thead><tr><th></th><th>Custom Rank</th><th>Player</th><th>Tier</th></tr></thead><tbody id="rankEditorBody"></tbody></table></div><div class="rank-editor-note">Position tabs reorder players within that position's existing custom-rank slots. ALL recalculates overall rank 1 through all players.</div>`;
     topActions.insertAdjacentElement('afterend',panel);
   }
   const editBtn=document.getElementById('editRanksBtn');
@@ -100,87 +99,32 @@ function openRankEditor(){
   renderRankEditor();
   panel.scrollIntoView({behavior:'smooth',block:'start'});
 }
-function closeRankEditor(){
-  const panel=document.getElementById('rankEditorPanel');
-  if(panel) panel.classList.remove('active');
-}
+function closeRankEditor(){const panel=document.getElementById('rankEditorPanel'); if(panel)panel.classList.remove('active')}
 function renderRankTabs(){
-  const wrap=document.getElementById('rankTabs');
-  if(!wrap)return;
+  const wrap=document.getElementById('rankTabs'); if(!wrap)return;
   const tabs=['ALL',...RANK_EDITOR_POSITIONS];
   wrap.innerHTML=tabs.map(pos=>`<button class="rank-tab ${rankEditorState.activePos===pos?'active':''}" data-rank-tab="${pos}">${pos}</button>`).join('');
   wrap.querySelectorAll('[data-rank-tab]').forEach(btn=>btn.addEventListener('click',()=>{rankEditorState.activePos=btn.dataset.rankTab;renderRankTabs();renderRankEditor();}));
 }
-function rankEditorPlayers(){
-  const arr=[...state.players].filter(p=>rankEditorState.activePos==='ALL'||p.pos===rankEditorState.activePos);
-  arr.sort((a,b)=>a.custom_rank-b.custom_rank||a.name.localeCompare(b.name));
-  return arr;
-}
+function rankEditorPlayers(){const arr=[...state.players].filter(p=>rankEditorState.activePos==='ALL'||p.pos===rankEditorState.activePos);arr.sort((a,b)=>a.custom_rank-b.custom_rank||a.name.localeCompare(b.name));return arr}
 function renderRankEditor(){
-  const body=document.getElementById('rankEditorBody');
-  if(!body)return;
+  const body=document.getElementById('rankEditorBody'); if(!body)return;
   const rows=rankEditorPlayers();
-  body.innerHTML=rows.map((p,i)=>`<tr draggable="true" data-rank-id="${p.id}"><td data-label="Move"><span class="drag-handle">☰</span></td><td data-label="Custom Rank"><input class="rank-editor-input" type="number" min="1" value="${p.custom_rank}" data-rank-field="custom_rank" data-rank-id="${p.id}" readonly></td><td data-label="Player"><div class="rank-editor-name">${esc(p.name)}</div><div class="rank-editor-meta">${p.pos} | ${esc(p.team||'')}</div></td><td data-label="Tier"><input class="rank-editor-tier" type="number" min="1" value="${p.tier}" data-rank-field="tier" data-rank-id="${p.id}"></td></tr>`).join('');
-  body.querySelectorAll('tr[data-rank-id]').forEach(row=>{
-    row.addEventListener('dragstart',rankDragStart);
-    row.addEventListener('dragover',rankDragOver);
-    row.addEventListener('dragleave',rankDragLeave);
-    row.addEventListener('drop',rankDrop);
-    row.addEventListener('dragend',rankDragEnd);
-  });
+  body.innerHTML=rows.map(p=>`<tr draggable="true" data-rank-id="${p.id}"><td data-label="Move"><span class="drag-handle">☰</span></td><td data-label="Custom Rank"><input class="rank-editor-input" type="number" min="1" value="${p.custom_rank}" readonly></td><td data-label="Player"><div class="rank-editor-name">${esc(p.name)}</div><div class="rank-editor-meta">${p.pos} | ${esc(p.team||'')}</div></td><td data-label="Tier"><input class="rank-editor-tier" type="number" min="1" value="${p.tier}" data-rank-id="${p.id}"></td></tr>`).join('');
+  body.querySelectorAll('tr[data-rank-id]').forEach(row=>{row.addEventListener('dragstart',rankDragStart);row.addEventListener('dragover',rankDragOver);row.addEventListener('dragleave',rankDragLeave);row.addEventListener('drop',rankDrop);row.addEventListener('dragend',rankDragEnd);});
   body.querySelectorAll('.rank-editor-tier').forEach(inp=>inp.addEventListener('change',rankTierChanged));
 }
-function rankDragStart(e){
-  rankEditorState.dragId=this.dataset.rankId;
-  this.classList.add('dragging');
-  e.dataTransfer.effectAllowed='move';
-  e.dataTransfer.setData('text/plain',rankEditorState.dragId);
-}
-function rankDragOver(e){
-  e.preventDefault();
-  if(this.dataset.rankId!==rankEditorState.dragId)this.classList.add('drag-over');
-}
+function rankDragStart(e){rankEditorState.dragId=this.dataset.rankId;this.classList.add('dragging');e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',rankEditorState.dragId)}
+function rankDragOver(e){e.preventDefault();if(this.dataset.rankId!==rankEditorState.dragId)this.classList.add('drag-over')}
 function rankDragLeave(){this.classList.remove('drag-over')}
-async function rankDrop(e){
-  e.preventDefault();
-  this.classList.remove('drag-over');
-  const fromId=rankEditorState.dragId||e.dataTransfer.getData('text/plain');
-  const toId=this.dataset.rankId;
-  if(!fromId||!toId||fromId===toId)return;
-  await reorderRankEditorPlayers(fromId,toId);
-}
-function rankDragEnd(){
-  this.classList.remove('dragging');
-  document.querySelectorAll('.rank-editor-table tr.drag-over').forEach(r=>r.classList.remove('drag-over'));
-  rankEditorState.dragId=null;
-}
+async function rankDrop(e){e.preventDefault();this.classList.remove('drag-over');const fromId=rankEditorState.dragId||e.dataTransfer.getData('text/plain');const toId=this.dataset.rankId;if(!fromId||!toId||fromId===toId)return;await reorderRankEditorPlayers(fromId,toId)}
+function rankDragEnd(){this.classList.remove('dragging');document.querySelectorAll('.rank-editor-table tr.drag-over').forEach(r=>r.classList.remove('drag-over'));rankEditorState.dragId=null}
 async function reorderRankEditorPlayers(fromId,toId){
-  const rows=rankEditorPlayers();
-  const fromIndex=rows.findIndex(p=>p.id===fromId);
-  const toIndex=rows.findIndex(p=>p.id===toId);
-  if(fromIndex<0||toIndex<0)return;
-  const [moved]=rows.splice(fromIndex,1);
-  rows.splice(toIndex,0,moved);
-  if(rankEditorState.activePos==='ALL'){
-    rows.forEach((p,i)=>{p.custom_rank=i+1;});
-  }else{
-    const rankSlots=rows.map(p=>Number(p.custom_rank)).sort((a,b)=>a-b);
-    rows.forEach((p,i)=>{p.custom_rank=rankSlots[i];});
-  }
-  await persistMany(state.players);
-  render();
-  renderRankEditor();
-  refreshBestRecommendation();
-  setStatus('Custom ranking order saved.','ok');
+  const rows=rankEditorPlayers();const fromIndex=rows.findIndex(p=>p.id===fromId);const toIndex=rows.findIndex(p=>p.id===toId);if(fromIndex<0||toIndex<0)return;
+  const [moved]=rows.splice(fromIndex,1);rows.splice(toIndex,0,moved);
+  if(rankEditorState.activePos==='ALL'){rows.forEach((p,i)=>{p.custom_rank=i+1})}else{const slots=rows.map(p=>Number(p.custom_rank)).sort((a,b)=>a-b);rows.forEach((p,i)=>{p.custom_rank=slots[i]})}
+  await persistMany(state.players);render();renderRankEditor();refreshBestRecommendation();setStatus('Custom ranking order saved.','ok')
 }
-async function rankTierChanged(e){
-  const p=state.players.find(x=>x.id===e.target.dataset.rankId);
-  if(!p)return;
-  p.tier=Number(e.target.value)||p.tier;
-  await persistPlayer(p);
-  render();
-  renderRankEditor();
-  refreshBestRecommendation();
-  setStatus('Tier saved.','ok');
-}
+async function rankTierChanged(e){const p=state.players.find(x=>x.id===e.target.dataset.rankId);if(!p)return;p.tier=Number(e.target.value)||p.tier;await persistPlayer(p);render();renderRankEditor();refreshBestRecommendation();setStatus('Tier saved.','ok')}
 setupRankEditor();
+init();

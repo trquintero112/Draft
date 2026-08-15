@@ -18,8 +18,4 @@
 
 
 ### v18 ranking editor
-- Added Edit Rankings button at the top.
-- Added a flat Excel-style ranking editor with tabs for ALL, QB, RB, WR, TE, K, and DST.
-- Drag rows to reorder custom ranking slots.
-- Edit Tier manually from the table.
-- Saves changes back to local state and Supabase when connected.
+- Added Edit Rankings view with drag/drop rows and editable tier.
