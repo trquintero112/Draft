@@ -1,42 +1,16 @@
 # Fantasy Draft War Room 2026 + Supabase
 
-This version uses GitHub Pages for hosting and Supabase for shared persistence.
-
-## New features added
-- Controls moved to the top so the board is wider.
-- `Custom Ranking` replaces `My Rank` everywhere.
-- Inline editable Custom Ranking and Tier fields.
-- Supabase shared save for ranks, tiers, notes, and draft status.
-- Realtime updates for other users on the site.
-- Consensus Rank column calculated from the imported source rankings.
-- Source rankings display by player.
-- Tier color bar by row.
-- Positional Scarcity tiles by QB/RB/WR/TE and tier.
-- Best Available recommendation engine.
-- Draft Recommended button.
-- Live Draft Board with pick order.
-- Undo Last Pick button.
-- Export JSON, CSV, Excel-compatible XLS, and Print/PDF.
-
-## Supabase setup
-1. Create a Supabase project.
-2. Open Supabase SQL Editor and run `supabase_schema.sql`.
-3. Open `config.js` and replace the placeholders with your Supabase Project URL and Publishable or anon key.
-4. Upload all files to your GitHub repo root.
-5. Enable GitHub Pages from Settings > Pages.
-6. Open the site and select `Seed Supabase` once to publish the starter board.
-
-## Important security note
-The included SQL policies allow anyone with the site link to edit the board. This is intentional for shared draft-room use. If you want private editing, add Supabase Auth and change the policies to authenticated users only.
-
-## CSV import format
-Use columns:
-
-`name, team, pos, custom_rank, tier, source, notes`
-
-Each import source is stored in the `sources` object and contributes to the Consensus column.
+## v9 simplified layout
+- Moved only the action buttons to the top of the page.
+- Search, position, show, and sort remain below Best Rec / Scarcity.
+- Removed Draft Sources section entirely.
+- Removed Source View dropdown, always shows all sources.
+- Removed Notes column and notes editor.
+- Removed all Undo controls from top toolbar and player rows.
+- Show and Sort sit next to each other on mobile.
+- Best Rec and Roster Scarcity are full width on mobile.
 
 
-## v10 mobile width alignment
-- Mobile Best Rec, Roster Scarcity, and Search/Filter sections now use the same outer width as the player card area.
-- Reduced mobile side padding so top panels line up with the Draft Board/player cards.
+## v11 mobile width alignment only
+- Built from the v9 simplified version to avoid reintroducing older changes.
+- Only changed mobile CSS so Best Rec, Roster Scarcity, and Search/Filter align to the same width as the player cards.
