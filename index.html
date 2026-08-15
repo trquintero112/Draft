@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fantasy Draft War Room 2026</title>
-  <link rel="stylesheet" href="styles.css?v=19" />
+  <link rel="stylesheet" href="styles.css?v=20" />
 </head>
 <body>
   <header class="hero">
@@ -35,7 +35,6 @@
       <div id="syncStatus" class="sync-status">Checking Supabase connection...</div>
     </section>
 
-
     <section id="rankEditorView" class="panel rank-editor-view" hidden>
       <div class="rank-editor-head">
         <div>
@@ -45,9 +44,7 @@
         <button id="backToDraftBtn" class="danger">Back to Draft Board</button>
       </div>
       <div id="rankEditorTabs" class="rank-tabs"></div>
-      <div class="rank-grid-head">
-        <div>Rank</div><div>Player</div><div>Team</div><div>Tier</div>
-      </div>
+      <div class="rank-grid-head"><div>Rank</div><div>Player</div><div>Team</div><div>Tier</div></div>
       <div id="rankEditorRows" class="rank-editor-rows"></div>
     </section>
 
@@ -64,24 +61,11 @@
           <div id="scarcityGrid" class="scarcity-grid"></div>
         </div>
       </section>
-
       <section class="filter-bar">
-        <div class="control-group search-box">
-          <label>Search</label>
-          <input id="search" type="search" placeholder="Bijan, BUF, TE, Texans..." />
-        </div>
-        <div class="control-group pos-box">
-          <label>Position</label>
-          <div class="chips" id="positionChips"></div>
-        </div>
-        <div class="control-group show-box">
-          <label>Show</label>
-          <select id="statusFilter"><option value="available">Available only</option><option value="all">All players</option><option value="mine">My team</option><option value="drafted">Drafted by anyone</option></select>
-        </div>
-        <div class="control-group sort-box">
-          <label>Sort</label>
-          <select id="sortBy"><option value="custom_rank">Custom Ranking</option><option value="recommendation">Recommendation Score</option><option value="tier">Tier then Custom Ranking</option><option value="adp">Consensus Rank</option><option value="pos">Position</option></select>
-        </div>
+        <div class="control-group search-box"><label>Search</label><input id="search" type="search" placeholder="Bijan, BUF, TE, Texans..." /></div>
+        <div class="control-group pos-box"><label>Position</label><div class="chips" id="positionChips"></div></div>
+        <div class="control-group show-box"><label>Show</label><select id="statusFilter"><option value="available">Available only</option><option value="all">All players</option><option value="mine">My team</option><option value="drafted">Drafted by anyone</option></select></div>
+        <div class="control-group sort-box"><label>Sort</label><select id="sortBy"><option value="custom_rank">Custom Ranking</option><option value="recommendation">Recommendation Score</option><option value="tier">Tier then Custom Ranking</option><option value="adp">Consensus Rank</option><option value="pos">Position</option></select></div>
       </section>
     </section>
 
@@ -90,9 +74,7 @@
         <details id="draftBoardDetails" open>
           <summary class="section-summary">Draft Board</summary>
           <div class="toolbar"><div></div><div class="mini"><span id="lastSaved">Not saved yet</span></div></div>
-          <div class="table-wrap">
-            <table id="board"><thead><tr><th>Custom Ranking</th><th>Consensus</th><th>Tier</th><th>Player</th><th>Pos</th><th>Team</th><th>Score</th><th>Action</th></tr></thead><tbody></tbody></table>
-          </div>
+          <div class="table-wrap"><table id="board"><thead><tr><th>Player</th><th>Custom Ranking</th><th>Tier</th><th>Consensus</th><th>Score</th><th>Action</th></tr></thead><tbody></tbody></table></div>
         </details>
       </section>
       <aside class="panel my-team">
@@ -103,19 +85,7 @@
     </section>
   </main>
 
-  <dialog id="editDialog">
-    <form method="dialog" id="editForm">
-      <h2>Edit Player</h2>
-      <input type="hidden" id="editId" />
-      <label>Name<input id="editName" /></label>
-      <label>Team<input id="editTeam" /></label>
-      <label>Position<select id="editPos"><option>QB</option><option>RB</option><option>WR</option><option>TE</option><option>K</option><option>DST</option></select></label>
-      <label>Custom Ranking<input id="editRank" type="number" min="1" /></label>
-      <label>Tier<input id="editTier" type="number" min="1" /></label>
-      <div class="dialog-actions"><button value="cancel" type="button" id="cancelEdit">Cancel</button><button value="save" id="saveEdit">Save</button></div>
-    </form>
-  </dialog>
-
+  <dialog id="editDialog"><form method="dialog" id="editForm"><h2>Edit Player</h2><input type="hidden" id="editId" /><label>Name<input id="editName" /></label><label>Team<input id="editTeam" /></label><label>Position<select id="editPos"><option>QB</option><option>RB</option><option>WR</option><option>TE</option><option>K</option><option>DST</option></select></label><label>Custom Ranking<input id="editRank" type="number" min="1" /></label><label>Tier<input id="editTier" type="number" min="1" /></label><div class="dialog-actions"><button value="cancel" type="button" id="cancelEdit">Cancel</button><button value="save" id="saveEdit">Save</button></div></form></dialog>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config.js"></script>
   <script src="app.js"></script>

@@ -74,75 +74,19 @@ function parseCsv(text){const rows=[];let row=[],cur='',q=false;for(let i=0;i<te
 function mergeCsv(text){const rows=parseCsv(text).filter(r=>r.length); const headers=rows.shift().map(h=>h.trim().toLowerCase()); const idx=h=>headers.indexOf(h); rows.forEach(r=>{const name=r[idx('name')]||r[idx('player')]||''; if(!name)return; const id=uid(name); let p=state.players.find(x=>x.id===id||x.name.toLowerCase()===name.toLowerCase()); if(!p){p={id,name,team:'',pos:'RB',custom_rank:999,tier:99,sources:{},drafted:false,draftedBy:'',pick:null}; state.players.push(p)} const source=r[idx('source')]||'Imported'; const rankVal=(idx('custom_rank')>-1?r[idx('custom_rank')]:r[idx('rank')]); if(rankVal){p.sources=p.sources||{}; p.sources[source]=+rankVal; p.custom_rank=+rankVal} if(idx('tier')>-1&&r[idx('tier')])p.tier=+r[idx('tier')]; if(idx('team')>-1&&r[idx('team')])p.team=r[idx('team')]; if(idx('pos')>-1&&r[idx('pos')])p.pos=r[idx('pos')];}); state.players.sort((a,b)=>a.custom_rank-b.custom_rank)}
 init();
 
-/* v19 dedicated edit rankings view and compact draft-board render override */
-const EDIT_POSITIONS_V19=['ALL','QB','RB','WR','TE','K','DST'];
-const rankEditV19={active:'ALL',dragId:null,pointerId:null};
-function setupRankEditorV19(){
-  const editBtn=document.getElementById('editRanksBtn');
-  const backBtn=document.getElementById('backToDraftBtn');
-  if(editBtn) editBtn.onclick=openRankEditorV19;
-  if(backBtn) backBtn.onclick=closeRankEditorV19;
-  renderRankTabsV19();
-}
-function openRankEditorV19(){
-  document.body.classList.add('edit-rank-mode');
-  const view=document.getElementById('rankEditorView');
-  if(view){view.hidden=false; renderRankEditorV19(); view.scrollIntoView({behavior:'smooth',block:'start'});}
-}
-function closeRankEditorV19(){
-  document.body.classList.remove('edit-rank-mode');
-  const view=document.getElementById('rankEditorView');
-  if(view)view.hidden=true;
-  render(); refreshBestRecommendation();
-}
-function renderRankTabsV19(){
-  const tabs=document.getElementById('rankEditorTabs');
-  if(!tabs)return;
-  tabs.innerHTML=EDIT_POSITIONS_V19.map(pos=>`<button class="rank-tab ${rankEditV19.active===pos?'active':''}" data-rank-pos="${pos}">${pos}</button>`).join('');
-  tabs.querySelectorAll('[data-rank-pos]').forEach(btn=>btn.onclick=()=>{rankEditV19.active=btn.dataset.rankPos;renderRankTabsV19();renderRankEditorV19();});
-}
-function getRankRowsV19(){
-  return [...state.players].filter(p=>rankEditV19.active==='ALL'||p.pos===rankEditV19.active).sort((a,b)=>a.custom_rank-b.custom_rank||a.name.localeCompare(b.name));
-}
-function renderRankEditorV19(){
-  const wrap=document.getElementById('rankEditorRows');
-  if(!wrap)return;
-  const rows=getRankRowsV19();
-  if(!rows.length){wrap.innerHTML='<div class="rank-editor-empty">No players found for this tab.</div>';return;}
-  wrap.innerHTML=rows.map(p=>`<div class="rank-editor-row" data-rank-id="${p.id}"><div class="rank-num"><span class="rank-drag" title="Drag to reorder">☰</span>${p.custom_rank}</div><div><div class="rank-player-name">${esc(p.name)}</div><div class="rank-player-meta">${p.pos} ${esc(p.team||'')}</div></div><div>${esc(p.team||'')}</div><div><input class="rank-tier-input" type="number" min="1" value="${p.tier}" data-tier-id="${p.id}"></div></div>`).join('');
-  wrap.querySelectorAll('.rank-editor-row').forEach(row=>{
-    row.addEventListener('dragover',e=>e.preventDefault());
-    const handle=row.querySelector('.rank-drag');
-    handle.setAttribute('draggable','true');
-    handle.addEventListener('dragstart',e=>rankDragStartV19(e,row));
-    row.addEventListener('drop',e=>rankDropV19(e,row));
-    handle.addEventListener('pointerdown',e=>rankPointerDownV19(e,row));
-  });
-  wrap.querySelectorAll('.rank-tier-input').forEach(inp=>inp.onchange=rankTierChangeV19);
-}
-function rankDragStartV19(e,row){rankEditV19.dragId=row.dataset.rankId;e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',rankEditV19.dragId);row.classList.add('dragging')}
-async function rankDropV19(e,row){e.preventDefault();const from=e.dataTransfer.getData('text/plain')||rankEditV19.dragId;await rankCommitMoveV19(from,row.dataset.rankId);document.querySelectorAll('.rank-editor-row').forEach(r=>r.classList.remove('dragging','drag-over'))}
-function rankPointerDownV19(e,row){
-  e.preventDefault();rankEditV19.dragId=row.dataset.rankId;rankEditV19.pointerId=e.pointerId;row.classList.add('dragging');row.setPointerCapture?.(e.pointerId);
-  const move=ev=>{const el=document.elementFromPoint(ev.clientX,ev.clientY);const target=el?.closest?.('.rank-editor-row');document.querySelectorAll('.rank-editor-row.drag-over').forEach(r=>r.classList.remove('drag-over'));if(target&&target.dataset.rankId!==rankEditV19.dragId)target.classList.add('drag-over')};
-  const up=async ev=>{document.removeEventListener('pointermove',move);document.removeEventListener('pointerup',up);const el=document.elementFromPoint(ev.clientX,ev.clientY);const target=el?.closest?.('.rank-editor-row');const from=rankEditV19.dragId;document.querySelectorAll('.rank-editor-row').forEach(r=>r.classList.remove('dragging','drag-over'));rankEditV19.dragId=null;if(target&&from&&target.dataset.rankId!==from)await rankCommitMoveV19(from,target.dataset.rankId)};
-  document.addEventListener('pointermove',move,{passive:false});document.addEventListener('pointerup',up,{once:true});
-}
-async function rankCommitMoveV19(fromId,toId){
-  if(!fromId||!toId||fromId===toId)return;
-  const rows=getRankRowsV19();const fromIx=rows.findIndex(p=>p.id===fromId);const toIx=rows.findIndex(p=>p.id===toId);if(fromIx<0||toIx<0)return;
-  const [moved]=rows.splice(fromIx,1);rows.splice(toIx,0,moved);
-  if(rankEditV19.active==='ALL'){rows.forEach((p,i)=>p.custom_rank=i+1)}else{const slots=rows.map(p=>Number(p.custom_rank)).sort((a,b)=>a-b);rows.forEach((p,i)=>p.custom_rank=slots[i])}
-  await persistMany(state.players);render();renderRankEditorV19();refreshBestRecommendation();setStatus('Custom ranking order saved.','ok');
-}
-async function rankTierChangeV19(e){const p=state.players.find(x=>x.id===e.target.dataset.tierId);if(!p)return;p.tier=Number(e.target.value)||p.tier;await persistPlayer(p);render();renderRankEditorV19();refreshBestRecommendation();setStatus('Tier saved.','ok')}
-function render(){
-  renderChips(); renderScarcity(); const tbody=$('#board tbody'); if(!tbody)return; tbody.innerHTML='';
-  for(const p of getFiltered()){
-    const tr=document.createElement('tr'); tr.className=`tier-${Math.min(14,Math.max(1,p.tier))} ${p.drafted?'drafted-row':''}`; const consensus=sourceAvg(p);
-    tr.innerHTML=`<td data-label="Custom Ranking"><input class="rank-input" type="number" min="1" value="${p.custom_rank}" data-field="custom_rank" data-id="${p.id}"></td><td data-label="Consensus"><strong>${fmt(consensus)}</strong></td><td data-label="Tier"><input class="tier-input" type="number" min="1" value="${p.tier}" data-field="tier" data-id="${p.id}"></td><td data-label="Player"><div class="compact-player-line"><span class="player-name">${esc(p.name)}</span><span class="pos ${p.pos}">${posRank(p)}</span><span class="compact-team">${esc(p.team)}</span></div><div class="meta">${p.drafted?p.draftedBy==='Me'?'On my team':'Drafted by other':'Available'}</div><div class="mobile-metrics"><div class="metric-pill"><span>Rank</span><strong>${p.custom_rank}</strong></div><div class="metric-pill"><span>Tier</span><strong>${p.tier}</strong></div><div class="metric-pill"><span>Cons</span><strong>${fmt(consensus)}</strong></div><div class="metric-pill"><span>Score</span><strong>${recommendationScore(p)}</strong></div></div></td><td data-label="Pos"><span class="pos ${p.pos}">${posRank(p)}</span></td><td data-label="Team">${esc(p.team)}</td><td data-label="Score"><span class="score-pill">${recommendationScore(p)}</span></td><td data-label="Action"><div class="actions"><button class="mine" data-act="mine" data-id="${p.id}">Mine</button><button class="gone" data-act="gone" data-id="${p.id}">Gone</button><button class="edit" data-act="edit" data-id="${p.id}">Edit</button></div></td>`;
-    tbody.appendChild(tr);
-  }
-  $$('.actions button').forEach(b=>b.onclick=()=>act(b.dataset.act,b.dataset.id)); $$('.rank-input,.tier-input').forEach(inp=>inp.onchange=()=>inlineUpdate(inp)); renderSidebars();
-}
-setupRankEditorV19();
+/* v20 final overrides: compact Draft Board + touch/desktop ranking editor */
+let rankEditV20={active:'ALL',dragId:null};
+function openRankEditorV20(){document.body.classList.add('edit-rank-mode');const v=document.getElementById('rankEditorView');if(v){v.hidden=false;renderRankTabsV20();renderRankEditorV20();v.scrollIntoView({behavior:'smooth',block:'start'});}}
+function closeRankEditorV20(){document.body.classList.remove('edit-rank-mode');const v=document.getElementById('rankEditorView');if(v)v.hidden=true;render();refreshBestRecommendation();}
+function setupRankEditorV20(){const e=document.getElementById('editRanksBtn'),b=document.getElementById('backToDraftBtn');if(e)e.onclick=openRankEditorV20;if(b)b.onclick=closeRankEditorV20;renderRankTabsV20();}
+function renderRankTabsV20(){const t=document.getElementById('rankEditorTabs');if(!t)return;t.innerHTML=['ALL','QB','RB','WR','TE','K','DST'].map(p=>`<button class="rank-tab ${rankEditV20.active===p?'active':''}" data-rank-pos="${p}">${p}</button>`).join('');t.querySelectorAll('[data-rank-pos]').forEach(b=>b.onclick=()=>{rankEditV20.active=b.dataset.rankPos;renderRankTabsV20();renderRankEditorV20();});}
+function getRankRowsV20(){return [...state.players].filter(p=>rankEditV20.active==='ALL'||p.pos===rankEditV20.active).sort((a,b)=>a.custom_rank-b.custom_rank||a.name.localeCompare(b.name));}
+function renderRankEditorV20(){const w=document.getElementById('rankEditorRows');if(!w)return;const rows=getRankRowsV20();w.innerHTML=rows.map(p=>`<div class="rank-editor-row" data-rank-id="${p.id}"><div class="rank-num"><span class="rank-drag">☰</span>${p.custom_rank}</div><div class="rank-player-name">${esc(p.name)}</div><div class="rank-team">${esc(p.team||'')}</div><div><input class="rank-tier-input" type="number" min="1" value="${p.tier}" data-tier-id="${p.id}"></div></div>`).join('')||'<div class="rank-editor-empty">No players found for this tab.</div>';w.querySelectorAll('.rank-editor-row').forEach(r=>{r.addEventListener('dragover',e=>e.preventDefault());r.addEventListener('drop',e=>rankDropV20(e,r));const h=r.querySelector('.rank-drag');h.draggable=true;h.addEventListener('dragstart',e=>rankDragStartV20(e,r));h.addEventListener('pointerdown',e=>rankPointerDownV20(e,r));});w.querySelectorAll('.rank-tier-input').forEach(i=>i.onchange=rankTierChangeV20);}
+function rankDragStartV20(e,row){rankEditV20.dragId=row.dataset.rankId;e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('text/plain',rankEditV20.dragId);row.classList.add('dragging');}
+async function rankDropV20(e,row){e.preventDefault();await commitRankMoveV20(e.dataTransfer.getData('text/plain')||rankEditV20.dragId,row.dataset.rankId);document.querySelectorAll('.rank-editor-row').forEach(r=>r.classList.remove('dragging','drag-over'));}
+function rankPointerDownV20(e,row){e.preventDefault();rankEditV20.dragId=row.dataset.rankId;row.classList.add('dragging');const move=ev=>{const el=document.elementFromPoint(ev.clientX,ev.clientY);const target=el?.closest?.('.rank-editor-row');document.querySelectorAll('.rank-editor-row.drag-over').forEach(r=>r.classList.remove('drag-over'));if(target&&target.dataset.rankId!==rankEditV20.dragId)target.classList.add('drag-over');};const up=async ev=>{document.removeEventListener('pointermove',move);document.removeEventListener('pointerup',up);const el=document.elementFromPoint(ev.clientX,ev.clientY);const target=el?.closest?.('.rank-editor-row');const from=rankEditV20.dragId;document.querySelectorAll('.rank-editor-row').forEach(r=>r.classList.remove('dragging','drag-over'));rankEditV20.dragId=null;if(target&&from&&target.dataset.rankId!==from)await commitRankMoveV20(from,target.dataset.rankId);};document.addEventListener('pointermove',move,{passive:false});document.addEventListener('pointerup',up,{once:true});}
+async function commitRankMoveV20(fromId,toId){if(!fromId||!toId||fromId===toId)return;const rows=getRankRowsV20();const a=rows.findIndex(p=>p.id===fromId),b=rows.findIndex(p=>p.id===toId);if(a<0||b<0)return;const [mv]=rows.splice(a,1);rows.splice(b,0,mv);if(rankEditV20.active==='ALL'){rows.forEach((p,i)=>p.custom_rank=i+1);}else{const slots=rows.map(p=>Number(p.custom_rank)).sort((x,y)=>x-y);rows.forEach((p,i)=>p.custom_rank=slots[i]);}await persistMany(state.players);render();renderRankEditorV20();refreshBestRecommendation();setStatus('Custom ranking order saved.','ok');}
+async function rankTierChangeV20(e){const p=state.players.find(x=>x.id===e.target.dataset.tierId);if(!p)return;p.tier=Number(e.target.value)||p.tier;await persistPlayer(p);render();renderRankEditorV20();refreshBestRecommendation();setStatus('Tier saved.','ok');}
+function render(){renderChips();renderScarcity();const tbody=document.querySelector('#board tbody');if(!tbody)return;tbody.innerHTML='';for(const p of getFiltered()){const cons=sourceAvg(p);const tr=document.createElement('tr');tr.className=`tier-${Math.min(14,Math.max(1,p.tier))} ${p.drafted?'drafted-row':''}`;tr.innerHTML=`<td data-label="Player"><div class="compact-player-line"><span class="player-name">${esc(p.name)}</span><span class="pos ${p.pos}">${posRank(p)}</span><span class="compact-team">${esc(p.team)}</span></div><div class="meta">${p.drafted?p.draftedBy==='Me'?'On my team':'Drafted by other':'Available'}</div><div class="mobile-metrics"><div class="metric-pill"><span>Rank</span><strong>${p.custom_rank}</strong></div><div class="metric-pill"><span>Tier</span><strong>${p.tier}</strong></div><div class="metric-pill"><span>Cons</span><strong>${fmt(cons)}</strong></div><div class="metric-pill"><span>Score</span><strong>${recommendationScore(p)}</strong></div></div></td><td data-label="Custom Ranking"><input class="rank-input" type="number" min="1" value="${p.custom_rank}" data-field="custom_rank" data-id="${p.id}"></td><td data-label="Tier"><input class="tier-input" type="number" min="1" value="${p.tier}" data-field="tier" data-id="${p.id}"></td><td data-label="Consensus"><strong>${fmt(cons)}</strong></td><td data-label="Score"><span class="score-pill">${recommendationScore(p)}</span></td><td data-label="Action"><div class="actions"><button class="mine" data-act="mine" data-id="${p.id}">Mine</button><button class="gone" data-act="gone" data-id="${p.id}">Gone</button><button class="edit" data-act="edit" data-id="${p.id}">Edit</button></div></td>`;tbody.appendChild(tr);}document.querySelectorAll('.actions button').forEach(b=>b.onclick=()=>act(b.dataset.act,b.dataset.id));document.querySelectorAll('.rank-input,.tier-input').forEach(inp=>inp.onchange=()=>inlineUpdate(inp));renderSidebars();}
+setupRankEditorV20();
+setTimeout(()=>{setupRankEditorV20();render();if(!document.getElementById('rankEditorView')?.hidden)renderRankEditorV20();},250);

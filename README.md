@@ -15,9 +15,3 @@
 - Built from the v9 simplified build to avoid reintroducing older changes.
 - Normalized mobile panel widths so Best Rec, Roster Scarcity, Search/Filters, Draft Board, and player cards share the same left/right edges.
 - Did not change HTML structure or app logic.
-
-
-### v19 ranking editor and compact draft board
-- Rebuilt ranking editor as one-line grid rows with pointer/touch drag support.
-- Removed Sources from Draft Board player tiles.
-- Mobile player tiles are more compact with player/position/team together and rank/tier/consensus/score in one metrics row.
