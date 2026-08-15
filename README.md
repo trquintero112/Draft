@@ -19,3 +19,9 @@
 - Player info popup now falls back to the Excel-generated seed by player id/name, so FantasyPros ECR through Key Player Notes show even when Supabase rows are older.
 - Reapplied no-text-selection behavior sitewide except for the Search bar.
 - Included the supplied Supabase URL/key in config.js.
+
+
+### v33 Excel seed migration supremacy
+- Rebuilt seed-rankings.json and data/seed-rankings.json from the Excel All Players Ranking tab.
+- On load, if Supabase/local rows are stale, the app now replaces the base ranking/tier/source/player notes with the Excel seed while preserving only drafted status, draftedBy, and pick.
+- No Supabase login is required in the browser UI if the publishable key has insert/update/select permissions through RLS. The app attempts the migration automatically on load, and Seed Supabase forces it again.

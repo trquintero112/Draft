@@ -91,3 +91,92 @@ let dragGhost=null,touchState={};function isInteractive(el){return !!el.closest(
 function activateDrag(row,x,y){if(rankEditor.dragging)return;rankEditor.dragging=true;touchState.active=true;rankEditor.dragId=row.dataset.rankId;pushUndo();if(navigator.vibrate)navigator.vibrate([22]);row.classList.remove('press-arming');row.classList.add('rank-placeholder');document.body.classList.add('rank-dragging');dragGhost=makeGhost(row,x,y);moveGhost(x,y)}function makeGhost(row,x,y){const r=row.getBoundingClientRect(),g=row.cloneNode(true);g.classList.add('rank-drag-ghost');g.style.width=r.width+'px';g.style.left=r.left+'px';g.style.top=r.top+'px';g.dataset.offsetX=x-r.left;g.dataset.offsetY=y-r.top;document.body.appendChild(g);return g}function moveGhost(x,y){if(!dragGhost)return;dragGhost.style.left=(x-Number(dragGhost.dataset.offsetX))+'px';dragGhost.style.top=(y-Number(dragGhost.dataset.offsetY))+'px'}function moveDrag(x,y){moveGhost(x,y);if(y<84)window.scrollBy(0,-18);if(y>window.innerHeight-84)window.scrollBy(0,18);const row=document.querySelector(`.rank-editor-row[data-rank-id="${rankEditor.dragId}"]`);if(!row)return;if(dragGhost)dragGhost.style.display='none';const el=document.elementFromPoint(x,y);if(dragGhost)dragGhost.style.display='';const target=el?.closest?.('.rank-editor-row');if(target&&target!==row&&target.parentNode===row.parentNode){const rect=target.getBoundingClientRect(),before=y<rect.top+rect.height/2;target.parentNode.insertBefore(row,before?target:target.nextSibling)}}async function finishDrag(){const row=document.querySelector(`.rank-editor-row[data-rank-id="${rankEditor.dragId}"]`);if(dragGhost){dragGhost.remove();dragGhost=null}if(row)row.classList.remove('rank-placeholder','press-arming');document.body.classList.remove('rank-dragging');rankEditor.dragging=false;await commitLiveOrder()}async function commitLiveOrder(){const ids=$$('#rankEditorRows .rank-editor-row').map(r=>r.dataset.rankId),vis=rankRows(),slots=vis.map(p=>p.custom_rank).sort((a,b)=>a-b);if(rankEditor.active==='ALL')ids.forEach((id,i)=>{const p=state.players.find(x=>x.id===id);if(p)p.custom_rank=i+1});else ids.forEach((id,i)=>{const p=state.players.find(x=>x.id===id);if(p)p.custom_rank=slots[i]});await persistMany();render();renderRankEditor();refreshBestRecommendation()}async function rankTierChange(e){const p=state.players.find(x=>x.id===e.target.dataset.tierId);if(!p)return;pushUndo();p.tier=Number(e.target.value)||p.tier;await persistPlayer(p);render();renderRankEditor();refreshBestRecommendation()}
 function selectionGuard(){document.addEventListener('selectstart',e=>{if(!e.target.closest('#search'))e.preventDefault()},true);document.addEventListener('copy',e=>{if(!e.target.closest('#search'))e.preventDefault()},true);document.addEventListener('cut',e=>{if(!e.target.closest('#search'))e.preventDefault()},true);document.addEventListener('contextmenu',e=>{if(!e.target.closest('#search'))e.preventDefault()},true)}
 init();
+
+
+/* v33 Excel seed migration supremacy */
+function rowHasExcelInfoV33(p){
+  const info=getInfoForPlayer(p);
+  return !!(info && info['FantasyPros ECR']!==undefined && info['Key Player Notes & Analysis']);
+}
+function supabaseNeedsExcelMigrationV33(rows){
+  if(!Array.isArray(rows) || rows.length!==SEED_PLAYERS.length)return true;
+  const sample=rows.slice(0,8).map(r=>normalizeRows([r])[0]);
+  if(sample.some(p=>!rowHasExcelInfoV33(p)))return true;
+  const ids=new Set(rows.map(r=>key(r.id||uid(r.name))));
+  if(SEED_PLAYERS.some(p=>!ids.has(key(p.id||uid(p.name)))))return true;
+  return false;
+}
+function buildExcelSeedStateV33(existingRows=[]){
+  const existing=normalizeRows(existingRows||[]);
+  const byId=new Map(existing.map(p=>[key(p.id||uid(p.name)),p]));
+  const byName=new Map(existing.map(p=>[key(p.name),p]));
+  state.players=SEED_PLAYERS.map(sp=>{
+    const old=byId.get(key(sp.id||uid(sp.name)))||byName.get(key(sp.name));
+    return {
+      ...sp,
+      // Excel file is source of truth for base ranking and player info.
+      custom_rank: sp.custom_rank,
+      tier: sp.tier,
+      sources: {...(sp.sources||{})},
+      player_info: {...(sp.player_info||{})},
+      notes: JSON.stringify(sp.player_info||{}),
+      // Keep only live draft state from older Supabase rows.
+      drafted: !!old?.drafted,
+      draftedBy: old?.draftedBy||'',
+      pick: old?.pick??null
+    };
+  });
+  state.activePos=state.activePos||'ALL';
+}
+async function loadFromSupabase(){
+  const {data,error}=await sb.from(TABLE).select('*').order('custom_rank',{ascending:true});
+  if(error)throw error;
+  if(!data||!data.length){
+    buildExcelSeedStateV33([]);
+    localSave(false);
+    setStatus('Supabase table empty. Excel seed loaded locally. Click Seed Supabase to publish.','warn');
+    return;
+  }
+  if(supabaseNeedsExcelMigrationV33(data)){
+    buildExcelSeedStateV33(data);
+    await persistMany(state.players,true);
+    setStatus('Supabase was migrated to the Excel ranking file and player notes.','ok');
+    return;
+  }
+  state.players=normalizeRows(data);
+  hydrateFromSeed();
+  localSave(false);
+  setStatus('Loaded rankings from Supabase with Excel player notes fallback.','ok');
+}
+async function loadLocalOrSeed(){
+  const saved=localStorage.getItem(STORE_KEY);
+  if(saved){
+    state=JSON.parse(saved);
+    // If local rows are stale, replace ranking base from Excel while preserving draft state.
+    if(supabaseNeedsExcelMigrationV33(state.players.map(p=>toDb(p)))){
+      buildExcelSeedStateV33(state.players.map(p=>toDb(p)));
+    }else{
+      hydrateFromSeed();
+    }
+  }else{
+    buildExcelSeedStateV33([]);
+  }
+  localSave(false);
+}
+async function seedSupabase(){
+  if(!usingSupabase||!sb){alert('Supabase is not connected. Check config.js.');return;}
+  buildExcelSeedStateV33(state.players.map(p=>toDb(p)));
+  await persistMany(state.players,true);
+  render();
+  if(!$('#rankEditorView')?.hidden)renderRankEditor();
+  refreshBestRecommendation();
+  setStatus('Supabase published from the Excel ranking file.','ok');
+}
+async function refreshSourceRankings(){
+  buildExcelSeedStateV33(state.players.map(p=>toDb(p)));
+  await persistMany(state.players,true);
+  render();
+  if(!$('#rankEditorView')?.hidden)renderRankEditor();
+  refreshBestRecommendation();
+  setStatus('Excel rankings and notes were forced into the site.','ok');
+}
