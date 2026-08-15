@@ -1,3 +1,3 @@
-# Draft War Room v43
+# Draft War Room v44
 
-Reverted to the v38 layout structure and re-applied post-v38 requested changes inside the main files. Upload the ZIP contents as a full replacement.
+Reverted to v38 layout structure and fixed Edit Rankings drag/drop. Sleeper stars now stay inline and yellow for all sleeper picks, including existing Excel/added sleepers and manual sleepers.
