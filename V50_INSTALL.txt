@@ -1,0 +1,6 @@
+Upload all three files over the current site folder:
+- index.html
+- v50-edit-rankings-safe.js
+- v50-edit-rankings-safe.css
+
+This keeps the v45 core data files untouched and only activates the Edit Rankings fix after the page finishes loading.
