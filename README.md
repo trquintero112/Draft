@@ -17,5 +17,7 @@
 - Did not change HTML structure or app logic.
 
 
-### v18 ranking editor
-- Added Edit Rankings view with drag/drop rows and editable tier.
+### v19 ranking editor and compact draft board
+- Rebuilt ranking editor as one-line grid rows with pointer/touch drag support.
+- Removed Sources from Draft Board player tiles.
+- Mobile player tiles are more compact with player/position/team together and rank/tier/consensus/score in one metrics row.

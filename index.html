@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fantasy Draft War Room 2026</title>
-  <link rel="stylesheet" href="styles.css?v=18" />
+  <link rel="stylesheet" href="styles.css?v=19" />
 </head>
 <body>
   <header class="hero">
@@ -33,6 +33,22 @@
         <button id="printPdfBtn">Print/PDF</button>
       </div>
       <div id="syncStatus" class="sync-status">Checking Supabase connection...</div>
+    </section>
+
+
+    <section id="rankEditorView" class="panel rank-editor-view" hidden>
+      <div class="rank-editor-head">
+        <div>
+          <h2>Edit Custom Rankings</h2>
+          <p>Use the position tabs, then drag names into the order you want. Tier can be typed directly.</p>
+        </div>
+        <button id="backToDraftBtn" class="danger">Back to Draft Board</button>
+      </div>
+      <div id="rankEditorTabs" class="rank-tabs"></div>
+      <div class="rank-grid-head">
+        <div>Rank</div><div>Player</div><div>Team</div><div>Tier</div>
+      </div>
+      <div id="rankEditorRows" class="rank-editor-rows"></div>
     </section>
 
     <section class="panel command-center">
@@ -75,7 +91,7 @@
           <summary class="section-summary">Draft Board</summary>
           <div class="toolbar"><div></div><div class="mini"><span id="lastSaved">Not saved yet</span></div></div>
           <div class="table-wrap">
-            <table id="board"><thead><tr><th>Custom Ranking</th><th>Consensus</th><th>Tier</th><th>Player</th><th>Pos</th><th>Team</th><th>Sources</th><th>Score</th><th>Action</th></tr></thead><tbody></tbody></table>
+            <table id="board"><thead><tr><th>Custom Ranking</th><th>Consensus</th><th>Tier</th><th>Player</th><th>Pos</th><th>Team</th><th>Score</th><th>Action</th></tr></thead><tbody></tbody></table>
           </div>
         </details>
       </section>
