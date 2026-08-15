@@ -103,112 +103,41 @@ async function seedSupabase(){
 }
 
 
-/* v30 Excel-only seed source and player-info fallback */
-let DRAFT_KIT_SEED_ROWS_V30=[];
-let DRAFT_KIT_INFO_BY_ID_V30=new Map();
-let DRAFT_KIT_INFO_BY_NAME_V30=new Map();
-function seedKeyV30(value){return String(value||'').toLowerCase().trim();}
-async function loadDraftKitSeedV30(){
-  if(DRAFT_KIT_SEED_ROWS_V30.length)return DRAFT_KIT_SEED_ROWS_V30;
-  const data=await(await fetch('data/seed-rankings.json?v=30')).json();
-  DRAFT_KIT_SEED_ROWS_V30=normalizeRows(data.players||[]);
-  DRAFT_KIT_INFO_BY_ID_V30=new Map();
-  DRAFT_KIT_INFO_BY_NAME_V30=new Map();
-  DRAFT_KIT_SEED_ROWS_V30.forEach(p=>{
-    DRAFT_KIT_INFO_BY_ID_V30.set(seedKeyV30(p.id||uid(p.name)),p);
-    DRAFT_KIT_INFO_BY_NAME_V30.set(seedKeyV30(p.name),p);
-  });
-  return DRAFT_KIT_SEED_ROWS_V30;
+/* v31 supplied Supabase config + diagnostics */
+function getSupabaseConfigV31(){
+  const url=String(window.SUPABASE_URL||'').trim();
+  const key=String(window.SUPABASE_PUBLIC_KEY||window.SUPABASE_ANON_KEY||'').trim();
+  const table=String(window.SUPABASE_TABLE||'fantasy_players').trim();
+  if(key && !window.SUPABASE_PUBLIC_KEY) window.SUPABASE_PUBLIC_KEY=key;
+  return {url,key,table};
 }
-function getSeedRecordV30(p){
-  return DRAFT_KIT_INFO_BY_ID_V30.get(seedKeyV30(p?.id||uid(p?.name)))||DRAFT_KIT_INFO_BY_NAME_V30.get(seedKeyV30(p?.name));
+function configured(){
+  const cfg=getSupabaseConfigV31();
+  return !!(cfg.url && cfg.key && !cfg.url.includes('PASTE_') && !cfg.key.includes('PASTE_') && cfg.url.startsWith('https://'));
 }
-async function hydratePlayerInfoFromSeed(){
-  const seed=await loadDraftKitSeedV30();
-  const byId=new Map(state.players.map(p=>[seedKeyV30(p.id||uid(p.name)),p]));
-  const byName=new Map(state.players.map(p=>[seedKeyV30(p.name),p]));
-  seed.forEach(sp=>{
-    const p=byId.get(seedKeyV30(sp.id||uid(sp.name)))||byName.get(seedKeyV30(sp.name));
-    if(!p){state.players.push({...sp});return;}
-    p.sources={...(sp.sources||{}),...(p.sources||{})};
-    p.player_info={...(sp.player_info||{}),...(parseInfo(p.notes)||{}),...(p.player_info||{})};
-    // Force the Excel values to be present even if old Supabase rows have partial notes.
-    p.player_info={...(p.player_info||{}),...(sp.player_info||{})};
-    p.notes=JSON.stringify(p.player_info||{});
-    p.pos=p.pos||sp.pos;
-    p.team=p.team||sp.team;
-  });
-  localSave(false);
-}
-async function loadLocalOrSeed(){
-  await loadDraftKitSeedV30();
-  const saved=localStorage.getItem(STORE_KEY);
-  if(saved){
-    state=JSON.parse(saved);
-    await hydratePlayerInfoFromSeed();
-  }else{
-    state.players=DRAFT_KIT_SEED_ROWS_V30.map(p=>({...p}));
-    state.activePos='ALL';
-    localSave();
+async function connect(){
+  const cfg=getSupabaseConfigV31();
+  try{
+    if(configured() && window.supabase){
+      sb=window.supabase.createClient(cfg.url,cfg.key);
+      usingSupabase=true;
+      setStatus('Connecting to Supabase project '+cfg.url.replace('https://','')+' ...','warn');
+      await loadFromSupabase();
+      subscribeRealtime();
+      setStatus('Connected to Supabase table '+cfg.table+'.','ok');
+    }else{
+      usingSupabase=false;
+      await loadLocalOrSeed();
+      if(configured() && !window.supabase){
+        setStatus('Supabase settings found, but the Supabase library did not load. Using local browser save only.','warn');
+      }else{
+        setStatus('Supabase is not linked yet. Using local browser save only.','warn');
+      }
+    }
+  }catch(err){
+    usingSupabase=false;
+    console.error('Supabase connection failed',err);
+    await loadLocalOrSeed();
+    setStatus('Supabase connection failed: '+(err && err.message ? err.message : String(err))+'. Using local browser save only.','bad');
   }
 }
-async function loadSeedRows(){
-  return await loadDraftKitSeedV30();
-}
-async function loadFromSupabase(){
-  await loadDraftKitSeedV30();
-  const {data,error}=await sb.from(TABLE).select('*').order('custom_rank',{ascending:true});
-  if(error){setStatus('Supabase error: '+error.message,'bad');await loadLocalOrSeed();return;}
-  if(!data||!data.length){
-    state.players=DRAFT_KIT_SEED_ROWS_V30.map(p=>({...p}));
-    state.activePos='ALL';
-    localSave(false);
-    setStatus('Supabase connected, table empty. Seed data loaded from Excel file. Select Seed Supabase to publish it.','warn');
-    return;
-  }
-  const saved=localStorage.getItem(STORE_KEY),old=saved?JSON.parse(saved):{};
-  state.players=normalizeRows(data);state.activePos=old.activePos||'ALL';
-  await hydratePlayerInfoFromSeed();
-  await persistMany(state.players);
-  setStatus('Excel seed data and player notes are loaded into Supabase.','ok');
-}
-async function seedSupabase(){
-  if(!usingSupabase||!sb){alert('Add your Supabase URL and publishable/anon key in config.js first.');return;}
-  await loadDraftKitSeedV30();
-  const currentById=new Map(state.players.map(p=>[seedKeyV30(p.id||uid(p.name)),p]));
-  state.players=DRAFT_KIT_SEED_ROWS_V30.map(sp=>{
-    const existing=currentById.get(seedKeyV30(sp.id||uid(sp.name)));
-    return {
-      ...sp,
-      custom_rank:existing?.custom_rank??sp.custom_rank,
-      tier:existing?.tier??sp.tier,
-      drafted:!!existing?.drafted,
-      draftedBy:existing?.draftedBy||'',
-      pick:existing?.pick??null
-    };
-  });
-  await persistMany(state.players);
-  render();
-  if(!$('#rankEditorView')?.hidden)renderRankEditor();
-  refreshBestRecommendation();
-  setStatus('Supabase seeded from the Excel All Players Ranking sheet.','ok');
-}
-async function refreshSourceRankings(){
-  await hydratePlayerInfoFromSeed();
-  await persistMany(state.players);
-  render();
-  if(!$('#rankEditorView')?.hidden)renderRankEditor();
-  refreshBestRecommendation();
-  setStatus('Excel seed player notes and rankings refreshed.','ok');
-}
-function getInfoForPlayer(p){
-  const seed=getSeedRecordV30(p);
-  return {...(seed?.player_info||{}),...(parseInfo(p?.notes)||{}),...(p?.player_info||{})};
-}
-function playerInfoHtml(p){
-  const info=getInfoForPlayer(p);
-  const rows=[['Consensus Rank',info['Consensus Rank']??p.custom_rank],['Consensus Tier',info['Consensus Tier']??('Tier '+p.tier)],['FantasyPros ECR',info['FantasyPros ECR']??p.sources?.['FantasyPros ECR']??''],['Draft Sharks (3D)',info['Draft Sharks (3D)']??p.sources?.['Draft Sharks (3D)']??''],['Rotoworld Top 200',info['Rotoworld Top 200']??p.sources?.['Rotoworld Top 200']??''],['Avg ADP',info['Avg ADP']??p.sources?.['Avg ADP']??'']];
-  const note=info['Key Player Notes & Analysis']||'';
-  return `<h2>${esc(p.name)}</h2><div class="player-info-sub"><span class="pos ${p.pos}">${esc(p.pos)}</span> <strong>${esc(p.team||'')}</strong></div><div class="player-info-grid">${rows.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v??'')}</strong></div>`).join('')}</div><div class="player-info-notes"><h3>Key Player Notes & Analysis</h3><p>${esc(note||'No notes loaded for this player.')}</p></div>`;
-}
-setTimeout(async()=>{await loadDraftKitSeedV30();await hydratePlayerInfoFromSeed();render();if(!$('#rankEditorView')?.hidden)renderRankEditor();},900);

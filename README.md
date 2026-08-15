@@ -13,7 +13,6 @@
 - Persists the merged notes JSON back to Supabase so FantasyPros ECR through Key Player Notes survive refreshes and devices.
 
 
-### v30 Excel-only seed source
-- Rebuilt seed-rankings.json and data/seed-rankings.json directly from Fantasy_Football_2026_27_Draft_Kit.xlsx, sheet All Players Ranking.
-- Added a seed-source fallback map so player info popups always read FantasyPros ECR through Key Player Notes directly from the Excel-generated seed, even when Supabase/local rows are older.
-- Seed Supabase now publishes the Excel file as the source of truth while preserving current custom rank, tier, drafted state, and pick values when possible.
+### v31 Supabase config
+- Included the supplied Supabase Project URL, publishable key, and fantasy_players table in config.js.
+- Added connection diagnostics so the status bar shows whether Supabase connected, the library failed to load, or the app fell back to local browser storage.

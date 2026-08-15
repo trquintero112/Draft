@@ -1,13 +1,10 @@
 {
-  "source_workbook": "Fantasy_Football_2026_27_Draft_Kit.xlsx",
-  "source_sheet": "All Players Ranking",
   "players": [
     {
       "id": "jahmyr-gibbs",
       "name": "Jahmyr Gibbs",
       "team": "DET",
       "pos": "RB",
-      "rank": 1,
       "custom_rank": 1,
       "tier": 1,
       "sources": {
@@ -18,9 +15,6 @@
       },
       "player_info": {
         "Consensus Rank": 1,
-        "Player Name": "Jahmyr Gibbs",
-        "Pos": "RB",
-        "Team": "DET",
         "Consensus Tier": "Tier 1: S-Tier Elite",
         "FantasyPros ECR": 1,
         "Draft Sharks (3D)": 1,
@@ -28,10 +22,8 @@
         "Avg ADP": 1.2,
         "Key Player Notes & Analysis": "Explosive multi-touch threat; elite passing game usage in high-flying offense"
       },
-      "notes": "{\"Consensus Rank\": 1, \"Player Name\": \"Jahmyr Gibbs\", \"Pos\": \"RB\", \"Team\": \"DET\", \"Consensus Tier\": \"Tier 1: S-Tier Elite\", \"FantasyPros ECR\": 1, \"Draft Sharks (3D)\": 1, \"Rotoworld Top 200\": 1, \"Avg ADP\": 1.2, \"Key Player Notes & Analysis\": \"Explosive multi-touch threat; elite passing game usage in high-flying offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -39,7 +31,6 @@
       "name": "Bijan Robinson",
       "team": "ATL",
       "pos": "RB",
-      "rank": 2,
       "custom_rank": 2,
       "tier": 1,
       "sources": {
@@ -50,9 +41,6 @@
       },
       "player_info": {
         "Consensus Rank": 2,
-        "Player Name": "Bijan Robinson",
-        "Pos": "RB",
-        "Team": "ATL",
         "Consensus Tier": "Tier 1: S-Tier Elite",
         "FantasyPros ECR": 2,
         "Draft Sharks (3D)": 2,
@@ -60,10 +48,8 @@
         "Avg ADP": 2.1,
         "Key Player Notes & Analysis": "Clear workhorse with maximum touch projection and goal-line dominance"
       },
-      "notes": "{\"Consensus Rank\": 2, \"Player Name\": \"Bijan Robinson\", \"Pos\": \"RB\", \"Team\": \"ATL\", \"Consensus Tier\": \"Tier 1: S-Tier Elite\", \"FantasyPros ECR\": 2, \"Draft Sharks (3D)\": 2, \"Rotoworld Top 200\": 2, \"Avg ADP\": 2.1, \"Key Player Notes & Analysis\": \"Clear workhorse with maximum touch projection and goal-line dominance\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -71,7 +57,6 @@
       "name": "Ja'Marr Chase",
       "team": "CIN",
       "pos": "WR",
-      "rank": 3,
       "custom_rank": 3,
       "tier": 1,
       "sources": {
@@ -82,9 +67,6 @@
       },
       "player_info": {
         "Consensus Rank": 3,
-        "Player Name": "Ja'Marr Chase",
-        "Pos": "WR",
-        "Team": "CIN",
         "Consensus Tier": "Tier 1: S-Tier Elite",
         "FantasyPros ECR": 3,
         "Draft Sharks (3D)": 3,
@@ -92,10 +74,8 @@
         "Avg ADP": 3,
         "Key Player Notes & Analysis": "Consensus WR1 overall; massive target share and red zone alpha"
       },
-      "notes": "{\"Consensus Rank\": 3, \"Player Name\": \"Ja'Marr Chase\", \"Pos\": \"WR\", \"Team\": \"CIN\", \"Consensus Tier\": \"Tier 1: S-Tier Elite\", \"FantasyPros ECR\": 3, \"Draft Sharks (3D)\": 3, \"Rotoworld Top 200\": 3, \"Avg ADP\": 3, \"Key Player Notes & Analysis\": \"Consensus WR1 overall; massive target share and red zone alpha\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -103,7 +83,6 @@
       "name": "Puka Nacua",
       "team": "LAR",
       "pos": "WR",
-      "rank": 4,
       "custom_rank": 4,
       "tier": 1,
       "sources": {
@@ -114,9 +93,6 @@
       },
       "player_info": {
         "Consensus Rank": 4,
-        "Player Name": "Puka Nacua",
-        "Pos": "WR",
-        "Team": "LAR",
         "Consensus Tier": "Tier 1: S-Tier Elite",
         "FantasyPros ECR": 4,
         "Draft Sharks (3D)": 4,
@@ -124,10 +100,8 @@
         "Avg ADP": 4.3,
         "Key Player Notes & Analysis": "Dominant target magnet with elite PPR floor and YAC ability"
       },
-      "notes": "{\"Consensus Rank\": 4, \"Player Name\": \"Puka Nacua\", \"Pos\": \"WR\", \"Team\": \"LAR\", \"Consensus Tier\": \"Tier 1: S-Tier Elite\", \"FantasyPros ECR\": 4, \"Draft Sharks (3D)\": 4, \"Rotoworld Top 200\": 4, \"Avg ADP\": 4.3, \"Key Player Notes & Analysis\": \"Dominant target magnet with elite PPR floor and YAC ability\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -135,7 +109,6 @@
       "name": "Jaxon Smith-Njigba",
       "team": "SEA",
       "pos": "WR",
-      "rank": 5,
       "custom_rank": 5,
       "tier": 2,
       "sources": {
@@ -146,9 +119,6 @@
       },
       "player_info": {
         "Consensus Rank": 5,
-        "Player Name": "Jaxon Smith-Njigba",
-        "Pos": "WR",
-        "Team": "SEA",
         "Consensus Tier": "Tier 2: Elite WR1",
         "FantasyPros ECR": 6,
         "Draft Sharks (3D)": 5,
@@ -156,10 +126,8 @@
         "Avg ADP": 5.8,
         "Key Player Notes & Analysis": "Breakout status confirmed; primary target in revitalized passing attack"
       },
-      "notes": "{\"Consensus Rank\": 5, \"Player Name\": \"Jaxon Smith-Njigba\", \"Pos\": \"WR\", \"Team\": \"SEA\", \"Consensus Tier\": \"Tier 2: Elite WR1\", \"FantasyPros ECR\": 6, \"Draft Sharks (3D)\": 5, \"Rotoworld Top 200\": 5, \"Avg ADP\": 5.8, \"Key Player Notes & Analysis\": \"Breakout status confirmed; primary target in revitalized passing attack\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -167,7 +135,6 @@
       "name": "Christian McCaffrey",
       "team": "SF",
       "pos": "RB",
-      "rank": 6,
       "custom_rank": 6,
       "tier": 2,
       "sources": {
@@ -178,9 +145,6 @@
       },
       "player_info": {
         "Consensus Rank": 6,
-        "Player Name": "Christian McCaffrey",
-        "Pos": "RB",
-        "Team": "SF",
         "Consensus Tier": "Tier 2: Elite Workhorse",
         "FantasyPros ECR": 7,
         "Draft Sharks (3D)": 6,
@@ -188,10 +152,8 @@
         "Avg ADP": 6.4,
         "Key Player Notes & Analysis": "Unmatched PPR ceiling when fully healthy; elite goal-line & receiving share"
       },
-      "notes": "{\"Consensus Rank\": 6, \"Player Name\": \"Christian McCaffrey\", \"Pos\": \"RB\", \"Team\": \"SF\", \"Consensus Tier\": \"Tier 2: Elite Workhorse\", \"FantasyPros ECR\": 7, \"Draft Sharks (3D)\": 6, \"Rotoworld Top 200\": 6, \"Avg ADP\": 6.4, \"Key Player Notes & Analysis\": \"Unmatched PPR ceiling when fully healthy; elite goal-line & receiving share\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -199,7 +161,6 @@
       "name": "Amon-Ra St. Brown",
       "team": "DET",
       "pos": "WR",
-      "rank": 7,
       "custom_rank": 7,
       "tier": 2,
       "sources": {
@@ -210,9 +171,6 @@
       },
       "player_info": {
         "Consensus Rank": 7,
-        "Player Name": "Amon-Ra St. Brown",
-        "Pos": "WR",
-        "Team": "DET",
         "Consensus Tier": "Tier 2: Elite WR1",
         "FantasyPros ECR": 5,
         "Draft Sharks (3D)": 7,
@@ -220,10 +178,8 @@
         "Avg ADP": 6.9,
         "Key Player Notes & Analysis": "Consistent 10+ target monster; rock-solid weekly PPR floor"
       },
-      "notes": "{\"Consensus Rank\": 7, \"Player Name\": \"Amon-Ra St. Brown\", \"Pos\": \"WR\", \"Team\": \"DET\", \"Consensus Tier\": \"Tier 2: Elite WR1\", \"FantasyPros ECR\": 5, \"Draft Sharks (3D)\": 7, \"Rotoworld Top 200\": 7, \"Avg ADP\": 6.9, \"Key Player Notes & Analysis\": \"Consistent 10+ target monster; rock-solid weekly PPR floor\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -231,7 +187,6 @@
       "name": "Jonathan Taylor",
       "team": "IND",
       "pos": "RB",
-      "rank": 8,
       "custom_rank": 8,
       "tier": 2,
       "sources": {
@@ -242,9 +197,6 @@
       },
       "player_info": {
         "Consensus Rank": 8,
-        "Player Name": "Jonathan Taylor",
-        "Pos": "RB",
-        "Team": "IND",
         "Consensus Tier": "Tier 2: Elite Workhorse",
         "FantasyPros ECR": 8,
         "Draft Sharks (3D)": 8,
@@ -252,10 +204,8 @@
         "Avg ADP": 8.2,
         "Key Player Notes & Analysis": "True bellcow RB; heavy touchdown upside in run-first scheme"
       },
-      "notes": "{\"Consensus Rank\": 8, \"Player Name\": \"Jonathan Taylor\", \"Pos\": \"RB\", \"Team\": \"IND\", \"Consensus Tier\": \"Tier 2: Elite Workhorse\", \"FantasyPros ECR\": 8, \"Draft Sharks (3D)\": 8, \"Rotoworld Top 200\": 8, \"Avg ADP\": 8.2, \"Key Player Notes & Analysis\": \"True bellcow RB; heavy touchdown upside in run-first scheme\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -263,7 +213,6 @@
       "name": "CeeDee Lamb",
       "team": "DAL",
       "pos": "WR",
-      "rank": 9,
       "custom_rank": 9,
       "tier": 2,
       "sources": {
@@ -274,9 +223,6 @@
       },
       "player_info": {
         "Consensus Rank": 9,
-        "Player Name": "CeeDee Lamb",
-        "Pos": "WR",
-        "Team": "DAL",
         "Consensus Tier": "Tier 2: Elite WR1",
         "FantasyPros ECR": 9,
         "Draft Sharks (3D)": 9,
@@ -284,10 +230,8 @@
         "Avg ADP": 9.1,
         "Key Player Notes & Analysis": "Primary focal point of Cowboys passing offense; elite volume"
       },
-      "notes": "{\"Consensus Rank\": 9, \"Player Name\": \"CeeDee Lamb\", \"Pos\": \"WR\", \"Team\": \"DAL\", \"Consensus Tier\": \"Tier 2: Elite WR1\", \"FantasyPros ECR\": 9, \"Draft Sharks (3D)\": 9, \"Rotoworld Top 200\": 10, \"Avg ADP\": 9.1, \"Key Player Notes & Analysis\": \"Primary focal point of Cowboys passing offense; elite volume\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -295,7 +239,6 @@
       "name": "Justin Jefferson",
       "team": "MIN",
       "pos": "WR",
-      "rank": 10,
       "custom_rank": 10,
       "tier": 2,
       "sources": {
@@ -306,9 +249,6 @@
       },
       "player_info": {
         "Consensus Rank": 10,
-        "Player Name": "Justin Jefferson",
-        "Pos": "WR",
-        "Team": "MIN",
         "Consensus Tier": "Tier 2: Elite WR1",
         "FantasyPros ECR": 11,
         "Draft Sharks (3D)": 10,
@@ -316,10 +256,8 @@
         "Avg ADP": 10.5,
         "Key Player Notes & Analysis": "Top-tier talent capable of winning weeks single-handedly"
       },
-      "notes": "{\"Consensus Rank\": 10, \"Player Name\": \"Justin Jefferson\", \"Pos\": \"WR\", \"Team\": \"MIN\", \"Consensus Tier\": \"Tier 2: Elite WR1\", \"FantasyPros ECR\": 11, \"Draft Sharks (3D)\": 10, \"Rotoworld Top 200\": 9, \"Avg ADP\": 10.5, \"Key Player Notes & Analysis\": \"Top-tier talent capable of winning weeks single-handedly\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -327,7 +265,6 @@
       "name": "Josh Allen",
       "team": "BUF",
       "pos": "QB",
-      "rank": 11,
       "custom_rank": 11,
       "tier": 2,
       "sources": {
@@ -338,9 +275,6 @@
       },
       "player_info": {
         "Consensus Rank": 11,
-        "Player Name": "Josh Allen",
-        "Pos": "QB",
-        "Team": "BUF",
         "Consensus Tier": "Tier 2: QB1 Overall",
         "FantasyPros ECR": 14,
         "Draft Sharks (3D)": 15,
@@ -348,10 +282,8 @@
         "Avg ADP": 11.8,
         "Key Player Notes & Analysis": "Elite rushing TD floor combined with high-volume passing stats"
       },
-      "notes": "{\"Consensus Rank\": 11, \"Player Name\": \"Josh Allen\", \"Pos\": \"QB\", \"Team\": \"BUF\", \"Consensus Tier\": \"Tier 2: QB1 Overall\", \"FantasyPros ECR\": 14, \"Draft Sharks (3D)\": 15, \"Rotoworld Top 200\": 12, \"Avg ADP\": 11.8, \"Key Player Notes & Analysis\": \"Elite rushing TD floor combined with high-volume passing stats\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -359,7 +291,6 @@
       "name": "Lamar Jackson",
       "team": "BAL",
       "pos": "QB",
-      "rank": 12,
       "custom_rank": 12,
       "tier": 2,
       "sources": {
@@ -370,9 +301,6 @@
       },
       "player_info": {
         "Consensus Rank": 12,
-        "Player Name": "Lamar Jackson",
-        "Pos": "QB",
-        "Team": "BAL",
         "Consensus Tier": "Tier 2: QB1 Overall",
         "FantasyPros ECR": 16,
         "Draft Sharks (3D)": 14,
@@ -380,10 +308,8 @@
         "Avg ADP": 12.4,
         "Key Player Notes & Analysis": "Dynamic rushing baseline makes him an unmatched weekly cheat code"
       },
-      "notes": "{\"Consensus Rank\": 12, \"Player Name\": \"Lamar Jackson\", \"Pos\": \"QB\", \"Team\": \"BAL\", \"Consensus Tier\": \"Tier 2: QB1 Overall\", \"FantasyPros ECR\": 16, \"Draft Sharks (3D)\": 14, \"Rotoworld Top 200\": 14, \"Avg ADP\": 12.4, \"Key Player Notes & Analysis\": \"Dynamic rushing baseline makes him an unmatched weekly cheat code\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -391,7 +317,6 @@
       "name": "James Cook",
       "team": "BUF",
       "pos": "RB",
-      "rank": 13,
       "custom_rank": 13,
       "tier": 3,
       "sources": {
@@ -402,9 +327,6 @@
       },
       "player_info": {
         "Consensus Rank": 13,
-        "Player Name": "James Cook",
-        "Pos": "RB",
-        "Team": "BUF",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 10,
         "Draft Sharks (3D)": 12,
@@ -412,10 +334,8 @@
         "Avg ADP": 13.1,
         "Key Player Notes & Analysis": "High-efficiency runner in high-scoring offense with expanding catch share"
       },
-      "notes": "{\"Consensus Rank\": 13, \"Player Name\": \"James Cook\", \"Pos\": \"RB\", \"Team\": \"BUF\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 10, \"Draft Sharks (3D)\": 12, \"Rotoworld Top 200\": 11, \"Avg ADP\": 13.1, \"Key Player Notes & Analysis\": \"High-efficiency runner in high-scoring offense with expanding catch share\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -423,7 +343,6 @@
       "name": "Saquon Barkley",
       "team": "PHI",
       "pos": "RB",
-      "rank": 14,
       "custom_rank": 14,
       "tier": 3,
       "sources": {
@@ -434,9 +353,6 @@
       },
       "player_info": {
         "Consensus Rank": 14,
-        "Player Name": "Saquon Barkley",
-        "Pos": "RB",
-        "Team": "PHI",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 13,
         "Draft Sharks (3D)": 11,
@@ -444,10 +360,8 @@
         "Avg ADP": 14,
         "Key Player Notes & Analysis": "Heavy touch count behind elite offensive line"
       },
-      "notes": "{\"Consensus Rank\": 14, \"Player Name\": \"Saquon Barkley\", \"Pos\": \"RB\", \"Team\": \"PHI\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 13, \"Draft Sharks (3D)\": 11, \"Rotoworld Top 200\": 13, \"Avg ADP\": 14, \"Key Player Notes & Analysis\": \"Heavy touch count behind elite offensive line\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -455,7 +369,6 @@
       "name": "De'Von Achane",
       "team": "MIA",
       "pos": "RB",
-      "rank": 15,
       "custom_rank": 15,
       "tier": 3,
       "sources": {
@@ -466,9 +379,6 @@
       },
       "player_info": {
         "Consensus Rank": 15,
-        "Player Name": "De'Von Achane",
-        "Pos": "RB",
-        "Team": "MIA",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 15,
         "Draft Sharks (3D)": 13,
@@ -476,10 +386,8 @@
         "Avg ADP": 15.2,
         "Key Player Notes & Analysis": "Unmatched big-play home run ability; high PPR upside"
       },
-      "notes": "{\"Consensus Rank\": 15, \"Player Name\": \"De'Von Achane\", \"Pos\": \"RB\", \"Team\": \"MIA\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 15, \"Draft Sharks (3D)\": 13, \"Rotoworld Top 200\": 15, \"Avg ADP\": 15.2, \"Key Player Notes & Analysis\": \"Unmatched big-play home run ability; high PPR upside\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -487,7 +395,6 @@
       "name": "Ashton Jeanty",
       "team": "DAL",
       "pos": "RB",
-      "rank": 16,
       "custom_rank": 16,
       "tier": 3,
       "sources": {
@@ -498,9 +405,6 @@
       },
       "player_info": {
         "Consensus Rank": 16,
-        "Player Name": "Ashton Jeanty",
-        "Pos": "RB",
-        "Team": "DAL",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 12,
         "Draft Sharks (3D)": 16,
@@ -508,10 +412,8 @@
         "Avg ADP": 16.5,
         "Key Player Notes & Analysis": "Rookie phenom projected for immediate high-volume starter role"
       },
-      "notes": "{\"Consensus Rank\": 16, \"Player Name\": \"Ashton Jeanty\", \"Pos\": \"RB\", \"Team\": \"DAL\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 12, \"Draft Sharks (3D)\": 16, \"Rotoworld Top 200\": 16, \"Avg ADP\": 16.5, \"Key Player Notes & Analysis\": \"Rookie phenom projected for immediate high-volume starter role\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -519,7 +421,6 @@
       "name": "Drake London",
       "team": "ATL",
       "pos": "WR",
-      "rank": 17,
       "custom_rank": 17,
       "tier": 3,
       "sources": {
@@ -530,9 +431,6 @@
       },
       "player_info": {
         "Consensus Rank": 17,
-        "Player Name": "Drake London",
-        "Pos": "WR",
-        "Team": "ATL",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 17,
         "Draft Sharks (3D)": 17,
@@ -540,10 +438,8 @@
         "Avg ADP": 17.8,
         "Key Player Notes & Analysis": "Clear WR1 target share in improved vertical offense"
       },
-      "notes": "{\"Consensus Rank\": 17, \"Player Name\": \"Drake London\", \"Pos\": \"WR\", \"Team\": \"ATL\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 17, \"Draft Sharks (3D)\": 17, \"Rotoworld Top 200\": 17, \"Avg ADP\": 17.8, \"Key Player Notes & Analysis\": \"Clear WR1 target share in improved vertical offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -551,7 +447,6 @@
       "name": "Nico Collins",
       "team": "HOU",
       "pos": "WR",
-      "rank": 18,
       "custom_rank": 18,
       "tier": 3,
       "sources": {
@@ -562,9 +457,6 @@
       },
       "player_info": {
         "Consensus Rank": 18,
-        "Player Name": "Nico Collins",
-        "Pos": "WR",
-        "Team": "HOU",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 18,
         "Draft Sharks (3D)": 18,
@@ -572,10 +464,8 @@
         "Avg ADP": 18.4,
         "Key Player Notes & Analysis": "Elite downfield separator with massive weekly yardage ceiling"
       },
-      "notes": "{\"Consensus Rank\": 18, \"Player Name\": \"Nico Collins\", \"Pos\": \"WR\", \"Team\": \"HOU\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 18, \"Draft Sharks (3D)\": 18, \"Rotoworld Top 200\": 18, \"Avg ADP\": 18.4, \"Key Player Notes & Analysis\": \"Elite downfield separator with massive weekly yardage ceiling\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -583,7 +473,6 @@
       "name": "Brock Bowers",
       "team": "LV",
       "pos": "TE",
-      "rank": 19,
       "custom_rank": 19,
       "tier": 3,
       "sources": {
@@ -594,9 +483,6 @@
       },
       "player_info": {
         "Consensus Rank": 19,
-        "Player Name": "Brock Bowers",
-        "Pos": "TE",
-        "Team": "LV",
         "Consensus Tier": "Tier 3: TE1 Elite",
         "FantasyPros ECR": 19,
         "Draft Sharks (3D)": 19,
@@ -604,10 +490,8 @@
         "Avg ADP": 19.1,
         "Key Player Notes & Analysis": "Mismatched weapon operating as primary target in offense"
       },
-      "notes": "{\"Consensus Rank\": 19, \"Player Name\": \"Brock Bowers\", \"Pos\": \"TE\", \"Team\": \"LV\", \"Consensus Tier\": \"Tier 3: TE1 Elite\", \"FantasyPros ECR\": 19, \"Draft Sharks (3D)\": 19, \"Rotoworld Top 200\": 19, \"Avg ADP\": 19.1, \"Key Player Notes & Analysis\": \"Mismatched weapon operating as primary target in offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -615,7 +499,6 @@
       "name": "Derrick Henry",
       "team": "BAL",
       "pos": "RB",
-      "rank": 20,
       "custom_rank": 20,
       "tier": 3,
       "sources": {
@@ -626,9 +509,6 @@
       },
       "player_info": {
         "Consensus Rank": 20,
-        "Player Name": "Derrick Henry",
-        "Pos": "RB",
-        "Team": "BAL",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 20,
         "Draft Sharks (3D)": 20,
@@ -636,10 +516,8 @@
         "Avg ADP": 20.3,
         "Key Player Notes & Analysis": "TD machine in power rushing attack; high double-digit TD floor"
       },
-      "notes": "{\"Consensus Rank\": 20, \"Player Name\": \"Derrick Henry\", \"Pos\": \"RB\", \"Team\": \"BAL\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 20, \"Draft Sharks (3D)\": 20, \"Rotoworld Top 200\": 20, \"Avg ADP\": 20.3, \"Key Player Notes & Analysis\": \"TD machine in power rushing attack; high double-digit TD floor\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -647,7 +525,6 @@
       "name": "Kenneth Walker III",
       "team": "SEA",
       "pos": "RB",
-      "rank": 21,
       "custom_rank": 21,
       "tier": 3,
       "sources": {
@@ -658,9 +535,6 @@
       },
       "player_info": {
         "Consensus Rank": 21,
-        "Player Name": "Kenneth Walker III",
-        "Pos": "RB",
-        "Team": "SEA",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 21,
         "Draft Sharks (3D)": 21,
@@ -668,10 +542,8 @@
         "Avg ADP": 21.7,
         "Key Player Notes & Analysis": "Explosive runner with secured high-volume early-down role"
       },
-      "notes": "{\"Consensus Rank\": 21, \"Player Name\": \"Kenneth Walker III\", \"Pos\": \"RB\", \"Team\": \"SEA\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 21, \"Draft Sharks (3D)\": 21, \"Rotoworld Top 200\": 21, \"Avg ADP\": 21.7, \"Key Player Notes & Analysis\": \"Explosive runner with secured high-volume early-down role\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -679,7 +551,6 @@
       "name": "Chase Brown",
       "team": "CIN",
       "pos": "RB",
-      "rank": 22,
       "custom_rank": 22,
       "tier": 3,
       "sources": {
@@ -690,9 +561,6 @@
       },
       "player_info": {
         "Consensus Rank": 22,
-        "Player Name": "Chase Brown",
-        "Pos": "RB",
-        "Team": "CIN",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 22,
         "Draft Sharks (3D)": 23,
@@ -700,10 +568,8 @@
         "Avg ADP": 22.9,
         "Key Player Notes & Analysis": "Featured back duties in explosive scoring offense"
       },
-      "notes": "{\"Consensus Rank\": 22, \"Player Name\": \"Chase Brown\", \"Pos\": \"RB\", \"Team\": \"CIN\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 22, \"Draft Sharks (3D)\": 23, \"Rotoworld Top 200\": 22, \"Avg ADP\": 22.9, \"Key Player Notes & Analysis\": \"Featured back duties in explosive scoring offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -711,7 +577,6 @@
       "name": "A.J. Brown",
       "team": "PHI",
       "pos": "WR",
-      "rank": 23,
       "custom_rank": 23,
       "tier": 3,
       "sources": {
@@ -722,9 +587,6 @@
       },
       "player_info": {
         "Consensus Rank": 23,
-        "Player Name": "A.J. Brown",
-        "Pos": "WR",
-        "Team": "PHI",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 23,
         "Draft Sharks (3D)": 22,
@@ -732,10 +594,8 @@
         "Avg ADP": 23.5,
         "Key Player Notes & Analysis": "Alpha receiver with huge big-play and TD threat profile"
       },
-      "notes": "{\"Consensus Rank\": 23, \"Player Name\": \"A.J. Brown\", \"Pos\": \"WR\", \"Team\": \"PHI\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 23, \"Draft Sharks (3D)\": 22, \"Rotoworld Top 200\": 23, \"Avg ADP\": 23.5, \"Key Player Notes & Analysis\": \"Alpha receiver with huge big-play and TD threat profile\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -743,7 +603,6 @@
       "name": "George Pickens",
       "team": "PIT",
       "pos": "WR",
-      "rank": 24,
       "custom_rank": 24,
       "tier": 3,
       "sources": {
@@ -754,9 +613,6 @@
       },
       "player_info": {
         "Consensus Rank": 24,
-        "Player Name": "George Pickens",
-        "Pos": "WR",
-        "Team": "PIT",
         "Consensus Tier": "Tier 3: Core Starter",
         "FantasyPros ECR": 24,
         "Draft Sharks (3D)": 24,
@@ -764,10 +620,8 @@
         "Avg ADP": 24.8,
         "Key Player Notes & Analysis": "Dominant contested catch winner with rising target share"
       },
-      "notes": "{\"Consensus Rank\": 24, \"Player Name\": \"George Pickens\", \"Pos\": \"WR\", \"Team\": \"PIT\", \"Consensus Tier\": \"Tier 3: Core Starter\", \"FantasyPros ECR\": 24, \"Draft Sharks (3D)\": 24, \"Rotoworld Top 200\": 24, \"Avg ADP\": 24.8, \"Key Player Notes & Analysis\": \"Dominant contested catch winner with rising target share\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -775,7 +629,6 @@
       "name": "Malik Nabers",
       "team": "NYG",
       "pos": "WR",
-      "rank": 25,
       "custom_rank": 25,
       "tier": 4,
       "sources": {
@@ -786,9 +639,6 @@
       },
       "player_info": {
         "Consensus Rank": 25,
-        "Player Name": "Malik Nabers",
-        "Pos": "WR",
-        "Team": "NYG",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 25,
         "Draft Sharks (3D)": 25,
@@ -796,10 +646,8 @@
         "Avg ADP": 25.4,
         "Key Player Notes & Analysis": "Target monster with rare speed and playmaking after catch"
       },
-      "notes": "{\"Consensus Rank\": 25, \"Player Name\": \"Malik Nabers\", \"Pos\": \"WR\", \"Team\": \"NYG\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 25, \"Draft Sharks (3D)\": 25, \"Rotoworld Top 200\": 25, \"Avg ADP\": 25.4, \"Key Player Notes & Analysis\": \"Target monster with rare speed and playmaking after catch\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -807,7 +655,6 @@
       "name": "Trey McBride",
       "team": "ARI",
       "pos": "TE",
-      "rank": 26,
       "custom_rank": 26,
       "tier": 4,
       "sources": {
@@ -818,9 +665,6 @@
       },
       "player_info": {
         "Consensus Rank": 26,
-        "Player Name": "Trey McBride",
-        "Pos": "TE",
-        "Team": "ARI",
         "Consensus Tier": "Tier 4: Elite TE",
         "FantasyPros ECR": 26,
         "Draft Sharks (3D)": 26,
@@ -828,10 +672,8 @@
         "Avg ADP": 26.2,
         "Key Player Notes & Analysis": "Consistently demands 20%+ target share; elite PPR TE option"
       },
-      "notes": "{\"Consensus Rank\": 26, \"Player Name\": \"Trey McBride\", \"Pos\": \"TE\", \"Team\": \"ARI\", \"Consensus Tier\": \"Tier 4: Elite TE\", \"FantasyPros ECR\": 26, \"Draft Sharks (3D)\": 26, \"Rotoworld Top 200\": 26, \"Avg ADP\": 26.2, \"Key Player Notes & Analysis\": \"Consistently demands 20%+ target share; elite PPR TE option\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -839,7 +681,6 @@
       "name": "Omarion Hampton",
       "team": "LAC",
       "pos": "RB",
-      "rank": 27,
       "custom_rank": 27,
       "tier": 4,
       "sources": {
@@ -850,9 +691,6 @@
       },
       "player_info": {
         "Consensus Rank": 27,
-        "Player Name": "Omarion Hampton",
-        "Pos": "RB",
-        "Team": "LAC",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 27,
         "Draft Sharks (3D)": 27,
@@ -860,10 +698,8 @@
         "Avg ADP": 27.9,
         "Key Player Notes & Analysis": "Rookie power back step into high-volume ground attack"
       },
-      "notes": "{\"Consensus Rank\": 27, \"Player Name\": \"Omarion Hampton\", \"Pos\": \"RB\", \"Team\": \"LAC\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 27, \"Draft Sharks (3D)\": 27, \"Rotoworld Top 200\": 27, \"Avg ADP\": 27.9, \"Key Player Notes & Analysis\": \"Rookie power back step into high-volume ground attack\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -871,7 +707,6 @@
       "name": "Jeremiyah Love",
       "team": "CAR",
       "pos": "RB",
-      "rank": 28,
       "custom_rank": 28,
       "tier": 4,
       "sources": {
@@ -882,9 +717,6 @@
       },
       "player_info": {
         "Consensus Rank": 28,
-        "Player Name": "Jeremiyah Love",
-        "Pos": "RB",
-        "Team": "CAR",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 28,
         "Draft Sharks (3D)": 28,
@@ -892,10 +724,8 @@
         "Avg ADP": 28.5,
         "Key Player Notes & Analysis": "Dynamic rookie playmaker with dual-threat receiving upside"
       },
-      "notes": "{\"Consensus Rank\": 28, \"Player Name\": \"Jeremiyah Love\", \"Pos\": \"RB\", \"Team\": \"CAR\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 28, \"Draft Sharks (3D)\": 28, \"Rotoworld Top 200\": 28, \"Avg ADP\": 28.5, \"Key Player Notes & Analysis\": \"Dynamic rookie playmaker with dual-threat receiving upside\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -903,7 +733,6 @@
       "name": "Breece Hall",
       "team": "NYJ",
       "pos": "RB",
-      "rank": 29,
       "custom_rank": 29,
       "tier": 4,
       "sources": {
@@ -914,9 +743,6 @@
       },
       "player_info": {
         "Consensus Rank": 29,
-        "Player Name": "Breece Hall",
-        "Pos": "RB",
-        "Team": "NYJ",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 29,
         "Draft Sharks (3D)": 29,
@@ -924,10 +750,8 @@
         "Avg ADP": 29.1,
         "Key Player Notes & Analysis": "High talent baseline; bounce-back candidate if offense rebounds"
       },
-      "notes": "{\"Consensus Rank\": 29, \"Player Name\": \"Breece Hall\", \"Pos\": \"RB\", \"Team\": \"NYJ\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 29, \"Draft Sharks (3D)\": 29, \"Rotoworld Top 200\": 30, \"Avg ADP\": 29.1, \"Key Player Notes & Analysis\": \"High talent baseline; bounce-back candidate if offense rebounds\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -935,7 +759,6 @@
       "name": "Kyren Williams",
       "team": "LAR",
       "pos": "RB",
-      "rank": 30,
       "custom_rank": 30,
       "tier": 4,
       "sources": {
@@ -946,9 +769,6 @@
       },
       "player_info": {
         "Consensus Rank": 30,
-        "Player Name": "Kyren Williams",
-        "Pos": "RB",
-        "Team": "LAR",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 30,
         "Draft Sharks (3D)": 30,
@@ -956,10 +776,8 @@
         "Avg ADP": 30.2,
         "Key Player Notes & Analysis": "Goal-line favorite with reliable touch volume when active"
       },
-      "notes": "{\"Consensus Rank\": 30, \"Player Name\": \"Kyren Williams\", \"Pos\": \"RB\", \"Team\": \"LAR\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 30, \"Draft Sharks (3D)\": 30, \"Rotoworld Top 200\": 29, \"Avg ADP\": 30.2, \"Key Player Notes & Analysis\": \"Goal-line favorite with reliable touch volume when active\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -967,7 +785,6 @@
       "name": "Travis Etienne Jr.",
       "team": "JAX",
       "pos": "RB",
-      "rank": 31,
       "custom_rank": 31,
       "tier": 4,
       "sources": {
@@ -978,9 +795,6 @@
       },
       "player_info": {
         "Consensus Rank": 31,
-        "Player Name": "Travis Etienne Jr.",
-        "Pos": "RB",
-        "Team": "JAX",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 31,
         "Draft Sharks (3D)": 31,
@@ -988,10 +802,8 @@
         "Avg ADP": 31.8,
         "Key Player Notes & Analysis": "Versatile RB with key third-down and red-zone involvement"
       },
-      "notes": "{\"Consensus Rank\": 31, \"Player Name\": \"Travis Etienne Jr.\", \"Pos\": \"RB\", \"Team\": \"JAX\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 31, \"Draft Sharks (3D)\": 31, \"Rotoworld Top 200\": 31, \"Avg ADP\": 31.8, \"Key Player Notes & Analysis\": \"Versatile RB with key third-down and red-zone involvement\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -999,7 +811,6 @@
       "name": "Tetairoa McMillan",
       "team": "CAR",
       "pos": "WR",
-      "rank": 32,
       "custom_rank": 32,
       "tier": 4,
       "sources": {
@@ -1010,9 +821,6 @@
       },
       "player_info": {
         "Consensus Rank": 32,
-        "Player Name": "Tetairoa McMillan",
-        "Pos": "WR",
-        "Team": "CAR",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 32,
         "Draft Sharks (3D)": 32,
@@ -1020,10 +828,8 @@
         "Avg ADP": 32.4,
         "Key Player Notes & Analysis": "Rookie wideout entering immediate #1 wideout role"
       },
-      "notes": "{\"Consensus Rank\": 32, \"Player Name\": \"Tetairoa McMillan\", \"Pos\": \"WR\", \"Team\": \"CAR\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 32, \"Draft Sharks (3D)\": 32, \"Rotoworld Top 200\": 32, \"Avg ADP\": 32.4, \"Key Player Notes & Analysis\": \"Rookie wideout entering immediate #1 wideout role\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1031,7 +837,6 @@
       "name": "Jayden Daniels",
       "team": "WAS",
       "pos": "QB",
-      "rank": 33,
       "custom_rank": 33,
       "tier": 4,
       "sources": {
@@ -1042,9 +847,6 @@
       },
       "player_info": {
         "Consensus Rank": 33,
-        "Player Name": "Jayden Daniels",
-        "Pos": "QB",
-        "Team": "WAS",
         "Consensus Tier": "Tier 4: Elite QB",
         "FantasyPros ECR": 33,
         "Draft Sharks (3D)": 34,
@@ -1052,10 +854,8 @@
         "Avg ADP": 33.1,
         "Key Player Notes & Analysis": "Konami code rushing QB with rapidly refining passing efficiency"
       },
-      "notes": "{\"Consensus Rank\": 33, \"Player Name\": \"Jayden Daniels\", \"Pos\": \"QB\", \"Team\": \"WAS\", \"Consensus Tier\": \"Tier 4: Elite QB\", \"FantasyPros ECR\": 33, \"Draft Sharks (3D)\": 34, \"Rotoworld Top 200\": 33, \"Avg ADP\": 33.1, \"Key Player Notes & Analysis\": \"Konami code rushing QB with rapidly refining passing efficiency\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1063,7 +863,6 @@
       "name": "Drake Maye",
       "team": "NE",
       "pos": "QB",
-      "rank": 34,
       "custom_rank": 34,
       "tier": 4,
       "sources": {
@@ -1074,9 +873,6 @@
       },
       "player_info": {
         "Consensus Rank": 34,
-        "Player Name": "Drake Maye",
-        "Pos": "QB",
-        "Team": "NE",
         "Consensus Tier": "Tier 4: Elite QB",
         "FantasyPros ECR": 34,
         "Draft Sharks (3D)": 33,
@@ -1084,10 +880,8 @@
         "Avg ADP": 34.6,
         "Key Player Notes & Analysis": "Dual-threat quarterback poised for massive sophomore jump"
       },
-      "notes": "{\"Consensus Rank\": 34, \"Player Name\": \"Drake Maye\", \"Pos\": \"QB\", \"Team\": \"NE\", \"Consensus Tier\": \"Tier 4: Elite QB\", \"FantasyPros ECR\": 34, \"Draft Sharks (3D)\": 33, \"Rotoworld Top 200\": 34, \"Avg ADP\": 34.6, \"Key Player Notes & Analysis\": \"Dual-threat quarterback poised for massive sophomore jump\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1095,7 +889,6 @@
       "name": "Garrett Wilson",
       "team": "NYJ",
       "pos": "WR",
-      "rank": 35,
       "custom_rank": 35,
       "tier": 4,
       "sources": {
@@ -1106,9 +899,6 @@
       },
       "player_info": {
         "Consensus Rank": 35,
-        "Player Name": "Garrett Wilson",
-        "Pos": "WR",
-        "Team": "NYJ",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 35,
         "Draft Sharks (3D)": 35,
@@ -1116,10 +906,8 @@
         "Avg ADP": 35.2,
         "Key Player Notes & Analysis": "Elite route runner with top-10 talent if QB play stabilizes"
       },
-      "notes": "{\"Consensus Rank\": 35, \"Player Name\": \"Garrett Wilson\", \"Pos\": \"WR\", \"Team\": \"NYJ\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 35, \"Draft Sharks (3D)\": 35, \"Rotoworld Top 200\": 35, \"Avg ADP\": 35.2, \"Key Player Notes & Analysis\": \"Elite route runner with top-10 talent if QB play stabilizes\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1127,7 +915,6 @@
       "name": "Marvin Harrison Jr.",
       "team": "ARI",
       "pos": "WR",
-      "rank": 36,
       "custom_rank": 36,
       "tier": 4,
       "sources": {
@@ -1138,9 +925,6 @@
       },
       "player_info": {
         "Consensus Rank": 36,
-        "Player Name": "Marvin Harrison Jr.",
-        "Pos": "WR",
-        "Team": "ARI",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 36,
         "Draft Sharks (3D)": 36,
@@ -1148,10 +932,8 @@
         "Avg ADP": 36.8,
         "Key Player Notes & Analysis": "Huge ceiling as primary target in fast-paced Cardinals attack"
       },
-      "notes": "{\"Consensus Rank\": 36, \"Player Name\": \"Marvin Harrison Jr.\", \"Pos\": \"WR\", \"Team\": \"ARI\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 36, \"Draft Sharks (3D)\": 36, \"Rotoworld Top 200\": 36, \"Avg ADP\": 36.8, \"Key Player Notes & Analysis\": \"Huge ceiling as primary target in fast-paced Cardinals attack\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1159,7 +941,6 @@
       "name": "Sam LaPorta",
       "team": "DET",
       "pos": "TE",
-      "rank": 37,
       "custom_rank": 37,
       "tier": 4,
       "sources": {
@@ -1170,9 +951,6 @@
       },
       "player_info": {
         "Consensus Rank": 37,
-        "Player Name": "Sam LaPorta",
-        "Pos": "TE",
-        "Team": "DET",
         "Consensus Tier": "Tier 4: Elite TE",
         "FantasyPros ECR": 37,
         "Draft Sharks (3D)": 37,
@@ -1180,10 +958,8 @@
         "Avg ADP": 37.5,
         "Key Player Notes & Analysis": "Red zone focal point in elite Lions scoring offense"
       },
-      "notes": "{\"Consensus Rank\": 37, \"Player Name\": \"Sam LaPorta\", \"Pos\": \"TE\", \"Team\": \"DET\", \"Consensus Tier\": \"Tier 4: Elite TE\", \"FantasyPros ECR\": 37, \"Draft Sharks (3D)\": 37, \"Rotoworld Top 200\": 37, \"Avg ADP\": 37.5, \"Key Player Notes & Analysis\": \"Red zone focal point in elite Lions scoring offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1191,7 +967,6 @@
       "name": "Isiah Pacheco",
       "team": "KC",
       "pos": "RB",
-      "rank": 38,
       "custom_rank": 38,
       "tier": 4,
       "sources": {
@@ -1202,9 +977,6 @@
       },
       "player_info": {
         "Consensus Rank": 38,
-        "Player Name": "Isiah Pacheco",
-        "Pos": "RB",
-        "Team": "KC",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 38,
         "Draft Sharks (3D)": 38,
@@ -1212,10 +984,8 @@
         "Avg ADP": 38.3,
         "Key Player Notes & Analysis": "Violent runner with secured early-down and goal-line work"
       },
-      "notes": "{\"Consensus Rank\": 38, \"Player Name\": \"Isiah Pacheco\", \"Pos\": \"RB\", \"Team\": \"KC\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 38, \"Draft Sharks (3D)\": 38, \"Rotoworld Top 200\": 38, \"Avg ADP\": 38.3, \"Key Player Notes & Analysis\": \"Violent runner with secured early-down and goal-line work\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1223,7 +993,6 @@
       "name": "Josh Jacobs",
       "team": "GB",
       "pos": "RB",
-      "rank": 39,
       "custom_rank": 39,
       "tier": 4,
       "sources": {
@@ -1234,9 +1003,6 @@
       },
       "player_info": {
         "Consensus Rank": 39,
-        "Player Name": "Josh Jacobs",
-        "Pos": "RB",
-        "Team": "GB",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 39,
         "Draft Sharks (3D)": 39,
@@ -1244,10 +1010,8 @@
         "Avg ADP": 39,
         "Key Player Notes & Analysis": "Volume-driven RB1 in potent, balanced Packers offense"
       },
-      "notes": "{\"Consensus Rank\": 39, \"Player Name\": \"Josh Jacobs\", \"Pos\": \"RB\", \"Team\": \"GB\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 39, \"Draft Sharks (3D)\": 39, \"Rotoworld Top 200\": 39, \"Avg ADP\": 39, \"Key Player Notes & Analysis\": \"Volume-driven RB1 in potent, balanced Packers offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1255,7 +1019,6 @@
       "name": "Emeka Egbuka",
       "team": "TB",
       "pos": "WR",
-      "rank": 40,
       "custom_rank": 40,
       "tier": 4,
       "sources": {
@@ -1266,9 +1029,6 @@
       },
       "player_info": {
         "Consensus Rank": 40,
-        "Player Name": "Emeka Egbuka",
-        "Pos": "WR",
-        "Team": "TB",
         "Consensus Tier": "Tier 4: High-Upside Flex",
         "FantasyPros ECR": 40,
         "Draft Sharks (3D)": 40,
@@ -1276,10 +1036,8 @@
         "Avg ADP": 40.7,
         "Key Player Notes & Analysis": "Rookie separator filling smooth slot and perimeter role"
       },
-      "notes": "{\"Consensus Rank\": 40, \"Player Name\": \"Emeka Egbuka\", \"Pos\": \"WR\", \"Team\": \"TB\", \"Consensus Tier\": \"Tier 4: High-Upside Flex\", \"FantasyPros ECR\": 40, \"Draft Sharks (3D)\": 40, \"Rotoworld Top 200\": 40, \"Avg ADP\": 40.7, \"Key Player Notes & Analysis\": \"Rookie separator filling smooth slot and perimeter role\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1287,7 +1045,6 @@
       "name": "Joe Burrow",
       "team": "CIN",
       "pos": "QB",
-      "rank": 41,
       "custom_rank": 41,
       "tier": 5,
       "sources": {
@@ -1298,9 +1055,6 @@
       },
       "player_info": {
         "Consensus Rank": 41,
-        "Player Name": "Joe Burrow",
-        "Pos": "QB",
-        "Team": "CIN",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 41,
         "Draft Sharks (3D)": 41,
@@ -1308,10 +1062,8 @@
         "Avg ADP": 41.5,
         "Key Player Notes & Analysis": "High-volume passing floor with elite WR tandem"
       },
-      "notes": "{\"Consensus Rank\": 41, \"Player Name\": \"Joe Burrow\", \"Pos\": \"QB\", \"Team\": \"CIN\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 41, \"Draft Sharks (3D)\": 41, \"Rotoworld Top 200\": 41, \"Avg ADP\": 41.5, \"Key Player Notes & Analysis\": \"High-volume passing floor with elite WR tandem\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1319,7 +1071,6 @@
       "name": "Jalen Hurts",
       "team": "PHI",
       "pos": "QB",
-      "rank": 42,
       "custom_rank": 42,
       "tier": 5,
       "sources": {
@@ -1330,9 +1081,6 @@
       },
       "player_info": {
         "Consensus Rank": 42,
-        "Player Name": "Jalen Hurts",
-        "Pos": "QB",
-        "Team": "PHI",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 42,
         "Draft Sharks (3D)": 42,
@@ -1340,10 +1088,8 @@
         "Avg ADP": 42.8,
         "Key Player Notes & Analysis": "Tush-push master with massive weekly TD ceiling"
       },
-      "notes": "{\"Consensus Rank\": 42, \"Player Name\": \"Jalen Hurts\", \"Pos\": \"QB\", \"Team\": \"PHI\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 42, \"Draft Sharks (3D)\": 42, \"Rotoworld Top 200\": 42, \"Avg ADP\": 42.8, \"Key Player Notes & Analysis\": \"Tush-push master with massive weekly TD ceiling\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1351,7 +1097,6 @@
       "name": "DeVonta Smith",
       "team": "PHI",
       "pos": "WR",
-      "rank": 43,
       "custom_rank": 43,
       "tier": 5,
       "sources": {
@@ -1362,9 +1107,6 @@
       },
       "player_info": {
         "Consensus Rank": 43,
-        "Player Name": "DeVonta Smith",
-        "Pos": "WR",
-        "Team": "PHI",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 43,
         "Draft Sharks (3D)": 43,
@@ -1372,10 +1114,8 @@
         "Avg ADP": 43.2,
         "Key Player Notes & Analysis": "Ultra-smooth route runner with WR1 upside if primary sits"
       },
-      "notes": "{\"Consensus Rank\": 43, \"Player Name\": \"DeVonta Smith\", \"Pos\": \"WR\", \"Team\": \"PHI\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 43, \"Draft Sharks (3D)\": 43, \"Rotoworld Top 200\": 43, \"Avg ADP\": 43.2, \"Key Player Notes & Analysis\": \"Ultra-smooth route runner with WR1 upside if primary sits\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1383,7 +1123,6 @@
       "name": "Zay Flowers",
       "team": "BAL",
       "pos": "WR",
-      "rank": 44,
       "custom_rank": 44,
       "tier": 5,
       "sources": {
@@ -1394,9 +1133,6 @@
       },
       "player_info": {
         "Consensus Rank": 44,
-        "Player Name": "Zay Flowers",
-        "Pos": "WR",
-        "Team": "BAL",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 44,
         "Draft Sharks (3D)": 44,
@@ -1404,10 +1140,8 @@
         "Avg ADP": 44.9,
         "Key Player Notes & Analysis": "Primary receiving weapon in dynamic Ravens attack"
       },
-      "notes": "{\"Consensus Rank\": 44, \"Player Name\": \"Zay Flowers\", \"Pos\": \"WR\", \"Team\": \"BAL\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 44, \"Draft Sharks (3D)\": 44, \"Rotoworld Top 200\": 44, \"Avg ADP\": 44.9, \"Key Player Notes & Analysis\": \"Primary receiving weapon in dynamic Ravens attack\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1415,7 +1149,6 @@
       "name": "Tee Higgins",
       "team": "CIN",
       "pos": "WR",
-      "rank": 45,
       "custom_rank": 45,
       "tier": 5,
       "sources": {
@@ -1426,9 +1159,6 @@
       },
       "player_info": {
         "Consensus Rank": 45,
-        "Player Name": "Tee Higgins",
-        "Pos": "WR",
-        "Team": "CIN",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 45,
         "Draft Sharks (3D)": 45,
@@ -1436,10 +1166,8 @@
         "Avg ADP": 45.3,
         "Key Player Notes & Analysis": "Elite WR2 who plays like a WR1 in high-octane scheme"
       },
-      "notes": "{\"Consensus Rank\": 45, \"Player Name\": \"Tee Higgins\", \"Pos\": \"WR\", \"Team\": \"CIN\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 45, \"Draft Sharks (3D)\": 45, \"Rotoworld Top 200\": 45, \"Avg ADP\": 45.3, \"Key Player Notes & Analysis\": \"Elite WR2 who plays like a WR1 in high-octane scheme\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1447,7 +1175,6 @@
       "name": "Mike Evans",
       "team": "TB",
       "pos": "WR",
-      "rank": 46,
       "custom_rank": 46,
       "tier": 5,
       "sources": {
@@ -1458,9 +1185,6 @@
       },
       "player_info": {
         "Consensus Rank": 46,
-        "Player Name": "Mike Evans",
-        "Pos": "WR",
-        "Team": "TB",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 46,
         "Draft Sharks (3D)": 46,
@@ -1468,10 +1192,8 @@
         "Avg ADP": 46.1,
         "Key Player Notes & Analysis": "Perennial 1,000-yard & double-digit TD threat"
       },
-      "notes": "{\"Consensus Rank\": 46, \"Player Name\": \"Mike Evans\", \"Pos\": \"WR\", \"Team\": \"TB\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 46, \"Draft Sharks (3D)\": 46, \"Rotoworld Top 200\": 46, \"Avg ADP\": 46.1, \"Key Player Notes & Analysis\": \"Perennial 1,000-yard & double-digit TD threat\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1479,7 +1201,6 @@
       "name": "David Montgomery",
       "team": "DET",
       "pos": "RB",
-      "rank": 47,
       "custom_rank": 47,
       "tier": 5,
       "sources": {
@@ -1490,9 +1211,6 @@
       },
       "player_info": {
         "Consensus Rank": 47,
-        "Player Name": "David Montgomery",
-        "Pos": "RB",
-        "Team": "DET",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 47,
         "Draft Sharks (3D)": 47,
@@ -1500,10 +1218,8 @@
         "Avg ADP": 47.6,
         "Key Player Notes & Analysis": "Goal-line hammer with weekly TD safety net"
       },
-      "notes": "{\"Consensus Rank\": 47, \"Player Name\": \"David Montgomery\", \"Pos\": \"RB\", \"Team\": \"DET\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 47, \"Draft Sharks (3D)\": 47, \"Rotoworld Top 200\": 47, \"Avg ADP\": 47.6, \"Key Player Notes & Analysis\": \"Goal-line hammer with weekly TD safety net\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1511,7 +1227,6 @@
       "name": "Rhamondre Stevenson",
       "team": "NE",
       "pos": "RB",
-      "rank": 48,
       "custom_rank": 48,
       "tier": 5,
       "sources": {
@@ -1522,9 +1237,6 @@
       },
       "player_info": {
         "Consensus Rank": 48,
-        "Player Name": "Rhamondre Stevenson",
-        "Pos": "RB",
-        "Team": "NE",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 48,
         "Draft Sharks (3D)": 48,
@@ -1532,10 +1244,8 @@
         "Avg ADP": 48.2,
         "Key Player Notes & Analysis": "Volume workhorse in ground-focused Patriots system"
       },
-      "notes": "{\"Consensus Rank\": 48, \"Player Name\": \"Rhamondre Stevenson\", \"Pos\": \"RB\", \"Team\": \"NE\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 48, \"Draft Sharks (3D)\": 48, \"Rotoworld Top 200\": 48, \"Avg ADP\": 48.2, \"Key Player Notes & Analysis\": \"Volume workhorse in ground-focused Patriots system\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1543,7 +1253,6 @@
       "name": "Tony Pollard",
       "team": "TEN",
       "pos": "RB",
-      "rank": 49,
       "custom_rank": 49,
       "tier": 5,
       "sources": {
@@ -1554,9 +1263,6 @@
       },
       "player_info": {
         "Consensus Rank": 49,
-        "Player Name": "Tony Pollard",
-        "Pos": "RB",
-        "Team": "TEN",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 49,
         "Draft Sharks (3D)": 49,
@@ -1564,10 +1270,8 @@
         "Avg ADP": 49,
         "Key Player Notes & Analysis": "Lead back in dual-headed backfield with strong PPR work"
       },
-      "notes": "{\"Consensus Rank\": 49, \"Player Name\": \"Tony Pollard\", \"Pos\": \"RB\", \"Team\": \"TEN\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 49, \"Draft Sharks (3D)\": 49, \"Rotoworld Top 200\": 49, \"Avg ADP\": 49, \"Key Player Notes & Analysis\": \"Lead back in dual-headed backfield with strong PPR work\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1575,7 +1279,6 @@
       "name": "Cam Skattebo",
       "team": "NYG",
       "pos": "RB",
-      "rank": 50,
       "custom_rank": 50,
       "tier": 5,
       "sources": {
@@ -1586,9 +1289,6 @@
       },
       "player_info": {
         "Consensus Rank": 50,
-        "Player Name": "Cam Skattebo",
-        "Pos": "RB",
-        "Team": "NYG",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 50,
         "Draft Sharks (3D)": 50,
@@ -1596,10 +1296,8 @@
         "Avg ADP": 50.4,
         "Key Player Notes & Analysis": "Rookie bruiser with soft hands and goal-line leverage"
       },
-      "notes": "{\"Consensus Rank\": 50, \"Player Name\": \"Cam Skattebo\", \"Pos\": \"RB\", \"Team\": \"NYG\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 50, \"Draft Sharks (3D)\": 50, \"Rotoworld Top 200\": 50, \"Avg ADP\": 50.4, \"Key Player Notes & Analysis\": \"Rookie bruiser with soft hands and goal-line leverage\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1607,7 +1305,6 @@
       "name": "Luther Burden III",
       "team": "CHI",
       "pos": "WR",
-      "rank": 51,
       "custom_rank": 51,
       "tier": 5,
       "sources": {
@@ -1618,9 +1315,6 @@
       },
       "player_info": {
         "Consensus Rank": 51,
-        "Player Name": "Luther Burden III",
-        "Pos": "WR",
-        "Team": "CHI",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 51,
         "Draft Sharks (3D)": 51,
@@ -1628,10 +1322,8 @@
         "Avg ADP": 51.8,
         "Key Player Notes & Analysis": "Dynamic rookie open-field weapon in Caleb Williams offense"
       },
-      "notes": "{\"Consensus Rank\": 51, \"Player Name\": \"Luther Burden III\", \"Pos\": \"WR\", \"Team\": \"CHI\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 51, \"Draft Sharks (3D)\": 51, \"Rotoworld Top 200\": 51, \"Avg ADP\": 51.8, \"Key Player Notes & Analysis\": \"Dynamic rookie open-field weapon in Caleb Williams offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1639,7 +1331,6 @@
       "name": "Ladd McConkey",
       "team": "LAC",
       "pos": "WR",
-      "rank": 52,
       "custom_rank": 52,
       "tier": 5,
       "sources": {
@@ -1650,9 +1341,6 @@
       },
       "player_info": {
         "Consensus Rank": 52,
-        "Player Name": "Ladd McConkey",
-        "Pos": "WR",
-        "Team": "LAC",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 52,
         "Draft Sharks (3D)": 52,
@@ -1660,10 +1348,8 @@
         "Avg ADP": 52.3,
         "Key Player Notes & Analysis": "Precision route runner and Herbert's go-to third-down key"
       },
-      "notes": "{\"Consensus Rank\": 52, \"Player Name\": \"Ladd McConkey\", \"Pos\": \"WR\", \"Team\": \"LAC\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 52, \"Draft Sharks (3D)\": 52, \"Rotoworld Top 200\": 52, \"Avg ADP\": 52.3, \"Key Player Notes & Analysis\": \"Precision route runner and Herbert's go-to third-down key\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1671,7 +1357,6 @@
       "name": "George Kittle",
       "team": "SF",
       "pos": "TE",
-      "rank": 53,
       "custom_rank": 53,
       "tier": 5,
       "sources": {
@@ -1682,9 +1367,6 @@
       },
       "player_info": {
         "Consensus Rank": 53,
-        "Player Name": "George Kittle",
-        "Pos": "TE",
-        "Team": "SF",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 53,
         "Draft Sharks (3D)": 53,
@@ -1692,10 +1374,8 @@
         "Avg ADP": 53.9,
         "Key Player Notes & Analysis": "Explosive TE with massive ceiling on limited targets"
       },
-      "notes": "{\"Consensus Rank\": 53, \"Player Name\": \"George Kittle\", \"Pos\": \"TE\", \"Team\": \"SF\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 53, \"Draft Sharks (3D)\": 53, \"Rotoworld Top 200\": 53, \"Avg ADP\": 53.9, \"Key Player Notes & Analysis\": \"Explosive TE with massive ceiling on limited targets\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1703,7 +1383,6 @@
       "name": "Travis Kelce",
       "team": "KC",
       "pos": "TE",
-      "rank": 54,
       "custom_rank": 54,
       "tier": 5,
       "sources": {
@@ -1714,9 +1393,6 @@
       },
       "player_info": {
         "Consensus Rank": 54,
-        "Player Name": "Travis Kelce",
-        "Pos": "TE",
-        "Team": "KC",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 54,
         "Draft Sharks (3D)": 54,
@@ -1724,10 +1400,8 @@
         "Avg ADP": 54.1,
         "Key Player Notes & Analysis": "Clutch third-down and red-zone option for Mahomes"
       },
-      "notes": "{\"Consensus Rank\": 54, \"Player Name\": \"Travis Kelce\", \"Pos\": \"TE\", \"Team\": \"KC\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 54, \"Draft Sharks (3D)\": 54, \"Rotoworld Top 200\": 54, \"Avg ADP\": 54.1, \"Key Player Notes & Analysis\": \"Clutch third-down and red-zone option for Mahomes\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1735,7 +1409,6 @@
       "name": "Mark Andrews",
       "team": "BAL",
       "pos": "TE",
-      "rank": 55,
       "custom_rank": 55,
       "tier": 5,
       "sources": {
@@ -1746,9 +1419,6 @@
       },
       "player_info": {
         "Consensus Rank": 55,
-        "Player Name": "Mark Andrews",
-        "Pos": "TE",
-        "Team": "BAL",
         "Consensus Tier": "Tier 5: Value Starter",
         "FantasyPros ECR": 55,
         "Draft Sharks (3D)": 55,
@@ -1756,10 +1426,8 @@
         "Avg ADP": 55.7,
         "Key Player Notes & Analysis": "Lamar's primary red-zone target with high TE1 upside"
       },
-      "notes": "{\"Consensus Rank\": 55, \"Player Name\": \"Mark Andrews\", \"Pos\": \"TE\", \"Team\": \"BAL\", \"Consensus Tier\": \"Tier 5: Value Starter\", \"FantasyPros ECR\": 55, \"Draft Sharks (3D)\": 55, \"Rotoworld Top 200\": 55, \"Avg ADP\": 55.7, \"Key Player Notes & Analysis\": \"Lamar's primary red-zone target with high TE1 upside\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1767,7 +1435,6 @@
       "name": "Trevor Lawrence",
       "team": "JAX",
       "pos": "QB",
-      "rank": 56,
       "custom_rank": 56,
       "tier": 5,
       "sources": {
@@ -1778,9 +1445,6 @@
       },
       "player_info": {
         "Consensus Rank": 56,
-        "Player Name": "Trevor Lawrence",
-        "Pos": "QB",
-        "Team": "JAX",
         "Consensus Tier": "Tier 5: QB1 Floor",
         "FantasyPros ECR": 56,
         "Draft Sharks (3D)": 56,
@@ -1788,10 +1452,8 @@
         "Avg ADP": 56.2,
         "Key Player Notes & Analysis": "Step-forward year in restructured play-calling setup"
       },
-      "notes": "{\"Consensus Rank\": 56, \"Player Name\": \"Trevor Lawrence\", \"Pos\": \"QB\", \"Team\": \"JAX\", \"Consensus Tier\": \"Tier 5: QB1 Floor\", \"FantasyPros ECR\": 56, \"Draft Sharks (3D)\": 56, \"Rotoworld Top 200\": 56, \"Avg ADP\": 56.2, \"Key Player Notes & Analysis\": \"Step-forward year in restructured play-calling setup\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1799,7 +1461,6 @@
       "name": "Justin Herbert",
       "team": "LAC",
       "pos": "QB",
-      "rank": 57,
       "custom_rank": 57,
       "tier": 5,
       "sources": {
@@ -1810,9 +1471,6 @@
       },
       "player_info": {
         "Consensus Rank": 57,
-        "Player Name": "Justin Herbert",
-        "Pos": "QB",
-        "Team": "LAC",
         "Consensus Tier": "Tier 5: QB1 Floor",
         "FantasyPros ECR": 57,
         "Draft Sharks (3D)": 57,
@@ -1820,10 +1478,8 @@
         "Avg ADP": 57.5,
         "Key Player Notes & Analysis": "High passing efficiency in physical, balanced scheme"
       },
-      "notes": "{\"Consensus Rank\": 57, \"Player Name\": \"Justin Herbert\", \"Pos\": \"QB\", \"Team\": \"LAC\", \"Consensus Tier\": \"Tier 5: QB1 Floor\", \"FantasyPros ECR\": 57, \"Draft Sharks (3D)\": 57, \"Rotoworld Top 200\": 57, \"Avg ADP\": 57.5, \"Key Player Notes & Analysis\": \"High passing efficiency in physical, balanced scheme\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1831,7 +1487,6 @@
       "name": "Caleb Williams",
       "team": "CHI",
       "pos": "QB",
-      "rank": 58,
       "custom_rank": 58,
       "tier": 5,
       "sources": {
@@ -1842,9 +1497,6 @@
       },
       "player_info": {
         "Consensus Rank": 58,
-        "Player Name": "Caleb Williams",
-        "Pos": "QB",
-        "Team": "CHI",
         "Consensus Tier": "Tier 5: QB1 Floor",
         "FantasyPros ECR": 58,
         "Draft Sharks (3D)": 58,
@@ -1852,10 +1504,8 @@
         "Avg ADP": 58.8,
         "Key Player Notes & Analysis": "Sophomore breakout candidate with upgraded wideout room"
       },
-      "notes": "{\"Consensus Rank\": 58, \"Player Name\": \"Caleb Williams\", \"Pos\": \"QB\", \"Team\": \"CHI\", \"Consensus Tier\": \"Tier 5: QB1 Floor\", \"FantasyPros ECR\": 58, \"Draft Sharks (3D)\": 58, \"Rotoworld Top 200\": 58, \"Avg ADP\": 58.8, \"Key Player Notes & Analysis\": \"Sophomore breakout candidate with upgraded wideout room\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1863,7 +1513,6 @@
       "name": "Brock Purdy",
       "team": "SF",
       "pos": "QB",
-      "rank": 59,
       "custom_rank": 59,
       "tier": 5,
       "sources": {
@@ -1874,9 +1523,6 @@
       },
       "player_info": {
         "Consensus Rank": 59,
-        "Player Name": "Brock Purdy",
-        "Pos": "QB",
-        "Team": "SF",
         "Consensus Tier": "Tier 5: QB1 Floor",
         "FantasyPros ECR": 59,
         "Draft Sharks (3D)": 59,
@@ -1884,10 +1530,8 @@
         "Avg ADP": 59.3,
         "Key Player Notes & Analysis": "High-efficiency distributor in elite play-action offense"
       },
-      "notes": "{\"Consensus Rank\": 59, \"Player Name\": \"Brock Purdy\", \"Pos\": \"QB\", \"Team\": \"SF\", \"Consensus Tier\": \"Tier 5: QB1 Floor\", \"FantasyPros ECR\": 59, \"Draft Sharks (3D)\": 59, \"Rotoworld Top 200\": 59, \"Avg ADP\": 59.3, \"Key Player Notes & Analysis\": \"High-efficiency distributor in elite play-action offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1895,7 +1539,6 @@
       "name": "Kyler Murray",
       "team": "ARI",
       "pos": "QB",
-      "rank": 60,
       "custom_rank": 60,
       "tier": 5,
       "sources": {
@@ -1906,9 +1549,6 @@
       },
       "player_info": {
         "Consensus Rank": 60,
-        "Player Name": "Kyler Murray",
-        "Pos": "QB",
-        "Team": "ARI",
         "Consensus Tier": "Tier 5: QB1 Floor",
         "FantasyPros ECR": 60,
         "Draft Sharks (3D)": 60,
@@ -1916,10 +1556,8 @@
         "Avg ADP": 60.1,
         "Key Player Notes & Analysis": "Rushing floor combined with downfield aggressive deep ball"
       },
-      "notes": "{\"Consensus Rank\": 60, \"Player Name\": \"Kyler Murray\", \"Pos\": \"QB\", \"Team\": \"ARI\", \"Consensus Tier\": \"Tier 5: QB1 Floor\", \"FantasyPros ECR\": 60, \"Draft Sharks (3D)\": 60, \"Rotoworld Top 200\": 60, \"Avg ADP\": 60.1, \"Key Player Notes & Analysis\": \"Rushing floor combined with downfield aggressive deep ball\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1927,7 +1565,6 @@
       "name": "Chuba Hubbard",
       "team": "CAR",
       "pos": "RB",
-      "rank": 61,
       "custom_rank": 61,
       "tier": 6,
       "sources": {
@@ -1938,9 +1575,6 @@
       },
       "player_info": {
         "Consensus Rank": 61,
-        "Player Name": "Chuba Hubbard",
-        "Pos": "RB",
-        "Team": "CAR",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 61,
         "Draft Sharks (3D)": 62,
@@ -1948,10 +1582,8 @@
         "Avg ADP": 61.2,
         "Key Player Notes & Analysis": "Reliable touch share in improving offensive unit"
       },
-      "notes": "{\"Consensus Rank\": 61, \"Player Name\": \"Chuba Hubbard\", \"Pos\": \"RB\", \"Team\": \"CAR\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 61, \"Draft Sharks (3D)\": 62, \"Rotoworld Top 200\": 61, \"Avg ADP\": 61.2, \"Key Player Notes & Analysis\": \"Reliable touch share in improving offensive unit\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1959,7 +1591,6 @@
       "name": "Najee Harris",
       "team": "PIT",
       "pos": "RB",
-      "rank": 62,
       "custom_rank": 62,
       "tier": 6,
       "sources": {
@@ -1970,9 +1601,6 @@
       },
       "player_info": {
         "Consensus Rank": 62,
-        "Player Name": "Najee Harris",
-        "Pos": "RB",
-        "Team": "PIT",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 62,
         "Draft Sharks (3D)": 61,
@@ -1980,10 +1608,8 @@
         "Avg ADP": 62.5,
         "Key Player Notes & Analysis": "Physical early-down grinder with double-digit carry floor"
       },
-      "notes": "{\"Consensus Rank\": 62, \"Player Name\": \"Najee Harris\", \"Pos\": \"RB\", \"Team\": \"PIT\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 62, \"Draft Sharks (3D)\": 61, \"Rotoworld Top 200\": 63, \"Avg ADP\": 62.5, \"Key Player Notes & Analysis\": \"Physical early-down grinder with double-digit carry floor\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -1991,7 +1617,6 @@
       "name": "Jonathon Brooks",
       "team": "CAR",
       "pos": "RB",
-      "rank": 63,
       "custom_rank": 63,
       "tier": 6,
       "sources": {
@@ -2002,9 +1627,6 @@
       },
       "player_info": {
         "Consensus Rank": 63,
-        "Player Name": "Jonathon Brooks",
-        "Pos": "RB",
-        "Team": "CAR",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 63,
         "Draft Sharks (3D)": 63,
@@ -2012,10 +1634,8 @@
         "Avg ADP": 63.1,
         "Key Player Notes & Analysis": "Second-year back coming on strong in late-season script"
       },
-      "notes": "{\"Consensus Rank\": 63, \"Player Name\": \"Jonathon Brooks\", \"Pos\": \"RB\", \"Team\": \"CAR\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 63, \"Draft Sharks (3D)\": 63, \"Rotoworld Top 200\": 62, \"Avg ADP\": 63.1, \"Key Player Notes & Analysis\": \"Second-year back coming on strong in late-season script\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2023,7 +1643,6 @@
       "name": "Trey Benson",
       "team": "ARI",
       "pos": "RB",
-      "rank": 64,
       "custom_rank": 64,
       "tier": 6,
       "sources": {
@@ -2034,9 +1653,6 @@
       },
       "player_info": {
         "Consensus Rank": 64,
-        "Player Name": "Trey Benson",
-        "Pos": "RB",
-        "Team": "ARI",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 64,
         "Draft Sharks (3D)": 64,
@@ -2044,10 +1660,8 @@
         "Avg ADP": 64.7,
         "Key Player Notes & Analysis": "High-upside handcuff with standalone weekly FLEX value"
       },
-      "notes": "{\"Consensus Rank\": 64, \"Player Name\": \"Trey Benson\", \"Pos\": \"RB\", \"Team\": \"ARI\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 64, \"Draft Sharks (3D)\": 64, \"Rotoworld Top 200\": 64, \"Avg ADP\": 64.7, \"Key Player Notes & Analysis\": \"High-upside handcuff with standalone weekly FLEX value\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2055,7 +1669,6 @@
       "name": "Zach Charbonnet",
       "team": "SEA",
       "pos": "RB",
-      "rank": 65,
       "custom_rank": 65,
       "tier": 6,
       "sources": {
@@ -2066,9 +1679,6 @@
       },
       "player_info": {
         "Consensus Rank": 65,
-        "Player Name": "Zach Charbonnet",
-        "Pos": "RB",
-        "Team": "SEA",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 65,
         "Draft Sharks (3D)": 65,
@@ -2076,10 +1686,8 @@
         "Avg ADP": 65.2,
         "Key Player Notes & Analysis": "High-value handcuff to Walker with third-down role"
       },
-      "notes": "{\"Consensus Rank\": 65, \"Player Name\": \"Zach Charbonnet\", \"Pos\": \"RB\", \"Team\": \"SEA\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 65, \"Draft Sharks (3D)\": 65, \"Rotoworld Top 200\": 65, \"Avg ADP\": 65.2, \"Key Player Notes & Analysis\": \"High-value handcuff to Walker with third-down role\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2087,7 +1695,6 @@
       "name": "Blake Corum",
       "team": "LAR",
       "pos": "RB",
-      "rank": 66,
       "custom_rank": 66,
       "tier": 6,
       "sources": {
@@ -2098,9 +1705,6 @@
       },
       "player_info": {
         "Consensus Rank": 66,
-        "Player Name": "Blake Corum",
-        "Pos": "RB",
-        "Team": "LAR",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 66,
         "Draft Sharks (3D)": 66,
@@ -2108,10 +1712,8 @@
         "Avg ADP": 66.8,
         "Key Player Notes & Analysis": "Red-zone specialist behind Kyren Williams"
       },
-      "notes": "{\"Consensus Rank\": 66, \"Player Name\": \"Blake Corum\", \"Pos\": \"RB\", \"Team\": \"LAR\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 66, \"Draft Sharks (3D)\": 66, \"Rotoworld Top 200\": 66, \"Avg ADP\": 66.8, \"Key Player Notes & Analysis\": \"Red-zone specialist behind Kyren Williams\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2119,7 +1721,6 @@
       "name": "Jaylen Warren",
       "team": "PIT",
       "pos": "RB",
-      "rank": 67,
       "custom_rank": 67,
       "tier": 6,
       "sources": {
@@ -2130,9 +1731,6 @@
       },
       "player_info": {
         "Consensus Rank": 67,
-        "Player Name": "Jaylen Warren",
-        "Pos": "RB",
-        "Team": "PIT",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 67,
         "Draft Sharks (3D)": 67,
@@ -2140,10 +1738,8 @@
         "Avg ADP": 67.4,
         "Key Player Notes & Analysis": "PPR asset with elite missed-tackle enforcement rate"
       },
-      "notes": "{\"Consensus Rank\": 67, \"Player Name\": \"Jaylen Warren\", \"Pos\": \"RB\", \"Team\": \"PIT\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 67, \"Draft Sharks (3D)\": 67, \"Rotoworld Top 200\": 67, \"Avg ADP\": 67.4, \"Key Player Notes & Analysis\": \"PPR asset with elite missed-tackle enforcement rate\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2151,7 +1747,6 @@
       "name": "Christian Watson",
       "team": "GB",
       "pos": "WR",
-      "rank": 68,
       "custom_rank": 68,
       "tier": 6,
       "sources": {
@@ -2162,9 +1757,6 @@
       },
       "player_info": {
         "Consensus Rank": 68,
-        "Player Name": "Christian Watson",
-        "Pos": "WR",
-        "Team": "GB",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 68,
         "Draft Sharks (3D)": 68,
@@ -2172,10 +1764,8 @@
         "Avg ADP": 68,
         "Key Player Notes & Analysis": "Deep threat TD machine when healthy"
       },
-      "notes": "{\"Consensus Rank\": 68, \"Player Name\": \"Christian Watson\", \"Pos\": \"WR\", \"Team\": \"GB\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 68, \"Draft Sharks (3D)\": 68, \"Rotoworld Top 200\": 68, \"Avg ADP\": 68, \"Key Player Notes & Analysis\": \"Deep threat TD machine when healthy\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2183,7 +1773,6 @@
       "name": "Josh Downs",
       "team": "IND",
       "pos": "WR",
-      "rank": 69,
       "custom_rank": 69,
       "tier": 6,
       "sources": {
@@ -2194,9 +1783,6 @@
       },
       "player_info": {
         "Consensus Rank": 69,
-        "Player Name": "Josh Downs",
-        "Pos": "WR",
-        "Team": "IND",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 69,
         "Draft Sharks (3D)": 69,
@@ -2204,10 +1790,8 @@
         "Avg ADP": 69.3,
         "Key Player Notes & Analysis": "High-volume slot receiver with quick separation"
       },
-      "notes": "{\"Consensus Rank\": 69, \"Player Name\": \"Josh Downs\", \"Pos\": \"WR\", \"Team\": \"IND\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 69, \"Draft Sharks (3D)\": 69, \"Rotoworld Top 200\": 69, \"Avg ADP\": 69.3, \"Key Player Notes & Analysis\": \"High-volume slot receiver with quick separation\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2215,7 +1799,6 @@
       "name": "Parker Washington",
       "team": "JAX",
       "pos": "WR",
-      "rank": 70,
       "custom_rank": 70,
       "tier": 7,
       "sources": {
@@ -2226,9 +1809,6 @@
       },
       "player_info": {
         "Consensus Rank": 70,
-        "Player Name": "Parker Washington",
-        "Pos": "WR",
-        "Team": "JAX",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 70,
         "Draft Sharks (3D)": 70,
@@ -2236,10 +1816,8 @@
         "Avg ADP": 70.8,
         "Key Player Notes & Analysis": "Slot weapon gaining trust in target progression"
       },
-      "notes": "{\"Consensus Rank\": 70, \"Player Name\": \"Parker Washington\", \"Pos\": \"WR\", \"Team\": \"JAX\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 70, \"Draft Sharks (3D)\": 70, \"Rotoworld Top 200\": 70, \"Avg ADP\": 70.8, \"Key Player Notes & Analysis\": \"Slot weapon gaining trust in target progression\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2247,7 +1825,6 @@
       "name": "Evan Engram",
       "team": "JAX",
       "pos": "TE",
-      "rank": 71,
       "custom_rank": 71,
       "tier": 6,
       "sources": {
@@ -2258,9 +1835,6 @@
       },
       "player_info": {
         "Consensus Rank": 71,
-        "Player Name": "Evan Engram",
-        "Pos": "TE",
-        "Team": "JAX",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 71,
         "Draft Sharks (3D)": 71,
@@ -2268,10 +1842,8 @@
         "Avg ADP": 71.5,
         "Key Player Notes & Analysis": "PPR volume monster in short passing game"
       },
-      "notes": "{\"Consensus Rank\": 71, \"Player Name\": \"Evan Engram\", \"Pos\": \"TE\", \"Team\": \"JAX\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 71, \"Draft Sharks (3D)\": 71, \"Rotoworld Top 200\": 71, \"Avg ADP\": 71.5, \"Key Player Notes & Analysis\": \"PPR volume monster in short passing game\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2279,7 +1851,6 @@
       "name": "Tucker Kraft",
       "team": "GB",
       "pos": "TE",
-      "rank": 72,
       "custom_rank": 72,
       "tier": 6,
       "sources": {
@@ -2290,9 +1861,6 @@
       },
       "player_info": {
         "Consensus Rank": 72,
-        "Player Name": "Tucker Kraft",
-        "Pos": "TE",
-        "Team": "GB",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 72,
         "Draft Sharks (3D)": 72,
@@ -2300,10 +1868,8 @@
         "Avg ADP": 72.1,
         "Key Player Notes & Analysis": "YAC beast breaking out in crowded Packers air attack"
       },
-      "notes": "{\"Consensus Rank\": 72, \"Player Name\": \"Tucker Kraft\", \"Pos\": \"TE\", \"Team\": \"GB\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 72, \"Draft Sharks (3D)\": 72, \"Rotoworld Top 200\": 72, \"Avg ADP\": 72.1, \"Key Player Notes & Analysis\": \"YAC beast breaking out in crowded Packers air attack\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2311,7 +1877,6 @@
       "name": "Dallas Goedert",
       "team": "PHI",
       "pos": "TE",
-      "rank": 73,
       "custom_rank": 73,
       "tier": 6,
       "sources": {
@@ -2322,9 +1887,6 @@
       },
       "player_info": {
         "Consensus Rank": 73,
-        "Player Name": "Dallas Goedert",
-        "Pos": "TE",
-        "Team": "PHI",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 73,
         "Draft Sharks (3D)": 73,
@@ -2332,10 +1894,8 @@
         "Avg ADP": 73.6,
         "Key Player Notes & Analysis": "Reliable middle-of-the-field TE option"
       },
-      "notes": "{\"Consensus Rank\": 73, \"Player Name\": \"Dallas Goedert\", \"Pos\": \"TE\", \"Team\": \"PHI\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 73, \"Draft Sharks (3D)\": 73, \"Rotoworld Top 200\": 73, \"Avg ADP\": 73.6, \"Key Player Notes & Analysis\": \"Reliable middle-of-the-field TE option\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2343,7 +1903,6 @@
       "name": "Dalton Kincaid",
       "team": "BUF",
       "pos": "TE",
-      "rank": 74,
       "custom_rank": 74,
       "tier": 6,
       "sources": {
@@ -2354,9 +1913,6 @@
       },
       "player_info": {
         "Consensus Rank": 74,
-        "Player Name": "Dalton Kincaid",
-        "Pos": "TE",
-        "Team": "BUF",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 74,
         "Draft Sharks (3D)": 74,
@@ -2364,10 +1920,8 @@
         "Avg ADP": 74.2,
         "Key Player Notes & Analysis": "Talented TE looking for target escalation in Year 3"
       },
-      "notes": "{\"Consensus Rank\": 74, \"Player Name\": \"Dalton Kincaid\", \"Pos\": \"TE\", \"Team\": \"BUF\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 74, \"Draft Sharks (3D)\": 74, \"Rotoworld Top 200\": 74, \"Avg ADP\": 74.2, \"Key Player Notes & Analysis\": \"Talented TE looking for target escalation in Year 3\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2375,7 +1929,6 @@
       "name": "Isaiah Likely",
       "team": "BAL",
       "pos": "TE",
-      "rank": 75,
       "custom_rank": 75,
       "tier": 6,
       "sources": {
@@ -2386,9 +1939,6 @@
       },
       "player_info": {
         "Consensus Rank": 75,
-        "Player Name": "Isaiah Likely",
-        "Pos": "TE",
-        "Team": "BAL",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 75,
         "Draft Sharks (3D)": 75,
@@ -2396,10 +1946,8 @@
         "Avg ADP": 75.9,
         "Key Player Notes & Analysis": "Dynamic move tight end with standalone Flex value"
       },
-      "notes": "{\"Consensus Rank\": 75, \"Player Name\": \"Isaiah Likely\", \"Pos\": \"TE\", \"Team\": \"BAL\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 75, \"Draft Sharks (3D)\": 75, \"Rotoworld Top 200\": 75, \"Avg ADP\": 75.9, \"Key Player Notes & Analysis\": \"Dynamic move tight end with standalone Flex value\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2407,7 +1955,6 @@
       "name": "Dak Prescott",
       "team": "DAL",
       "pos": "QB",
-      "rank": 76,
       "custom_rank": 76,
       "tier": 6,
       "sources": {
@@ -2418,9 +1965,6 @@
       },
       "player_info": {
         "Consensus Rank": 76,
-        "Player Name": "Dak Prescott",
-        "Pos": "QB",
-        "Team": "DAL",
         "Consensus Tier": "Tier 6: QB2 Upside",
         "FantasyPros ECR": 76,
         "Draft Sharks (3D)": 76,
@@ -2428,10 +1972,8 @@
         "Avg ADP": 76.4,
         "Key Player Notes & Analysis": "High passing yardage volume in pass-heavy game scripts"
       },
-      "notes": "{\"Consensus Rank\": 76, \"Player Name\": \"Dak Prescott\", \"Pos\": \"QB\", \"Team\": \"DAL\", \"Consensus Tier\": \"Tier 6: QB2 Upside\", \"FantasyPros ECR\": 76, \"Draft Sharks (3D)\": 76, \"Rotoworld Top 200\": 76, \"Avg ADP\": 76.4, \"Key Player Notes & Analysis\": \"High passing yardage volume in pass-heavy game scripts\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2439,7 +1981,6 @@
       "name": "Jaxson Dart",
       "team": "LV",
       "pos": "QB",
-      "rank": 77,
       "custom_rank": 77,
       "tier": 6,
       "sources": {
@@ -2450,9 +1991,6 @@
       },
       "player_info": {
         "Consensus Rank": 77,
-        "Player Name": "Jaxson Dart",
-        "Pos": "QB",
-        "Team": "LV",
         "Consensus Tier": "Tier 6: QB2 Upside",
         "FantasyPros ECR": 77,
         "Draft Sharks (3D)": 77,
@@ -2460,10 +1998,8 @@
         "Avg ADP": 77,
         "Key Player Notes & Analysis": "Rookie QB with dynamic rushing skills starting early"
       },
-      "notes": "{\"Consensus Rank\": 77, \"Player Name\": \"Jaxson Dart\", \"Pos\": \"QB\", \"Team\": \"LV\", \"Consensus Tier\": \"Tier 6: QB2 Upside\", \"FantasyPros ECR\": 77, \"Draft Sharks (3D)\": 77, \"Rotoworld Top 200\": 77, \"Avg ADP\": 77, \"Key Player Notes & Analysis\": \"Rookie QB with dynamic rushing skills starting early\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2471,7 +2007,6 @@
       "name": "Bo Nix",
       "team": "DEN",
       "pos": "QB",
-      "rank": 78,
       "custom_rank": 78,
       "tier": 6,
       "sources": {
@@ -2482,9 +2017,6 @@
       },
       "player_info": {
         "Consensus Rank": 78,
-        "Player Name": "Bo Nix",
-        "Pos": "QB",
-        "Team": "DEN",
         "Consensus Tier": "Tier 6: QB2 Upside",
         "FantasyPros ECR": 78,
         "Draft Sharks (3D)": 78,
@@ -2492,10 +2024,8 @@
         "Avg ADP": 78.3,
         "Key Player Notes & Analysis": "Rushing baseline plus Sean Payton quick-game system"
       },
-      "notes": "{\"Consensus Rank\": 78, \"Player Name\": \"Bo Nix\", \"Pos\": \"QB\", \"Team\": \"DEN\", \"Consensus Tier\": \"Tier 6: QB2 Upside\", \"FantasyPros ECR\": 78, \"Draft Sharks (3D)\": 78, \"Rotoworld Top 200\": 78, \"Avg ADP\": 78.3, \"Key Player Notes & Analysis\": \"Rushing baseline plus Sean Payton quick-game system\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2503,7 +2033,6 @@
       "name": "Patrick Mahomes",
       "team": "KC",
       "pos": "QB",
-      "rank": 79,
       "custom_rank": 79,
       "tier": 6,
       "sources": {
@@ -2514,9 +2043,6 @@
       },
       "player_info": {
         "Consensus Rank": 79,
-        "Player Name": "Patrick Mahomes",
-        "Pos": "QB",
-        "Team": "KC",
         "Consensus Tier": "Tier 6: QB2 Upside",
         "FantasyPros ECR": 79,
         "Draft Sharks (3D)": 79,
@@ -2524,10 +2050,8 @@
         "Avg ADP": 79.1,
         "Key Player Notes & Analysis": "Elite real-life QB with steady, reliable fantasy baseline"
       },
-      "notes": "{\"Consensus Rank\": 79, \"Player Name\": \"Patrick Mahomes\", \"Pos\": \"QB\", \"Team\": \"KC\", \"Consensus Tier\": \"Tier 6: QB2 Upside\", \"FantasyPros ECR\": 79, \"Draft Sharks (3D)\": 79, \"Rotoworld Top 200\": 79, \"Avg ADP\": 79.1, \"Key Player Notes & Analysis\": \"Elite real-life QB with steady, reliable fantasy baseline\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2535,7 +2059,6 @@
       "name": "Jared Goff",
       "team": "DET",
       "pos": "QB",
-      "rank": 80,
       "custom_rank": 80,
       "tier": 6,
       "sources": {
@@ -2546,9 +2069,6 @@
       },
       "player_info": {
         "Consensus Rank": 80,
-        "Player Name": "Jared Goff",
-        "Pos": "QB",
-        "Team": "DET",
         "Consensus Tier": "Tier 6: QB2 Upside",
         "FantasyPros ECR": 80,
         "Draft Sharks (3D)": 80,
@@ -2556,10 +2076,8 @@
         "Avg ADP": 80.7,
         "Key Player Notes & Analysis": "Dome stadium monster with elite surrounding weapons"
       },
-      "notes": "{\"Consensus Rank\": 80, \"Player Name\": \"Jared Goff\", \"Pos\": \"QB\", \"Team\": \"DET\", \"Consensus Tier\": \"Tier 6: QB2 Upside\", \"FantasyPros ECR\": 80, \"Draft Sharks (3D)\": 80, \"Rotoworld Top 200\": 80, \"Avg ADP\": 80.7, \"Key Player Notes & Analysis\": \"Dome stadium monster with elite surrounding weapons\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2567,7 +2085,6 @@
       "name": "Matthew Stafford",
       "team": "LAR",
       "pos": "QB",
-      "rank": 81,
       "custom_rank": 81,
       "tier": 7,
       "sources": {
@@ -2578,9 +2095,6 @@
       },
       "player_info": {
         "Consensus Rank": 81,
-        "Player Name": "Matthew Stafford",
-        "Pos": "QB",
-        "Team": "LAR",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 81,
         "Draft Sharks (3D)": 81,
@@ -2588,10 +2102,8 @@
         "Avg ADP": 81.2,
         "Key Player Notes & Analysis": "Veteran passing volume launcher when Nacua is rolling"
       },
-      "notes": "{\"Consensus Rank\": 81, \"Player Name\": \"Matthew Stafford\", \"Pos\": \"QB\", \"Team\": \"LAR\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 81, \"Draft Sharks (3D)\": 81, \"Rotoworld Top 200\": 81, \"Avg ADP\": 81.2, \"Key Player Notes & Analysis\": \"Veteran passing volume launcher when Nacua is rolling\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2599,7 +2111,6 @@
       "name": "Jordan Love",
       "team": "GB",
       "pos": "QB",
-      "rank": 82,
       "custom_rank": 82,
       "tier": 7,
       "sources": {
@@ -2610,9 +2121,6 @@
       },
       "player_info": {
         "Consensus Rank": 82,
-        "Player Name": "Jordan Love",
-        "Pos": "QB",
-        "Team": "GB",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 82,
         "Draft Sharks (3D)": 82,
@@ -2620,10 +2128,8 @@
         "Avg ADP": 82.5,
         "Key Player Notes & Analysis": "High TD rate passer in ascending young Packers offense"
       },
-      "notes": "{\"Consensus Rank\": 82, \"Player Name\": \"Jordan Love\", \"Pos\": \"QB\", \"Team\": \"GB\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 82, \"Draft Sharks (3D)\": 82, \"Rotoworld Top 200\": 82, \"Avg ADP\": 82.5, \"Key Player Notes & Analysis\": \"High TD rate passer in ascending young Packers offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2631,7 +2137,6 @@
       "name": "Baker Mayfield",
       "team": "TB",
       "pos": "QB",
-      "rank": 83,
       "custom_rank": 83,
       "tier": 7,
       "sources": {
@@ -2642,9 +2147,6 @@
       },
       "player_info": {
         "Consensus Rank": 83,
-        "Player Name": "Baker Mayfield",
-        "Pos": "QB",
-        "Team": "TB",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 83,
         "Draft Sharks (3D)": 83,
@@ -2652,10 +2154,8 @@
         "Avg ADP": 83,
         "Key Player Notes & Analysis": "Gritty gunslinger with solid weekly high-floor production"
       },
-      "notes": "{\"Consensus Rank\": 83, \"Player Name\": \"Baker Mayfield\", \"Pos\": \"QB\", \"Team\": \"TB\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 83, \"Draft Sharks (3D)\": 83, \"Rotoworld Top 200\": 83, \"Avg ADP\": 83, \"Key Player Notes & Analysis\": \"Gritty gunslinger with solid weekly high-floor production\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2663,7 +2163,6 @@
       "name": "C.J. Stroud",
       "team": "HOU",
       "pos": "QB",
-      "rank": 84,
       "custom_rank": 84,
       "tier": 7,
       "sources": {
@@ -2674,9 +2173,6 @@
       },
       "player_info": {
         "Consensus Rank": 84,
-        "Player Name": "C.J. Stroud",
-        "Pos": "QB",
-        "Team": "HOU",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 84,
         "Draft Sharks (3D)": 84,
@@ -2684,10 +2180,8 @@
         "Avg ADP": 84.6,
         "Key Player Notes & Analysis": "Elite pocket passer with deadly downfield accuracy"
       },
-      "notes": "{\"Consensus Rank\": 84, \"Player Name\": \"C.J. Stroud\", \"Pos\": \"QB\", \"Team\": \"HOU\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 84, \"Draft Sharks (3D)\": 84, \"Rotoworld Top 200\": 84, \"Avg ADP\": 84.6, \"Key Player Notes & Analysis\": \"Elite pocket passer with deadly downfield accuracy\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2695,7 +2189,6 @@
       "name": "Quinn Ewers",
       "team": "MIA",
       "pos": "QB",
-      "rank": 85,
       "custom_rank": 85,
       "tier": 7,
       "sources": {
@@ -2706,9 +2199,6 @@
       },
       "player_info": {
         "Consensus Rank": 85,
-        "Player Name": "Quinn Ewers",
-        "Pos": "QB",
-        "Team": "MIA",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 85,
         "Draft Sharks (3D)": 85,
@@ -2716,10 +2206,8 @@
         "Avg ADP": 85.3,
         "Key Player Notes & Analysis": "Rookie backup with explosive speed weapons around him"
       },
-      "notes": "{\"Consensus Rank\": 85, \"Player Name\": \"Quinn Ewers\", \"Pos\": \"QB\", \"Team\": \"MIA\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 85, \"Draft Sharks (3D)\": 85, \"Rotoworld Top 200\": 85, \"Avg ADP\": 85.3, \"Key Player Notes & Analysis\": \"Rookie backup with explosive speed weapons around him\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2727,7 +2215,6 @@
       "name": "Tyreek Hill",
       "team": "MIA",
       "pos": "WR",
-      "rank": 86,
       "custom_rank": 86,
       "tier": 6,
       "sources": {
@@ -2738,9 +2225,6 @@
       },
       "player_info": {
         "Consensus Rank": 86,
-        "Player Name": "Tyreek Hill",
-        "Pos": "WR",
-        "Team": "MIA",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 86,
         "Draft Sharks (3D)": 86,
@@ -2748,10 +2232,8 @@
         "Avg ADP": 86,
         "Key Player Notes & Analysis": "Veteran big-play threat capable of explosive multi-TD weeks"
       },
-      "notes": "{\"Consensus Rank\": 86, \"Player Name\": \"Tyreek Hill\", \"Pos\": \"WR\", \"Team\": \"MIA\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 86, \"Draft Sharks (3D)\": 86, \"Rotoworld Top 200\": 86, \"Avg ADP\": 86, \"Key Player Notes & Analysis\": \"Veteran big-play threat capable of explosive multi-TD weeks\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2759,7 +2241,6 @@
       "name": "Davante Adams",
       "team": "NYJ",
       "pos": "WR",
-      "rank": 87,
       "custom_rank": 87,
       "tier": 6,
       "sources": {
@@ -2770,9 +2251,6 @@
       },
       "player_info": {
         "Consensus Rank": 87,
-        "Player Name": "Davante Adams",
-        "Pos": "WR",
-        "Team": "NYJ",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 87,
         "Draft Sharks (3D)": 87,
@@ -2780,10 +2258,8 @@
         "Avg ADP": 87.4,
         "Key Player Notes & Analysis": "Elite red-zone threat and route runner"
       },
-      "notes": "{\"Consensus Rank\": 87, \"Player Name\": \"Davante Adams\", \"Pos\": \"WR\", \"Team\": \"NYJ\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 87, \"Draft Sharks (3D)\": 87, \"Rotoworld Top 200\": 87, \"Avg ADP\": 87.4, \"Key Player Notes & Analysis\": \"Elite red-zone threat and route runner\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2791,7 +2267,6 @@
       "name": "Cooper Kupp",
       "team": "LAR",
       "pos": "WR",
-      "rank": 88,
       "custom_rank": 88,
       "tier": 6,
       "sources": {
@@ -2802,9 +2277,6 @@
       },
       "player_info": {
         "Consensus Rank": 88,
-        "Player Name": "Cooper Kupp",
-        "Pos": "WR",
-        "Team": "LAR",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 88,
         "Draft Sharks (3D)": 88,
@@ -2812,10 +2284,8 @@
         "Avg ADP": 88.1,
         "Key Player Notes & Analysis": "Veteran slot commander with heavy target per route run"
       },
-      "notes": "{\"Consensus Rank\": 88, \"Player Name\": \"Cooper Kupp\", \"Pos\": \"WR\", \"Team\": \"LAR\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 88, \"Draft Sharks (3D)\": 88, \"Rotoworld Top 200\": 88, \"Avg ADP\": 88.1, \"Key Player Notes & Analysis\": \"Veteran slot commander with heavy target per route run\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2823,7 +2293,6 @@
       "name": "Stefon Diggs",
       "team": "HOU",
       "pos": "WR",
-      "rank": 89,
       "custom_rank": 89,
       "tier": 6,
       "sources": {
@@ -2834,9 +2303,6 @@
       },
       "player_info": {
         "Consensus Rank": 89,
-        "Player Name": "Stefon Diggs",
-        "Pos": "WR",
-        "Team": "HOU",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 89,
         "Draft Sharks (3D)": 89,
@@ -2844,10 +2310,8 @@
         "Avg ADP": 89.7,
         "Key Player Notes & Analysis": "Experienced target earner in intermediate routes"
       },
-      "notes": "{\"Consensus Rank\": 89, \"Player Name\": \"Stefon Diggs\", \"Pos\": \"WR\", \"Team\": \"HOU\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 89, \"Draft Sharks (3D)\": 89, \"Rotoworld Top 200\": 89, \"Avg ADP\": 89.7, \"Key Player Notes & Analysis\": \"Experienced target earner in intermediate routes\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2855,7 +2319,6 @@
       "name": "Keenan Allen",
       "team": "CHI",
       "pos": "WR",
-      "rank": 90,
       "custom_rank": 90,
       "tier": 6,
       "sources": {
@@ -2866,9 +2329,6 @@
       },
       "player_info": {
         "Consensus Rank": 90,
-        "Player Name": "Keenan Allen",
-        "Pos": "WR",
-        "Team": "CHI",
         "Consensus Tier": "Tier 6: Bench Depth",
         "FantasyPros ECR": 90,
         "Draft Sharks (3D)": 90,
@@ -2876,10 +2336,8 @@
         "Avg ADP": 90.2,
         "Key Player Notes & Analysis": "PPR third-down converter with strong hands"
       },
-      "notes": "{\"Consensus Rank\": 90, \"Player Name\": \"Keenan Allen\", \"Pos\": \"WR\", \"Team\": \"CHI\", \"Consensus Tier\": \"Tier 6: Bench Depth\", \"FantasyPros ECR\": 90, \"Draft Sharks (3D)\": 90, \"Rotoworld Top 200\": 90, \"Avg ADP\": 90.2, \"Key Player Notes & Analysis\": \"PPR third-down converter with strong hands\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2887,7 +2345,6 @@
       "name": "Amari Cooper",
       "team": "BUF",
       "pos": "WR",
-      "rank": 91,
       "custom_rank": 91,
       "tier": 7,
       "sources": {
@@ -2898,9 +2355,6 @@
       },
       "player_info": {
         "Consensus Rank": 91,
-        "Player Name": "Amari Cooper",
-        "Pos": "WR",
-        "Team": "BUF",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 91,
         "Draft Sharks (3D)": 91,
@@ -2908,10 +2362,8 @@
         "Avg ADP": 91.5,
         "Key Player Notes & Analysis": "Veteran perimeter weapon in Allen's high-octane offense"
       },
-      "notes": "{\"Consensus Rank\": 91, \"Player Name\": \"Amari Cooper\", \"Pos\": \"WR\", \"Team\": \"BUF\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 91, \"Draft Sharks (3D)\": 91, \"Rotoworld Top 200\": 91, \"Avg ADP\": 91.5, \"Key Player Notes & Analysis\": \"Veteran perimeter weapon in Allen's high-octane offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2919,7 +2371,6 @@
       "name": "Calvin Ridley",
       "team": "TEN",
       "pos": "WR",
-      "rank": 92,
       "custom_rank": 92,
       "tier": 7,
       "sources": {
@@ -2930,9 +2381,6 @@
       },
       "player_info": {
         "Consensus Rank": 92,
-        "Player Name": "Calvin Ridley",
-        "Pos": "WR",
-        "Team": "TEN",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 92,
         "Draft Sharks (3D)": 92,
@@ -2940,10 +2388,8 @@
         "Avg ADP": 92.8,
         "Key Player Notes & Analysis": "Deep-ball threat with big air yards market share"
       },
-      "notes": "{\"Consensus Rank\": 92, \"Player Name\": \"Calvin Ridley\", \"Pos\": \"WR\", \"Team\": \"TEN\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 92, \"Draft Sharks (3D)\": 92, \"Rotoworld Top 200\": 92, \"Avg ADP\": 92.8, \"Key Player Notes & Analysis\": \"Deep-ball threat with big air yards market share\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2951,7 +2397,6 @@
       "name": "Christian Kirk",
       "team": "JAX",
       "pos": "WR",
-      "rank": 93,
       "custom_rank": 93,
       "tier": 7,
       "sources": {
@@ -2962,9 +2407,6 @@
       },
       "player_info": {
         "Consensus Rank": 93,
-        "Player Name": "Christian Kirk",
-        "Pos": "WR",
-        "Team": "JAX",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 93,
         "Draft Sharks (3D)": 93,
@@ -2972,10 +2414,8 @@
         "Avg ADP": 93.3,
         "Key Player Notes & Analysis": "Reliable slot separator with consistent PPR floor"
       },
-      "notes": "{\"Consensus Rank\": 93, \"Player Name\": \"Christian Kirk\", \"Pos\": \"WR\", \"Team\": \"JAX\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 93, \"Draft Sharks (3D)\": 93, \"Rotoworld Top 200\": 93, \"Avg ADP\": 93.3, \"Key Player Notes & Analysis\": \"Reliable slot separator with consistent PPR floor\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -2983,7 +2423,6 @@
       "name": "Diontae Johnson",
       "team": "BAL",
       "pos": "WR",
-      "rank": 94,
       "custom_rank": 94,
       "tier": 7,
       "sources": {
@@ -2994,9 +2433,6 @@
       },
       "player_info": {
         "Consensus Rank": 94,
-        "Player Name": "Diontae Johnson",
-        "Pos": "WR",
-        "Team": "BAL",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 94,
         "Draft Sharks (3D)": 94,
@@ -3004,10 +2440,8 @@
         "Avg ADP": 94,
         "Key Player Notes & Analysis": "Elite target separator working open routes"
       },
-      "notes": "{\"Consensus Rank\": 94, \"Player Name\": \"Diontae Johnson\", \"Pos\": \"WR\", \"Team\": \"BAL\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 94, \"Draft Sharks (3D)\": 94, \"Rotoworld Top 200\": 94, \"Avg ADP\": 94, \"Key Player Notes & Analysis\": \"Elite target separator working open routes\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3015,7 +2449,6 @@
       "name": "Courtland Sutton",
       "team": "DEN",
       "pos": "WR",
-      "rank": 95,
       "custom_rank": 95,
       "tier": 7,
       "sources": {
@@ -3026,9 +2459,6 @@
       },
       "player_info": {
         "Consensus Rank": 95,
-        "Player Name": "Courtland Sutton",
-        "Pos": "WR",
-        "Team": "DEN",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 95,
         "Draft Sharks (3D)": 95,
@@ -3036,10 +2466,8 @@
         "Avg ADP": 95.6,
         "Key Player Notes & Analysis": "Red-zone leap threat and primary target for Bo Nix"
       },
-      "notes": "{\"Consensus Rank\": 95, \"Player Name\": \"Courtland Sutton\", \"Pos\": \"WR\", \"Team\": \"DEN\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 95, \"Draft Sharks (3D)\": 95, \"Rotoworld Top 200\": 95, \"Avg ADP\": 95.6, \"Key Player Notes & Analysis\": \"Red-zone leap threat and primary target for Bo Nix\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3047,7 +2475,6 @@
       "name": "Jakobi Meyers",
       "team": "LV",
       "pos": "WR",
-      "rank": 96,
       "custom_rank": 96,
       "tier": 7,
       "sources": {
@@ -3058,9 +2485,6 @@
       },
       "player_info": {
         "Consensus Rank": 96,
-        "Player Name": "Jakobi Meyers",
-        "Pos": "WR",
-        "Team": "LV",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 96,
         "Draft Sharks (3D)": 96,
@@ -3068,10 +2492,8 @@
         "Avg ADP": 96.2,
         "Key Player Notes & Analysis": "Underrated PPR floor player with high catch radius"
       },
-      "notes": "{\"Consensus Rank\": 96, \"Player Name\": \"Jakobi Meyers\", \"Pos\": \"WR\", \"Team\": \"LV\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 96, \"Draft Sharks (3D)\": 96, \"Rotoworld Top 200\": 96, \"Avg ADP\": 96.2, \"Key Player Notes & Analysis\": \"Underrated PPR floor player with high catch radius\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3079,7 +2501,6 @@
       "name": "Rico Dowdle",
       "team": "DAL",
       "pos": "RB",
-      "rank": 97,
       "custom_rank": 97,
       "tier": 7,
       "sources": {
@@ -3090,9 +2511,6 @@
       },
       "player_info": {
         "Consensus Rank": 97,
-        "Player Name": "Rico Dowdle",
-        "Pos": "RB",
-        "Team": "DAL",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 97,
         "Draft Sharks (3D)": 97,
@@ -3100,10 +2518,8 @@
         "Avg ADP": 97.5,
         "Key Player Notes & Analysis": "Handcuff / rotation back with high team touch leverage"
       },
-      "notes": "{\"Consensus Rank\": 97, \"Player Name\": \"Rico Dowdle\", \"Pos\": \"RB\", \"Team\": \"DAL\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 97, \"Draft Sharks (3D)\": 97, \"Rotoworld Top 200\": 97, \"Avg ADP\": 97.5, \"Key Player Notes & Analysis\": \"Handcuff / rotation back with high team touch leverage\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3111,7 +2527,6 @@
       "name": "Ty Chandler",
       "team": "MIN",
       "pos": "RB",
-      "rank": 98,
       "custom_rank": 98,
       "tier": 7,
       "sources": {
@@ -3122,9 +2537,6 @@
       },
       "player_info": {
         "Consensus Rank": 98,
-        "Player Name": "Ty Chandler",
-        "Pos": "RB",
-        "Team": "MIN",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 98,
         "Draft Sharks (3D)": 98,
@@ -3132,10 +2544,8 @@
         "Avg ADP": 98.1,
         "Key Player Notes & Analysis": "Change-of-pace speed back with receiving upside"
       },
-      "notes": "{\"Consensus Rank\": 98, \"Player Name\": \"Ty Chandler\", \"Pos\": \"RB\", \"Team\": \"MIN\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 98, \"Draft Sharks (3D)\": 98, \"Rotoworld Top 200\": 98, \"Avg ADP\": 98.1, \"Key Player Notes & Analysis\": \"Change-of-pace speed back with receiving upside\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3143,7 +2553,6 @@
       "name": "Ray Davis",
       "team": "BUF",
       "pos": "RB",
-      "rank": 99,
       "custom_rank": 99,
       "tier": 7,
       "sources": {
@@ -3154,9 +2563,6 @@
       },
       "player_info": {
         "Consensus Rank": 99,
-        "Player Name": "Ray Davis",
-        "Pos": "RB",
-        "Team": "BUF",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 99,
         "Draft Sharks (3D)": 99,
@@ -3164,10 +2570,8 @@
         "Avg ADP": 99.4,
         "Key Player Notes & Analysis": "Goal-line power back handcuff to James Cook"
       },
-      "notes": "{\"Consensus Rank\": 99, \"Player Name\": \"Ray Davis\", \"Pos\": \"RB\", \"Team\": \"BUF\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 99, \"Draft Sharks (3D)\": 99, \"Rotoworld Top 200\": 99, \"Avg ADP\": 99.4, \"Key Player Notes & Analysis\": \"Goal-line power back handcuff to James Cook\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3175,7 +2579,6 @@
       "name": "Bucky Irving",
       "team": "TB",
       "pos": "RB",
-      "rank": 100,
       "custom_rank": 100,
       "tier": 7,
       "sources": {
@@ -3186,9 +2589,6 @@
       },
       "player_info": {
         "Consensus Rank": 100,
-        "Player Name": "Bucky Irving",
-        "Pos": "RB",
-        "Team": "TB",
         "Consensus Tier": "Tier 7: Late Flier",
         "FantasyPros ECR": 100,
         "Draft Sharks (3D)": 100,
@@ -3196,10 +2596,8 @@
         "Avg ADP": 100,
         "Key Player Notes & Analysis": "Elusive back carving out substantial third-down work"
       },
-      "notes": "{\"Consensus Rank\": 100, \"Player Name\": \"Bucky Irving\", \"Pos\": \"RB\", \"Team\": \"TB\", \"Consensus Tier\": \"Tier 7: Late Flier\", \"FantasyPros ECR\": 100, \"Draft Sharks (3D)\": 100, \"Rotoworld Top 200\": 100, \"Avg ADP\": 100, \"Key Player Notes & Analysis\": \"Elusive back carving out substantial third-down work\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3207,7 +2605,6 @@
       "name": "Brandon Aubrey",
       "team": "DAL",
       "pos": "K",
-      "rank": 101,
       "custom_rank": 101,
       "tier": 1,
       "sources": {
@@ -3218,9 +2615,6 @@
       },
       "player_info": {
         "Consensus Rank": 101,
-        "Player Name": "Brandon Aubrey",
-        "Pos": "K",
-        "Team": "DAL",
         "Consensus Tier": "Tier 1: Elite Kicker",
         "FantasyPros ECR": 1,
         "Draft Sharks (3D)": 1,
@@ -3228,10 +2622,8 @@
         "Avg ADP": 110.5,
         "Key Player Notes & Analysis": "Consensus K1; massive 60+ yard leg in high-scoring dome offense"
       },
-      "notes": "{\"Consensus Rank\": 101, \"Player Name\": \"Brandon Aubrey\", \"Pos\": \"K\", \"Team\": \"DAL\", \"Consensus Tier\": \"Tier 1: Elite Kicker\", \"FantasyPros ECR\": 1, \"Draft Sharks (3D)\": 1, \"Rotoworld Top 200\": 1, \"Avg ADP\": 110.5, \"Key Player Notes & Analysis\": \"Consensus K1; massive 60+ yard leg in high-scoring dome offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3239,7 +2631,6 @@
       "name": "Ka'imi Fairbairn",
       "team": "HOU",
       "pos": "K",
-      "rank": 102,
       "custom_rank": 102,
       "tier": 1,
       "sources": {
@@ -3250,9 +2641,6 @@
       },
       "player_info": {
         "Consensus Rank": 102,
-        "Player Name": "Ka'imi Fairbairn",
-        "Pos": "K",
-        "Team": "HOU",
         "Consensus Tier": "Tier 1: Elite Kicker",
         "FantasyPros ECR": 2,
         "Draft Sharks (3D)": 2,
@@ -3260,10 +2648,8 @@
         "Avg ADP": 118.2,
         "Key Player Notes & Analysis": "Top 2 fantasy kicker; high field goal volume in elite Texans offense"
       },
-      "notes": "{\"Consensus Rank\": 102, \"Player Name\": \"Ka'imi Fairbairn\", \"Pos\": \"K\", \"Team\": \"HOU\", \"Consensus Tier\": \"Tier 1: Elite Kicker\", \"FantasyPros ECR\": 2, \"Draft Sharks (3D)\": 2, \"Rotoworld Top 200\": 2, \"Avg ADP\": 118.2, \"Key Player Notes & Analysis\": \"Top 2 fantasy kicker; high field goal volume in elite Texans offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3271,7 +2657,6 @@
       "name": "Cameron Dicker",
       "team": "LAC",
       "pos": "K",
-      "rank": 103,
       "custom_rank": 103,
       "tier": 2,
       "sources": {
@@ -3282,9 +2667,6 @@
       },
       "player_info": {
         "Consensus Rank": 103,
-        "Player Name": "Cameron Dicker",
-        "Pos": "K",
-        "Team": "LAC",
         "Consensus Tier": "Tier 2: High Floor K",
         "FantasyPros ECR": 3,
         "Draft Sharks (3D)": 3,
@@ -3292,10 +2674,8 @@
         "Avg ADP": 125,
         "Key Player Notes & Analysis": "Consistent efficiency inside 50 yards on physical offense"
       },
-      "notes": "{\"Consensus Rank\": 103, \"Player Name\": \"Cameron Dicker\", \"Pos\": \"K\", \"Team\": \"LAC\", \"Consensus Tier\": \"Tier 2: High Floor K\", \"FantasyPros ECR\": 3, \"Draft Sharks (3D)\": 3, \"Rotoworld Top 200\": 3, \"Avg ADP\": 125, \"Key Player Notes & Analysis\": \"Consistent efficiency inside 50 yards on physical offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3303,7 +2683,6 @@
       "name": "Cam Little",
       "team": "JAX",
       "pos": "K",
-      "rank": 104,
       "custom_rank": 104,
       "tier": 2,
       "sources": {
@@ -3314,9 +2693,6 @@
       },
       "player_info": {
         "Consensus Rank": 104,
-        "Player Name": "Cam Little",
-        "Pos": "K",
-        "Team": "JAX",
         "Consensus Tier": "Tier 2: High Floor K",
         "FantasyPros ECR": 4,
         "Draft Sharks (3D)": 4,
@@ -3324,10 +2700,8 @@
         "Avg ADP": 132.1,
         "Key Player Notes & Analysis": "Big leg with strong 50+ yard conversion profile"
       },
-      "notes": "{\"Consensus Rank\": 104, \"Player Name\": \"Cam Little\", \"Pos\": \"K\", \"Team\": \"JAX\", \"Consensus Tier\": \"Tier 2: High Floor K\", \"FantasyPros ECR\": 4, \"Draft Sharks (3D)\": 4, \"Rotoworld Top 200\": 4, \"Avg ADP\": 132.1, \"Key Player Notes & Analysis\": \"Big leg with strong 50+ yard conversion profile\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3335,7 +2709,6 @@
       "name": "Jason Myers",
       "team": "SEA",
       "pos": "K",
-      "rank": 105,
       "custom_rank": 105,
       "tier": 2,
       "sources": {
@@ -3346,9 +2719,6 @@
       },
       "player_info": {
         "Consensus Rank": 105,
-        "Player Name": "Jason Myers",
-        "Pos": "K",
-        "Team": "SEA",
         "Consensus Tier": "Tier 2: High Floor K",
         "FantasyPros ECR": 5,
         "Draft Sharks (3D)": 5,
@@ -3356,10 +2726,8 @@
         "Avg ADP": 138.4,
         "Key Player Notes & Analysis": "High FPPG performer with strong team field goal reliance"
       },
-      "notes": "{\"Consensus Rank\": 105, \"Player Name\": \"Jason Myers\", \"Pos\": \"K\", \"Team\": \"SEA\", \"Consensus Tier\": \"Tier 2: High Floor K\", \"FantasyPros ECR\": 5, \"Draft Sharks (3D)\": 5, \"Rotoworld Top 200\": 5, \"Avg ADP\": 138.4, \"Key Player Notes & Analysis\": \"High FPPG performer with strong team field goal reliance\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3367,7 +2735,6 @@
       "name": "Eddy Pineiro",
       "team": "SF",
       "pos": "K",
-      "rank": 106,
       "custom_rank": 106,
       "tier": 2,
       "sources": {
@@ -3378,9 +2745,6 @@
       },
       "player_info": {
         "Consensus Rank": 106,
-        "Player Name": "Eddy Pineiro",
-        "Pos": "K",
-        "Team": "SF",
         "Consensus Tier": "Tier 2: High Floor K",
         "FantasyPros ECR": 6,
         "Draft Sharks (3D)": 6,
@@ -3388,10 +2752,8 @@
         "Avg ADP": 142,
         "Key Player Notes & Analysis": "High extra point baseline and reliable accuracy in elite SF scoring offense"
       },
-      "notes": "{\"Consensus Rank\": 106, \"Player Name\": \"Eddy Pineiro\", \"Pos\": \"K\", \"Team\": \"SF\", \"Consensus Tier\": \"Tier 2: High Floor K\", \"FantasyPros ECR\": 6, \"Draft Sharks (3D)\": 6, \"Rotoworld Top 200\": 6, \"Avg ADP\": 142, \"Key Player Notes & Analysis\": \"High extra point baseline and reliable accuracy in elite SF scoring offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3399,7 +2761,6 @@
       "name": "Evan McPherson",
       "team": "CIN",
       "pos": "K",
-      "rank": 107,
       "custom_rank": 107,
       "tier": 3,
       "sources": {
@@ -3410,9 +2771,6 @@
       },
       "player_info": {
         "Consensus Rank": 107,
-        "Player Name": "Evan McPherson",
-        "Pos": "K",
-        "Team": "CIN",
         "Consensus Tier": "Tier 3: Streamer K",
         "FantasyPros ECR": 7,
         "Draft Sharks (3D)": 7,
@@ -3420,10 +2778,8 @@
         "Avg ADP": 148.5,
         "Key Player Notes & Analysis": "Strong bounce-back year with healthy Joe Burrow back at QB"
       },
-      "notes": "{\"Consensus Rank\": 107, \"Player Name\": \"Evan McPherson\", \"Pos\": \"K\", \"Team\": \"CIN\", \"Consensus Tier\": \"Tier 3: Streamer K\", \"FantasyPros ECR\": 7, \"Draft Sharks (3D)\": 7, \"Rotoworld Top 200\": 7, \"Avg ADP\": 148.5, \"Key Player Notes & Analysis\": \"Strong bounce-back year with healthy Joe Burrow back at QB\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3431,7 +2787,6 @@
       "name": "Harrison Mevis",
       "team": "LAR",
       "pos": "K",
-      "rank": 108,
       "custom_rank": 108,
       "tier": 3,
       "sources": {
@@ -3442,9 +2797,6 @@
       },
       "player_info": {
         "Consensus Rank": 108,
-        "Player Name": "Harrison Mevis",
-        "Pos": "K",
-        "Team": "LAR",
         "Consensus Tier": "Tier 3: Streamer K",
         "FantasyPros ECR": 8,
         "Draft Sharks (3D)": 8,
@@ -3452,10 +2804,8 @@
         "Avg ADP": 154.2,
         "Key Player Notes & Analysis": "Primary kicker in explosive McVay Rams offense"
       },
-      "notes": "{\"Consensus Rank\": 108, \"Player Name\": \"Harrison Mevis\", \"Pos\": \"K\", \"Team\": \"LAR\", \"Consensus Tier\": \"Tier 3: Streamer K\", \"FantasyPros ECR\": 8, \"Draft Sharks (3D)\": 8, \"Rotoworld Top 200\": 8, \"Avg ADP\": 154.2, \"Key Player Notes & Analysis\": \"Primary kicker in explosive McVay Rams offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3463,7 +2813,6 @@
       "name": "Tyler Loop",
       "team": "BAL",
       "pos": "K",
-      "rank": 109,
       "custom_rank": 109,
       "tier": 3,
       "sources": {
@@ -3474,9 +2823,6 @@
       },
       "player_info": {
         "Consensus Rank": 109,
-        "Player Name": "Tyler Loop",
-        "Pos": "K",
-        "Team": "BAL",
         "Consensus Tier": "Tier 3: Streamer K",
         "FantasyPros ECR": 9,
         "Draft Sharks (3D)": 9,
@@ -3484,10 +2830,8 @@
         "Avg ADP": 158,
         "Key Player Notes & Analysis": "High extra-point floor attached to Baltimore's high-scoring offense"
       },
-      "notes": "{\"Consensus Rank\": 109, \"Player Name\": \"Tyler Loop\", \"Pos\": \"K\", \"Team\": \"BAL\", \"Consensus Tier\": \"Tier 3: Streamer K\", \"FantasyPros ECR\": 9, \"Draft Sharks (3D)\": 9, \"Rotoworld Top 200\": 9, \"Avg ADP\": 158, \"Key Player Notes & Analysis\": \"High extra-point floor attached to Baltimore's high-scoring offense\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3495,7 +2839,6 @@
       "name": "Jake Bates",
       "team": "DET",
       "pos": "K",
-      "rank": 110,
       "custom_rank": 110,
       "tier": 3,
       "sources": {
@@ -3506,9 +2849,6 @@
       },
       "player_info": {
         "Consensus Rank": 110,
-        "Player Name": "Jake Bates",
-        "Pos": "K",
-        "Team": "DET",
         "Consensus Tier": "Tier 3: Streamer K",
         "FantasyPros ECR": 10,
         "Draft Sharks (3D)": 10,
@@ -3516,10 +2856,8 @@
         "Avg ADP": 162.5,
         "Key Player Notes & Analysis": "Indoor home games in high-octane Lions passing attack"
       },
-      "notes": "{\"Consensus Rank\": 110, \"Player Name\": \"Jake Bates\", \"Pos\": \"K\", \"Team\": \"DET\", \"Consensus Tier\": \"Tier 3: Streamer K\", \"FantasyPros ECR\": 10, \"Draft Sharks (3D)\": 10, \"Rotoworld Top 200\": 10, \"Avg ADP\": 162.5, \"Key Player Notes & Analysis\": \"Indoor home games in high-octane Lions passing attack\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3527,7 +2865,6 @@
       "name": "Houston Texans",
       "team": "HOU",
       "pos": "DST",
-      "rank": 111,
       "custom_rank": 111,
       "tier": 1,
       "sources": {
@@ -3538,9 +2875,6 @@
       },
       "player_info": {
         "Consensus Rank": 111,
-        "Player Name": "Houston Texans",
-        "Pos": "DST",
-        "Team": "HOU",
         "Consensus Tier": "Tier 1: Elite D/ST",
         "FantasyPros ECR": 1,
         "Draft Sharks (3D)": 1,
@@ -3548,10 +2882,8 @@
         "Avg ADP": 105,
         "Key Player Notes & Analysis": "Consensus DST1; elite pass-rush duo, top-tier secondary, high turnover rate"
       },
-      "notes": "{\"Consensus Rank\": 111, \"Player Name\": \"Houston Texans\", \"Pos\": \"DST\", \"Team\": \"HOU\", \"Consensus Tier\": \"Tier 1: Elite D/ST\", \"FantasyPros ECR\": 1, \"Draft Sharks (3D)\": 1, \"Rotoworld Top 200\": 1, \"Avg ADP\": 105, \"Key Player Notes & Analysis\": \"Consensus DST1; elite pass-rush duo, top-tier secondary, high turnover rate\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3559,7 +2891,6 @@
       "name": "Denver Broncos",
       "team": "DEN",
       "pos": "DST",
-      "rank": 112,
       "custom_rank": 112,
       "tier": 1,
       "sources": {
@@ -3570,9 +2901,6 @@
       },
       "player_info": {
         "Consensus Rank": 112,
-        "Player Name": "Denver Broncos",
-        "Pos": "DST",
-        "Team": "DEN",
         "Consensus Tier": "Tier 1: Elite D/ST",
         "FantasyPros ECR": 2,
         "Draft Sharks (3D)": 2,
@@ -3580,10 +2908,8 @@
         "Avg ADP": 112.4,
         "Key Player Notes & Analysis": "League leader in sack rate and pressure rate led by Patrick Surtain II"
       },
-      "notes": "{\"Consensus Rank\": 112, \"Player Name\": \"Denver Broncos\", \"Pos\": \"DST\", \"Team\": \"DEN\", \"Consensus Tier\": \"Tier 1: Elite D/ST\", \"FantasyPros ECR\": 2, \"Draft Sharks (3D)\": 2, \"Rotoworld Top 200\": 2, \"Avg ADP\": 112.4, \"Key Player Notes & Analysis\": \"League leader in sack rate and pressure rate led by Patrick Surtain II\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3591,7 +2917,6 @@
       "name": "Seattle Seahawks",
       "team": "SEA",
       "pos": "DST",
-      "rank": 113,
       "custom_rank": 113,
       "tier": 1,
       "sources": {
@@ -3602,9 +2927,6 @@
       },
       "player_info": {
         "Consensus Rank": 113,
-        "Player Name": "Seattle Seahawks",
-        "Pos": "DST",
-        "Team": "SEA",
         "Consensus Tier": "Tier 1: Elite D/ST",
         "FantasyPros ECR": 3,
         "Draft Sharks (3D)": 3,
@@ -3612,10 +2934,8 @@
         "Avg ADP": 119.8,
         "Key Player Notes & Analysis": "Super Bowl champion defense allowing lowest points per drive"
       },
-      "notes": "{\"Consensus Rank\": 113, \"Player Name\": \"Seattle Seahawks\", \"Pos\": \"DST\", \"Team\": \"SEA\", \"Consensus Tier\": \"Tier 1: Elite D/ST\", \"FantasyPros ECR\": 3, \"Draft Sharks (3D)\": 3, \"Rotoworld Top 200\": 3, \"Avg ADP\": 119.8, \"Key Player Notes & Analysis\": \"Super Bowl champion defense allowing lowest points per drive\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3623,7 +2943,6 @@
       "name": "Los Angeles Rams",
       "team": "LAR",
       "pos": "DST",
-      "rank": 114,
       "custom_rank": 114,
       "tier": 2,
       "sources": {
@@ -3634,9 +2953,6 @@
       },
       "player_info": {
         "Consensus Rank": 114,
-        "Player Name": "Los Angeles Rams",
-        "Pos": "DST",
-        "Team": "LAR",
         "Consensus Tier": "Tier 2: Solid D/ST",
         "FantasyPros ECR": 4,
         "Draft Sharks (3D)": 4,
@@ -3644,10 +2960,8 @@
         "Avg ADP": 126.3,
         "Key Player Notes & Analysis": "Heavy pressure rate team with added elite edge presence"
       },
-      "notes": "{\"Consensus Rank\": 114, \"Player Name\": \"Los Angeles Rams\", \"Pos\": \"DST\", \"Team\": \"LAR\", \"Consensus Tier\": \"Tier 2: Solid D/ST\", \"FantasyPros ECR\": 4, \"Draft Sharks (3D)\": 4, \"Rotoworld Top 200\": 4, \"Avg ADP\": 126.3, \"Key Player Notes & Analysis\": \"Heavy pressure rate team with added elite edge presence\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3655,7 +2969,6 @@
       "name": "Philadelphia Eagles",
       "team": "PHI",
       "pos": "DST",
-      "rank": 115,
       "custom_rank": 115,
       "tier": 2,
       "sources": {
@@ -3666,9 +2979,6 @@
       },
       "player_info": {
         "Consensus Rank": 115,
-        "Player Name": "Philadelphia Eagles",
-        "Pos": "DST",
-        "Team": "PHI",
         "Consensus Tier": "Tier 2: Solid D/ST",
         "FantasyPros ECR": 5,
         "Draft Sharks (3D)": 5,
@@ -3676,10 +2986,8 @@
         "Avg ADP": 131,
         "Key Player Notes & Analysis": "Vic Fangio system loaded with Jalen Carter and offseason secondary additions"
       },
-      "notes": "{\"Consensus Rank\": 115, \"Player Name\": \"Philadelphia Eagles\", \"Pos\": \"DST\", \"Team\": \"PHI\", \"Consensus Tier\": \"Tier 2: Solid D/ST\", \"FantasyPros ECR\": 5, \"Draft Sharks (3D)\": 5, \"Rotoworld Top 200\": 5, \"Avg ADP\": 131, \"Key Player Notes & Analysis\": \"Vic Fangio system loaded with Jalen Carter and offseason secondary additions\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3687,7 +2995,6 @@
       "name": "Minnesota Vikings",
       "team": "MIN",
       "pos": "DST",
-      "rank": 116,
       "custom_rank": 116,
       "tier": 2,
       "sources": {
@@ -3698,9 +3005,6 @@
       },
       "player_info": {
         "Consensus Rank": 116,
-        "Player Name": "Minnesota Vikings",
-        "Pos": "DST",
-        "Team": "MIN",
         "Consensus Tier": "Tier 2: Solid D/ST",
         "FantasyPros ECR": 6,
         "Draft Sharks (3D)": 6,
@@ -3708,10 +3012,8 @@
         "Avg ADP": 137.5,
         "Key Player Notes & Analysis": "Brian Flores aggressive blitzing scheme creating sacks and turnover chaos"
       },
-      "notes": "{\"Consensus Rank\": 116, \"Player Name\": \"Minnesota Vikings\", \"Pos\": \"DST\", \"Team\": \"MIN\", \"Consensus Tier\": \"Tier 2: Solid D/ST\", \"FantasyPros ECR\": 6, \"Draft Sharks (3D)\": 6, \"Rotoworld Top 200\": 6, \"Avg ADP\": 137.5, \"Key Player Notes & Analysis\": \"Brian Flores aggressive blitzing scheme creating sacks and turnover chaos\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3719,7 +3021,6 @@
       "name": "Los Angeles Chargers",
       "team": "LAC",
       "pos": "DST",
-      "rank": 117,
       "custom_rank": 117,
       "tier": 2,
       "sources": {
@@ -3730,9 +3031,6 @@
       },
       "player_info": {
         "Consensus Rank": 117,
-        "Player Name": "Los Angeles Chargers",
-        "Pos": "DST",
-        "Team": "LAC",
         "Consensus Tier": "Tier 2: Solid D/ST",
         "FantasyPros ECR": 7,
         "Draft Sharks (3D)": 7,
@@ -3740,10 +3038,8 @@
         "Avg ADP": 143.2,
         "Key Player Notes & Analysis": "Top-10 in defensive EPA/drive and interceptions"
       },
-      "notes": "{\"Consensus Rank\": 117, \"Player Name\": \"Los Angeles Chargers\", \"Pos\": \"DST\", \"Team\": \"LAC\", \"Consensus Tier\": \"Tier 2: Solid D/ST\", \"FantasyPros ECR\": 7, \"Draft Sharks (3D)\": 7, \"Rotoworld Top 200\": 7, \"Avg ADP\": 143.2, \"Key Player Notes & Analysis\": \"Top-10 in defensive EPA/drive and interceptions\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3751,7 +3047,6 @@
       "name": "Baltimore Ravens",
       "team": "BAL",
       "pos": "DST",
-      "rank": 118,
       "custom_rank": 118,
       "tier": 3,
       "sources": {
@@ -3762,9 +3057,6 @@
       },
       "player_info": {
         "Consensus Rank": 118,
-        "Player Name": "Baltimore Ravens",
-        "Pos": "DST",
-        "Team": "BAL",
         "Consensus Tier": "Tier 3: Streamer D/ST",
         "FantasyPros ECR": 8,
         "Draft Sharks (3D)": 8,
@@ -3772,10 +3064,8 @@
         "Avg ADP": 150.1,
         "Key Player Notes & Analysis": "Loaded secondary anchored by Kyle Hamilton and upgraded pass rush"
       },
-      "notes": "{\"Consensus Rank\": 118, \"Player Name\": \"Baltimore Ravens\", \"Pos\": \"DST\", \"Team\": \"BAL\", \"Consensus Tier\": \"Tier 3: Streamer D/ST\", \"FantasyPros ECR\": 8, \"Draft Sharks (3D)\": 8, \"Rotoworld Top 200\": 8, \"Avg ADP\": 150.1, \"Key Player Notes & Analysis\": \"Loaded secondary anchored by Kyle Hamilton and upgraded pass rush\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3783,7 +3073,6 @@
       "name": "Pittsburgh Steelers",
       "team": "PIT",
       "pos": "DST",
-      "rank": 119,
       "custom_rank": 119,
       "tier": 3,
       "sources": {
@@ -3794,9 +3083,6 @@
       },
       "player_info": {
         "Consensus Rank": 119,
-        "Player Name": "Pittsburgh Steelers",
-        "Pos": "DST",
-        "Team": "PIT",
         "Consensus Tier": "Tier 3: Streamer D/ST",
         "FantasyPros ECR": 9,
         "Draft Sharks (3D)": 9,
@@ -3804,10 +3090,8 @@
         "Avg ADP": 155.8,
         "Key Player Notes & Analysis": "Perennial top-8 unit led by T.J. Watt and high turnover baseline"
       },
-      "notes": "{\"Consensus Rank\": 119, \"Player Name\": \"Pittsburgh Steelers\", \"Pos\": \"DST\", \"Team\": \"PIT\", \"Consensus Tier\": \"Tier 3: Streamer D/ST\", \"FantasyPros ECR\": 9, \"Draft Sharks (3D)\": 9, \"Rotoworld Top 200\": 9, \"Avg ADP\": 155.8, \"Key Player Notes & Analysis\": \"Perennial top-8 unit led by T.J. Watt and high turnover baseline\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     },
     {
@@ -3815,7 +3099,6 @@
       "name": "Jacksonville Jaguars",
       "team": "JAX",
       "pos": "DST",
-      "rank": 120,
       "custom_rank": 120,
       "tier": 3,
       "sources": {
@@ -3826,9 +3109,6 @@
       },
       "player_info": {
         "Consensus Rank": 120,
-        "Player Name": "Jacksonville Jaguars",
-        "Pos": "DST",
-        "Team": "JAX",
         "Consensus Tier": "Tier 3: Streamer D/ST",
         "FantasyPros ECR": 10,
         "Draft Sharks (3D)": 10,
@@ -3836,10 +3116,8 @@
         "Avg ADP": 160,
         "Key Player Notes & Analysis": "Elite run defense forcing heavy passing scripts and takeover opportunities"
       },
-      "notes": "{\"Consensus Rank\": 120, \"Player Name\": \"Jacksonville Jaguars\", \"Pos\": \"DST\", \"Team\": \"JAX\", \"Consensus Tier\": \"Tier 3: Streamer D/ST\", \"FantasyPros ECR\": 10, \"Draft Sharks (3D)\": 10, \"Rotoworld Top 200\": 10, \"Avg ADP\": 160, \"Key Player Notes & Analysis\": \"Elite run defense forcing heavy passing scripts and takeover opportunities\"}",
       "drafted": false,
       "draftedBy": "",
-      "drafted_by": "",
       "pick": null
     }
   ],
