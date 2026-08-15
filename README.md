@@ -34,3 +34,8 @@
 - The selected player appears as a floating ghost tile.
 - A stronger gold placeholder/drop line shows exact placement.
 - Haptic feedback uses navigator.vibrate when supported by the browser/device.
+
+
+### v24 touch drag hotfix
+- Added touchstart/touchmove/touchend based drag support so long-pressing the player name/row works on iPhone, not just the handle.
+- Fixed undo event handling so one tap performs the undo.
