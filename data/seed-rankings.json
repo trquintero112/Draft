@@ -2334,21 +2334,21 @@
     }
   ],
   "supported_sources": [
-    "FantasyPros",
-    "Draft Sharks",
-    "ESPN",
     "CBS/SportsLine",
-    "Yahoo",
-    "Sleeper",
-    "RotoBaller",
-    "Footballguys",
-    "RotoWire",
-    "Establish The Run",
     "Custom Sheet",
-    "FantasyPros K",
+    "Draft Sharks",
     "Draft Sharks K",
-    "SportsBrackets K",
+    "ESPN",
+    "Establish The Run",
+    "FantasyPros",
+    "FantasyPros K",
+    "Footballguys",
+    "RotoBaller",
+    "RotoWire",
+    "SI DST",
+    "Sleeper",
     "SportsBrackets DST",
-    "SI DST"
+    "SportsBrackets K",
+    "Yahoo"
   ]
 }
