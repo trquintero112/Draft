@@ -1,0 +1,81 @@
+{
+  "source_workbook": "Fantasy_Football_2026_27_Draft_Kit_v2.xlsx",
+  "source_sheet": "Rookie & Sleeper Targets",
+  "excelSleeperNames": [
+    "Ashton Jeanty",
+    "Omarion Hampton",
+    "Tetairoa McMillan",
+    "Emeka Egbuka",
+    "Cam Skattebo",
+    "Caleb Williams",
+    "Jaxson Dart",
+    "Quinn Ewers"
+  ],
+  "copilotSleeperNames": [],
+  "sleepers": [
+    {
+      "overall_rank": 16,
+      "name": "Ashton Jeanty",
+      "pos": "RB",
+      "team": "DAL",
+      "avg_adp": 16.5,
+      "rationale": "Rookie phenom projected for immediate high-volume starter role"
+    },
+    {
+      "overall_rank": 27,
+      "name": "Omarion Hampton",
+      "pos": "RB",
+      "team": "LAC",
+      "avg_adp": 27.9,
+      "rationale": "Rookie power back step into high-volume ground attack"
+    },
+    {
+      "overall_rank": 32,
+      "name": "Tetairoa McMillan",
+      "pos": "WR",
+      "team": "CAR",
+      "avg_adp": 32.4,
+      "rationale": "Rookie wideout entering immediate #1 wideout role"
+    },
+    {
+      "overall_rank": 40,
+      "name": "Emeka Egbuka",
+      "pos": "WR",
+      "team": "TB",
+      "avg_adp": 40.7,
+      "rationale": "Rookie separator filling smooth slot and perimeter role"
+    },
+    {
+      "overall_rank": 50,
+      "name": "Cam Skattebo",
+      "pos": "RB",
+      "team": "NYG",
+      "avg_adp": 50.4,
+      "rationale": "Rookie bruiser with soft hands and goal-line leverage"
+    },
+    {
+      "overall_rank": 58,
+      "name": "Caleb Williams",
+      "pos": "QB",
+      "team": "CHI",
+      "avg_adp": 58.8,
+      "rationale": "Sophomore breakout candidate with upgraded wideout room"
+    },
+    {
+      "overall_rank": 77,
+      "name": "Jaxson Dart",
+      "pos": "QB",
+      "team": "LV",
+      "avg_adp": 77,
+      "rationale": "Rookie QB with dynamic rushing skills starting early"
+    },
+    {
+      "overall_rank": 85,
+      "name": "Quinn Ewers",
+      "pos": "QB",
+      "team": "MIA",
+      "avg_adp": 85.3,
+      "rationale": "Rookie backup with explosive speed weapons around him"
+    }
+  ]
+}
