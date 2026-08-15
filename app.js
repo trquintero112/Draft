@@ -423,3 +423,222 @@ async function refreshSourceRankings(){
   refreshBestRecommendation();
   setStatus('Excel notes refreshed and your custom ranks/tiers were preserved.','ok');
 }
+
+
+/* v37 admin login and guest read-only mode
+   Client-side gate for draft-site UX. This is not server-side security, but it prevents normal guest edits in the browser UI. */
+const AUTH_MODE_KEY_V37='fantasy-war-room-auth-mode-v37';
+const AUTH_USER_V37='admin';
+const AUTH_PASS_V37='tqsd26';
+function authModeV37(){return localStorage.getItem(AUTH_MODE_KEY_V37)||'';}
+function isAdminMode(){return authModeV37()==='admin';}
+function isGuestMode(){return authModeV37()==='guest';}
+function setAuthModeV37(mode){localStorage.setItem(AUTH_MODE_KEY_V37,mode);}
+function clearAuthModeV37(){localStorage.removeItem(AUTH_MODE_KEY_V37);}
+function ensureAuthGateV37(){
+  if(document.getElementById('authGateV37'))return;
+  const gate=document.createElement('div');
+  gate.id='authGateV37';
+  gate.className='auth-gate-v37';
+  gate.innerHTML=`
+    <div class="auth-card-v37">
+      <div class="auth-eyebrow-v37">Fantasy Draft War Room</div>
+      <h2>Sign in to edit rankings</h2>
+      <p>Admin mode can update custom ranks, tiers, draft picks, and save changes. Guest mode is read-only.</p>
+      <label>Username<input id="authUserV37" autocomplete="username" value=""></label>
+      <label>Password<input id="authPassV37" type="password" autocomplete="current-password"></label>
+      <div id="authErrorV37" class="auth-error-v37" hidden>Invalid username or password.</div>
+      <div class="auth-actions-v37">
+        <button id="authLoginBtnV37" type="button">Login</button>
+        <button id="authGuestBtnV37" type="button" class="guest-btn-v37">Continue as Guest</button>
+      </div>
+    </div>`;
+  document.body.appendChild(gate);
+  const user=document.getElementById('authUserV37');
+  const pass=document.getElementById('authPassV37');
+  const err=document.getElementById('authErrorV37');
+  const login=()=>{
+    if((user.value||'').trim()===AUTH_USER_V37 && (pass.value||'')===AUTH_PASS_V37){
+      setAuthModeV37('admin');
+      gate.remove();
+      document.dispatchEvent(new CustomEvent('auth-ready-v37'));
+    }else{
+      err.hidden=false;
+      pass.value='';
+      pass.focus();
+    }
+  };
+  document.getElementById('authLoginBtnV37').onclick=login;
+  document.getElementById('authGuestBtnV37').onclick=()=>{setAuthModeV37('guest');gate.remove();document.dispatchEvent(new CustomEvent('auth-ready-v37'));};
+  pass.addEventListener('keydown',e=>{if(e.key==='Enter')login();});
+  user.addEventListener('keydown',e=>{if(e.key==='Enter')pass.focus();});
+  setTimeout(()=>user.focus(),50);
+}
+function waitForAuthV37(){
+  if(authModeV37())return Promise.resolve();
+  ensureAuthGateV37();
+  return new Promise(resolve=>document.addEventListener('auth-ready-v37',resolve,{once:true}));
+}
+function ensureAuthControlsV37(){
+  if(document.getElementById('authStatusV37'))return;
+  const top=document.querySelector('.top-actions .button-row')||document.querySelector('.button-row');
+  if(!top)return;
+  const wrap=document.createElement('div');
+  wrap.id='authStatusV37';
+  wrap.className='auth-status-v37';
+  top.appendChild(wrap);
+}
+function applyAuthUIV37(){
+  ensureAuthControlsV37();
+  document.body.classList.toggle('admin-mode-v37',isAdminMode());
+  document.body.classList.toggle('guest-mode-v37',!isAdminMode());
+  const status=document.getElementById('authStatusV37');
+  if(status){
+    status.innerHTML=isAdminMode()?`<span class="auth-chip-v37 admin">Admin</span><button id="logoutAuthV37" type="button">Logout</button>`:`<span class="auth-chip-v37 guest">Guest View</span><button id="logoutAuthV37" type="button">Login</button>`;
+    document.getElementById('logoutAuthV37').onclick=()=>{clearAuthModeV37();location.reload();};
+  }
+  ['editRanksBtn','resetDraftBtn','seedSupabaseBtn','refreshSourcesBtn'].forEach(id=>{const el=document.getElementById(id); if(el)el.hidden=!isAdminMode();});
+  document.querySelectorAll('.file-btn').forEach(el=>el.hidden=!isAdminMode());
+  document.querySelectorAll('.rank-input,.tier-input,.rank-tier-input').forEach(inp=>{inp.disabled=!isAdminMode();inp.readOnly=!isAdminMode();});
+  document.querySelectorAll('.actions button').forEach(btn=>{btn.disabled=!isAdminMode();btn.hidden=!isAdminMode();});
+  document.querySelectorAll('.admin-only-v37').forEach(el=>el.hidden=!isAdminMode());
+}
+async function init(){
+  bind();
+  await waitForAuthV37();
+  await loadExcelSeedV34();
+  await connect();
+  render();
+  setupRankEditor();
+  refreshBestRecommendation();
+  selectionGuard();
+  applyAuthUIV37();
+}
+function render(){
+  renderChips();renderScarcity();const tbody=$('#board tbody');if(!tbody)return;tbody.innerHTML='';
+  for(const p of getFiltered()){
+    const cons=sourceAvg(p);const tr=document.createElement('tr');tr.className=`tier-${Math.min(14,Math.max(1,p.tier))} ${p.drafted?'drafted-row':''}`;
+    const editDisabled=isAdminMode()?'':'disabled readonly';
+    const actionHtml=isAdminMode()?`<div class="actions"><button class="mine" data-act="mine" data-id="${p.id}">Mine</button><button class="gone" data-act="gone" data-id="${p.id}">Gone</button><button class="edit" data-act="edit" data-id="${p.id}">Edit</button></div>`:`<span class="guest-readonly-v37">View only</span>`;
+    tr.innerHTML=`<td data-label="Player"><div class="compact-player-line"><span class="player-name">${esc(p.name)}</span><span class="pos ${p.pos}">${posRank(p)}</span><span class="compact-team">${esc(p.team)}</span><button class="tile-note-btn" type="button" data-info-id="${p.id}" title="View player notes">📝</button></div><div class="meta">${p.drafted?p.draftedBy==='Me'?'On my team':'Drafted by other':'Available'}</div><div class="mobile-metrics"><div class="metric-pill"><span>Rank</span><strong>${p.custom_rank}</strong></div><div class="metric-pill"><span>Tier</span><strong>${p.tier}</strong></div><div class="metric-pill"><span>Cons</span><strong>${fmt(cons)}</strong></div><div class="metric-pill"><span>Score</span><strong>${recommendationScore(p)}</strong></div></div></td><td data-label="Custom Ranking"><input class="rank-input" type="number" min="1" value="${p.custom_rank}" data-field="custom_rank" data-id="${p.id}" ${editDisabled}></td><td data-label="Tier"><input class="tier-input" type="number" min="1" value="${p.tier}" data-field="tier" data-id="${p.id}" ${editDisabled}></td><td data-label="Consensus"><strong>${fmt(cons)}</strong></td><td data-label="Score"><span class="score-pill">${recommendationScore(p)}</span></td><td data-label="Action">${actionHtml}</td>`;
+    tbody.appendChild(tr);
+  }
+  if(isAdminMode()){
+    $$('.actions button').forEach(b=>b.onclick=()=>act(b.dataset.act,b.dataset.id));
+    $$('.rank-input,.tier-input').forEach(inp=>inp.onchange=()=>inlineUpdate(inp));
+  }
+  $$('.tile-note-btn').forEach(btn=>btn.onclick=e=>{e.preventDefault();e.stopPropagation();showPlayerInfo(btn.dataset.infoId)});
+  renderSidebars();
+  applyAuthUIV37();
+}
+function assertAdminActionV37(){
+  if(isAdminMode())return true;
+  setStatus('Guest mode is read-only. Login as admin to save changes.','warn');
+  return false;
+}
+async function persistPlayer(p){
+  if(!assertAdminActionV37())return;
+  saveCustomOverridesV36();localSave();
+  if(!usingSupabase||!sb)return;
+  const {error}=await sb.from(TABLE).upsert(toDb(p));
+  if(error)setStatus('Supabase save failed: '+error.message,'bad');
+}
+async function persistMany(players=state.players,show=true){
+  if(!assertAdminActionV37())return;
+  saveCustomOverridesV36();localSave();
+  if(!usingSupabase||!sb)return;
+  const {error}=await sb.from(TABLE).upsert(players.map(toDb));
+  if(error)setStatus('Supabase bulk save failed: '+error.message,'bad');
+  else if(show)setStatus('Saved custom ranks and tiers to Supabase.','ok');
+}
+function inlineUpdate(inp){if(!assertAdminActionV37())return;const p=state.players.find(x=>x.id===inp.dataset.id);if(!p)return;p[inp.dataset.field]=Number(inp.value);saveCustomOverridesV36();persistPlayer(p);render();refreshBestRecommendation();}
+function act(action,id){if(!assertAdminActionV37())return;const p=state.players.find(x=>x.id===id);if(!p)return;if(action==='mine'){p.drafted=true;p.draftedBy='Me';p.pick=nextPick()}if(action==='gone'){p.drafted=true;p.draftedBy='Other';p.pick=nextPick()}if(action==='edit')return openEdit(p);persistPlayer(p);render();refreshBestRecommendation();}
+function openRankEditor(){if(!assertAdminActionV37())return;document.body.classList.add('edit-rank-mode');const v=$('#rankEditorView');if(v){v.hidden=false;renderRankTabs();renderRankEditor();v.scrollIntoView({behavior:'smooth',block:'start'})}}
+async function resetAllDraft(){if(!assertAdminActionV37())return;if(!confirm('Reset entire draft board?'))return;if(!confirm('Final confirmation: reset for everyone?'))return;state.players.forEach(p=>{p.drafted=false;p.draftedBy='';p.pick=null});await persistMany();render();refreshBestRecommendation();}
+async function seedSupabase(){if(!assertAdminActionV37())return;if(!usingSupabase||!sb){alert('Supabase is not connected. Check config.js.');return;}buildExcelOnlyStateV34(state.players.map(p=>toDb(p)));saveCustomOverridesV36();await persistMany(state.players,true);render();if(!$('#rankEditorView')?.hidden)renderRankEditor();refreshBestRecommendation();setStatus('Supabase saved with Excel notes plus your custom ranks and tiers.','ok');}
+async function refreshSourceRankings(){if(!assertAdminActionV37())return;buildExcelOnlyStateV34(state.players.map(p=>toDb(p)));saveCustomOverridesV36();await persistMany(state.players,true);render();if(!$('#rankEditorView')?.hidden)renderRankEditor();refreshBestRecommendation();setStatus('Excel notes refreshed and your custom ranks/tiers were preserved.','ok');}
+function rankTouchStart(e){if(!isAdminMode())return;if(e.touches.length!==1||isInteractive(e.target))return;const row=e.currentTarget,t=e.touches[0];touchState={row,startX:t.clientX,startY:t.clientY,active:false,timer:setTimeout(()=>activateDrag(row,t.clientX,t.clientY),320)};row.classList.add('press-arming')}
+function rankPointerStart(e){if(!isAdminMode())return;if(('ontouchstart'in window)||isInteractive(e.target))return;if(e.button!==undefined&&e.button!==0)return;const row=e.currentTarget;e.preventDefault();activateDrag(row,e.clientX,e.clientY);const move=ev=>{ev.preventDefault();moveDrag(ev.clientX,ev.clientY)},up=()=>{document.removeEventListener('pointermove',move);document.removeEventListener('pointerup',up);finishDrag()};document.addEventListener('pointermove',move,{passive:false});document.addEventListener('pointerup',up,{once:true})}
+
+
+/* v38 guest password gate
+   Guests must enter guest password before read-only access is granted. */
+const AUTH_GUEST_PASS_V38='password';
+function ensureAuthGateV37(){
+  if(document.getElementById('authGateV37'))return;
+  const gate=document.createElement('div');
+  gate.id='authGateV37';
+  gate.className='auth-gate-v37';
+  gate.innerHTML=`
+    <div class="auth-card-v37">
+      <div class="auth-eyebrow-v37">Fantasy Draft War Room</div>
+      <h2>Sign in to access draft board</h2>
+      <p>Admin mode can update custom ranks, tiers, draft picks, and save changes. Guest mode is read-only and requires the guest password.</p>
+      <div class="auth-tabs-v38">
+        <button id="authAdminTabV38" type="button" class="active">Admin</button>
+        <button id="authGuestTabV38" type="button">Guest</button>
+      </div>
+      <div id="adminLoginPanelV38" class="auth-panel-v38">
+        <label>Username<input id="authUserV37" autocomplete="username" value=""></label>
+        <label>Password<input id="authPassV37" type="password" autocomplete="current-password"></label>
+        <div id="authErrorV37" class="auth-error-v37" hidden>Invalid admin username or password.</div>
+        <div class="auth-actions-v37 one-v38">
+          <button id="authLoginBtnV37" type="button">Login as Admin</button>
+        </div>
+      </div>
+      <div id="guestLoginPanelV38" class="auth-panel-v38" hidden>
+        <label>Guest Password<input id="authGuestPassV38" type="password" autocomplete="current-password"></label>
+        <div id="authGuestErrorV38" class="auth-error-v37" hidden>Invalid guest password.</div>
+        <div class="auth-actions-v37 one-v38">
+          <button id="authGuestBtnV37" type="button" class="guest-btn-v37">Continue as Guest</button>
+        </div>
+      </div>
+    </div>`;
+  document.body.appendChild(gate);
+  const adminTab=document.getElementById('authAdminTabV38');
+  const guestTab=document.getElementById('authGuestTabV38');
+  const adminPanel=document.getElementById('adminLoginPanelV38');
+  const guestPanel=document.getElementById('guestLoginPanelV38');
+  const switchTab=(mode)=>{
+    const guest=mode==='guest';
+    adminPanel.hidden=guest; guestPanel.hidden=!guest;
+    adminTab.classList.toggle('active',!guest); guestTab.classList.toggle('active',guest);
+    setTimeout(()=>{(guest?document.getElementById('authGuestPassV38'):document.getElementById('authUserV37')).focus();},20);
+  };
+  adminTab.onclick=()=>switchTab('admin');
+  guestTab.onclick=()=>switchTab('guest');
+
+  const user=document.getElementById('authUserV37');
+  const pass=document.getElementById('authPassV37');
+  const err=document.getElementById('authErrorV37');
+  const guestPass=document.getElementById('authGuestPassV38');
+  const guestErr=document.getElementById('authGuestErrorV38');
+  const loginAdmin=()=>{
+    if((user.value||'').trim()===AUTH_USER_V37 && (pass.value||'')===AUTH_PASS_V37){
+      setAuthModeV37('admin');
+      gate.remove();
+      document.dispatchEvent(new CustomEvent('auth-ready-v37'));
+    }else{
+      err.hidden=false;
+      pass.value='';
+      pass.focus();
+    }
+  };
+  const loginGuest=()=>{
+    if((guestPass.value||'')===AUTH_GUEST_PASS_V38){
+      setAuthModeV37('guest');
+      gate.remove();
+      document.dispatchEvent(new CustomEvent('auth-ready-v37'));
+    }else{
+      guestErr.hidden=false;
+      guestPass.value='';
+      guestPass.focus();
+    }
+  };
+  document.getElementById('authLoginBtnV37').onclick=loginAdmin;
+  document.getElementById('authGuestBtnV37').onclick=loginGuest;
+  pass.addEventListener('keydown',e=>{if(e.key==='Enter')loginAdmin();});
+  user.addEventListener('keydown',e=>{if(e.key==='Enter')pass.focus();});
+  guestPass.addEventListener('keydown',e=>{if(e.key==='Enter')loginGuest();});
+  setTimeout(()=>user.focus(),50);
+}

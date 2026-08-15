@@ -45,3 +45,16 @@
 - Custom Rank and Tier edits now persist across refreshes using local storage and Supabase.
 - Drag-and-drop ranking changes in Edit Rankings save as custom rank overrides.
 - Refresh Sources keeps your custom rank and tier edits while refreshing Excel notes/source rankings.
+
+
+### v37 admin login and guest mode
+- First load shows a login gate. Admin credentials are username admin and password tqsd26.
+- Admin mode can edit custom ranks, tiers, draft actions, and save to local storage/Supabase.
+- Continue as Guest opens a read-only version of the normal site: search, filters, rankings, notes, export/print still work, but edits and saves are disabled.
+- Admin login is remembered in the browser using localStorage. Logout/Login control is shown in the top button row.
+
+
+### v38 guest password
+- Guest access now requires the guest password `password` before the read-only site loads.
+- Admin login remains username `admin` and password `tqsd26`.
+- Browser memory still applies after either Admin or Guest login until Logout/Login is clicked.
