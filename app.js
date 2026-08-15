@@ -103,19 +103,76 @@ async function seedSupabase(){
 }
 
 
-/* v28 selection guard */
-(function(){
-  function isSearchTarget(el){return !!(el && el.closest && el.closest('#search'));}
-  document.addEventListener('selectstart',function(e){
-    if(!isSearchTarget(e.target)) e.preventDefault();
-  },true);
-  document.addEventListener('copy',function(e){
-    if(!isSearchTarget(e.target)) e.preventDefault();
-  },true);
-  document.addEventListener('cut',function(e){
-    if(!isSearchTarget(e.target)) e.preventDefault();
-  },true);
-  document.addEventListener('contextmenu',function(e){
-    if(!isSearchTarget(e.target)) e.preventDefault();
-  },true);
-})();
+/* v29 explicit note buttons and forced player-info hydration */
+async function hydratePlayerInfoFromSeed(){
+  try{
+    const seed=await loadSeedRows();
+    const byId=new Map(state.players.map(p=>[String(p.id||uid(p.name)).toLowerCase(),p]));
+    const byName=new Map(state.players.map(p=>[String(p.name||'').toLowerCase(),p]));
+    seed.forEach(sp=>{
+      const p=byId.get(String(sp.id||uid(sp.name)).toLowerCase())||byName.get(String(sp.name||'').toLowerCase());
+      if(!p){state.players.push(sp);return;}
+      p.sources={...(p.sources||{}),...(sp.sources||{})};
+      p.player_info={...(parseInfo(p.notes)||{}),...(p.player_info||{}),...(sp.player_info||{})};
+      p.notes=JSON.stringify(p.player_info||{});
+      p.pos=p.pos||sp.pos;
+      p.team=p.team||sp.team;
+      if(!Number.isFinite(Number(p.custom_rank))||Number(p.custom_rank)>=900)p.custom_rank=sp.custom_rank;
+      if(!Number.isFinite(Number(p.tier))||Number(p.tier)>=90)p.tier=sp.tier;
+    });
+    localSave(false);
+  }catch(err){console.warn('player info hydration failed',err);}
+}
+async function loadLocalOrSeed(){
+  const saved=localStorage.getItem(STORE_KEY);
+  if(saved){
+    state=JSON.parse(saved);
+    await hydratePlayerInfoFromSeed();
+  }else{
+    const data=await(await fetch('data/seed-rankings.json')).json();
+    state.players=normalizeRows(data.players);
+    state.activePos='ALL';
+    await hydratePlayerInfoFromSeed();
+    localSave();
+  }
+}
+async function loadFromSupabase(){
+  const {data,error}=await sb.from(TABLE).select('*').order('custom_rank',{ascending:true});
+  if(error){setStatus('Supabase error: '+error.message,'bad');await loadLocalOrSeed();return;}
+  if(!data||!data.length){await loadLocalOrSeed();setStatus('Supabase connected, table empty. Select Seed Supabase to publish the starter board.','warn');return;}
+  const saved=localStorage.getItem(STORE_KEY),old=saved?JSON.parse(saved):{};
+  state.players=normalizeRows(data);state.activePos=old.activePos||'ALL';
+  await hydratePlayerInfoFromSeed();
+  await persistMany(state.players);
+  setStatus('Draft kit player notes and source rankings loaded into Supabase.','ok');
+}
+function getInfoForPlayer(p){
+  return p?.player_info||parseInfo(p?.notes)||{};
+}
+function playerInfoHtml(p){
+  const info=getInfoForPlayer(p);
+  const rows=[['Consensus Rank',info['Consensus Rank']??p.custom_rank],['Consensus Tier',info['Consensus Tier']??('Tier '+p.tier)],['FantasyPros ECR',info['FantasyPros ECR']??p.sources?.['FantasyPros ECR']??''],['Draft Sharks (3D)',info['Draft Sharks (3D)']??p.sources?.['Draft Sharks (3D)']??''],['Rotoworld Top 200',info['Rotoworld Top 200']??p.sources?.['Rotoworld Top 200']??''],['Avg ADP',info['Avg ADP']??p.sources?.['Avg ADP']??'']];
+  const note=info['Key Player Notes & Analysis']||'';
+  return `<h2>${esc(p.name)}</h2><div class="player-info-sub"><span class="pos ${p.pos}">${esc(p.pos)}</span> <strong>${esc(p.team||'')}</strong></div><div class="player-info-grid">${rows.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v??'')}</strong></div>`).join('')}</div><div class="player-info-notes"><h3>Key Player Notes & Analysis</h3><p>${esc(note||'No notes loaded for this player yet. Tap Refresh Sources once, then reopen notes.')}</p></div>`;
+}
+function render(){
+  renderChips();renderScarcity();const tbody=$('#board tbody');if(!tbody)return;tbody.innerHTML='';
+  for(const p of getFiltered()){
+    const cons=sourceAvg(p);const tr=document.createElement('tr');tr.className=`tier-${Math.min(14,Math.max(1,p.tier))} ${p.drafted?'drafted-row':''}`;
+    tr.innerHTML=`<td data-label="Player"><div class="compact-player-line"><span class="player-name">${esc(p.name)}</span><span class="pos ${p.pos}">${posRank(p)}</span><span class="compact-team">${esc(p.team)}</span><button class="tile-note-btn" type="button" data-info-id="${p.id}" title="View player notes">📝</button></div><div class="meta">${p.drafted?p.draftedBy==='Me'?'On my team':'Drafted by other':'Available'}</div><div class="mobile-metrics"><div class="metric-pill"><span>Rank</span><strong>${p.custom_rank}</strong></div><div class="metric-pill"><span>Tier</span><strong>${p.tier}</strong></div><div class="metric-pill"><span>Cons</span><strong>${fmt(cons)}</strong></div><div class="metric-pill"><span>Score</span><strong>${recommendationScore(p)}</strong></div></div></td><td data-label="Custom Ranking"><input class="rank-input" type="number" min="1" value="${p.custom_rank}" data-field="custom_rank" data-id="${p.id}"></td><td data-label="Tier"><input class="tier-input" type="number" min="1" value="${p.tier}" data-field="tier" data-id="${p.id}"></td><td data-label="Consensus"><strong>${fmt(cons)}</strong></td><td data-label="Score"><span class="score-pill">${recommendationScore(p)}</span></td><td data-label="Action"><div class="actions"><button class="mine" data-act="mine" data-id="${p.id}">Mine</button><button class="gone" data-act="gone" data-id="${p.id}">Gone</button><button class="edit" data-act="edit" data-id="${p.id}">Edit</button></div></td>`;
+    tbody.appendChild(tr);
+  }
+  $$('.actions button').forEach(b=>b.onclick=()=>act(b.dataset.act,b.dataset.id));
+  $$('.rank-input,.tier-input').forEach(inp=>inp.onchange=()=>inlineUpdate(inp));
+  $$('.tile-note-btn').forEach(btn=>btn.onclick=e=>{e.preventDefault();e.stopPropagation();showPlayerInfo(btn.dataset.infoId)});
+  renderSidebars();
+}
+async function refreshSourceRankings(){
+  await hydratePlayerInfoFromSeed();
+  await persistMany(state.players);
+  render();
+  if(!$('#rankEditorView')?.hidden)renderRankEditor();
+  refreshBestRecommendation();
+  setStatus('Draft kit source rankings and player notes refreshed and saved.','ok');
+}
+setTimeout(async()=>{await hydratePlayerInfoFromSeed();render();if(!$('#rankEditorView')?.hidden)renderRankEditor();},700);

@@ -13,7 +13,7 @@
 - Persists the merged notes JSON back to Supabase so FantasyPros ECR through Key Player Notes survive refreshes and devices.
 
 
-### v28 selection lock
-- Disabled text selection/copy/callout across the mobile app UX.
-- The only selectable text field is the Search bar.
-- This prevents player names, notes, ranks, and tiles from being treated like copyable text during hard-press and drag interactions.
+### v29 draft board notes icon
+- Replaced Draft Board hard-press notes with a visible 📝 icon on the player-name line.
+- Added forced source/player-info hydration from data/seed-rankings.json for both local storage and existing Supabase rows.
+- Notes popup now pulls FantasyPros ECR through Key Player Notes & Analysis directly from hydrated player_info.
