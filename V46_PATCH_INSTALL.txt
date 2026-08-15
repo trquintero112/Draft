@@ -1,0 +1,6 @@
+Upload these three files over your current v45 site folder:
+- v46-stable-drag-fix.js
+- v46-stable-drag-fix.css
+- index.html
+
+This index.html keeps your current v45 app/styles loaded and adds the v46 overlay after them. No code editing needed.
