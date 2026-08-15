@@ -11,7 +11,7 @@
     <div>
       <p class="eyebrow">2026/2027 NFL Fantasy Draft</p>
       <h1>Fantasy Draft War Room</h1>
-      <p class="sub">Shared Supabase draft board with editable custom rankings, consensus views, positional scarcity, recommendations, live draft tracking, and export tools.</p>
+      <p class="sub">Shared Supabase draft board with team-aware recommendations, sourced K/DST support, clean imports, mobile cards, and live draft tracking.</p>
     </div>
     <div class="hero-card">
       <div class="stat"><span id="availableCount">0</span><label>Available</label></div>
@@ -21,86 +21,89 @@
   </header>
 
   <main class="page">
-    <section class="panel controls-top">
-      <div class="control-group wide">
-        <label>Search player/team</label>
-        <input id="search" type="search" placeholder="Bijan, BUF, TE..." />
-      </div>
-      <div class="control-group">
-        <label>Position</label>
-        <div class="chips" id="positionChips"></div>
-      </div>
-      <div class="control-group">
-        <label>Show</label>
-        <select id="statusFilter"><option value="available">Available only</option><option value="all">All players</option><option value="mine">My team</option><option value="drafted">Drafted by anyone</option></select>
-      </div>
-      <div class="control-group">
-        <label>Sort</label>
-        <select id="sortBy"><option value="custom_rank">Custom Ranking</option><option value="recommendation">Recommendation Score</option><option value="tier">Tier then Custom Ranking</option><option value="adp">Consensus Rank</option><option value="pos">Position</option></select>
-      </div>
-      <div class="control-buttons">
-        <button id="bestBtn">Best Available</button>
-        <button id="undoLastBtn">Undo Last Pick</button>
-        <button id="seedSupabaseBtn">Seed Supabase</button><button id="refreshSourcesBtn">Refresh Source Rankings</button>
-        <button id="exportBtn">Export JSON</button>
+    <section class="panel command-center">
+      <section class="top-widgets">
+        <div class="recommendation-card inner-card">
+          <div class="card-title-row"><h2>Best Available Recommendation</h2></div>
+          <div id="recommendationBox" class="recommendation-box">Recommendation will populate after players load.</div>
+          <button id="chooseRecommendedBtn" class="mine choose-rec" hidden>Choose Player</button>
+        </div>
+        <div class="scarcity-card inner-card">
+          <h2>Roster + Positional Scarcity</h2>
+          <div id="rosterBuild" class="roster-build"></div>
+          <div id="scarcityGrid" class="scarcity-grid"></div>
+        </div>
+      </section>
+
+      <section class="filter-bar">
+        <div class="control-group search-box">
+          <label>Search</label>
+          <input id="search" type="search" placeholder="Bijan, BUF, TE, Texans..." />
+        </div>
+        <div class="control-group pos-box">
+          <label>Position</label>
+          <div class="chips" id="positionChips"></div>
+        </div>
+        <div class="control-group">
+          <label>Show</label>
+          <select id="statusFilter"><option value="available">Available only</option><option value="all">All players</option><option value="mine">My team</option><option value="drafted">Drafted by anyone</option></select>
+        </div>
+        <div class="control-group">
+          <label>Sort</label>
+          <select id="sortBy"><option value="custom_rank">Custom Ranking</option><option value="recommendation">Recommendation Score</option><option value="tier">Tier then Custom Ranking</option><option value="adp">Consensus Rank</option><option value="pos">Position</option></select>
+        </div>
+        <div class="control-group">
+          <label>Source View</label>
+          <select id="sourceView"><option value="all">All Sources</option><option>FantasyPros</option><option>Draft Sharks</option><option>ESPN</option><option>CBS/SportsLine</option><option>Yahoo</option><option>Sleeper</option><option>RotoBaller Half-PPR Aug 8</option><option>RotoBaller PPR Jul 13</option><option>FantasyPros K</option><option>Draft Sharks K</option><option>SportsBrackets K</option><option>SportsBrackets DST</option><option>SI DST</option><option>Custom Sheet</option></select>
+        </div>
+      </section>
+
+      <section class="button-row">
+        <button id="bestBtn">Refresh Rec</button>
+        <button id="undoLastBtn">Undo Last</button>
+        <button id="resetDraftBtn" class="danger">Reset All Draft</button>
+        <button id="seedSupabaseBtn">Seed Supabase</button>
+        <button id="refreshSourcesBtn">Refresh Sources</button>
         <button id="exportCsvBtn">Export CSV</button>
-        <button id="exportXlsBtn">Export Excel</button>
         <button id="printPdfBtn">Print/PDF</button>
-        <label class="file-btn">Import Save<input id="importJson" type="file" accept="application/json" hidden /></label>
-        <label class="file-btn">Import CSV<input id="importCsv" type="file" accept=".csv,text/csv" hidden /></label>
-        <button id="resetBtn" class="danger">Local Reset</button>
-      </div>
-      <div class="control-group source-filter"><label>Source View</label><select id="sourceView"><option value="all">All Sources</option><option>FantasyPros</option><option>Draft Sharks</option><option>ESPN</option><option>CBS/SportsLine</option><option>Yahoo</option><option>Sleeper</option><option>RotoBaller</option><option>Footballguys</option><option>RotoWire</option><option>Establish The Run</option><option>Custom Sheet</option></select></div><div id="syncStatus" class="sync-status">Checking Supabase connection...</div>
-    </section>
-
-    <section class="panel source-panel"><h2>Draft Sources</h2><p class="hint">Supported source slots: FantasyPros, Draft Sharks, ESPN, CBS/SportsLine, Yahoo, Sleeper, RotoBaller, Footballguys, RotoWire, Establish The Run, and Custom Sheet. Import any source with the CSV format and it will be added to the Sources column and Consensus Rank.</p><div id="sourceSummary" class="source-summary"></div></section>
-
-    <section class="insight-grid">
-      <section class="panel recommendation-card">
-        <div class="card-title-row"><h2>Best Available Recommendation</h2><button id="draftRecommendedBtn" class="mine">Draft Recommended</button></div>
-        <div id="recommendationBox" class="recommendation-box">Select Best Available to calculate a pick.</div>
+        <label class="file-btn">Import<input id="importAny" type="file" accept=".csv,.json,application/json,text/csv" hidden /></label>
       </section>
-      <section class="panel scarcity-card">
-        <h2>Positional Scarcity</h2>
-        <div id="scarcityGrid" class="scarcity-grid"></div>
-      </section>
+      <div id="syncStatus" class="sync-status">Checking Supabase connection...</div>
     </section>
 
     <section class="content-grid">
       <section class="panel board-wrap">
-        <div class="toolbar">
-          <h2>Draft Board</h2>
-          <div class="mini"><span id="lastSaved">Not saved yet</span></div>
-        </div>
-        <div class="table-wrap">
-          <table id="board"><thead><tr><th>Custom Ranking</th><th>Consensus</th><th>Tier</th><th>Player</th><th>Pos</th><th>Team</th><th>Sources</th><th>Notes</th><th>Score</th><th>Action</th></tr></thead><tbody></tbody></table>
-        </div>
+        <details id="draftBoardDetails" open>
+          <summary class="section-summary">Draft Board</summary>
+          <div class="toolbar"><div></div><div class="mini"><span id="lastSaved">Not saved yet</span></div></div>
+          <div class="table-wrap">
+            <table id="board"><thead><tr><th>Custom Ranking</th><th>Consensus</th><th>Tier</th><th>Player</th><th>Pos</th><th>Team</th><th>Sources</th><th>Notes</th><th>Score</th><th>Action</th></tr></thead><tbody></tbody></table>
+          </div>
+        </details>
       </section>
       <aside class="panel my-team">
-        <details open>
-          <summary>My Draft</summary>
-          <ol id="myTeam"></ol>
-        </details>
-        <details open>
-          <summary>Live Draft Board</summary>
-          <ol id="liveDraftBoard"></ol>
-        </details>
-        <details open>
-          <summary>Drafted Log</summary>
-          <ol id="draftedLog"></ol>
-        </details>
+        <details open><summary>My Draft</summary><ol id="myTeam"></ol></details>
+        <details open><summary>Live Draft Board</summary><ol id="liveDraftBoard"></ol></details>
+        <details open><summary>Drafted Log</summary><ol id="draftedLog"></ol></details>
       </aside>
+    </section>
+
+    <section class="panel source-panel bottom-source-panel">
+      <details>
+        <summary>Draft Sources</summary>
+        <p class="hint">Source slots are loaded into the Sources column and Consensus Rank. Use the single Import button for CSV source sheets or JSON backups.</p>
+        <div id="sourceSummary" class="source-summary"></div>
+      </details>
     </section>
   </main>
 
   <dialog id="editDialog">
     <form method="dialog" id="editForm">
       <h2>Edit Player</h2>
-      <p class="hint">Rank, tier, notes, and draft status save to Supabase when configured, so everyone sees the update.</p>
       <input type="hidden" id="editId" />
       <label>Name<input id="editName" /></label>
       <label>Team<input id="editTeam" /></label>
-      <label>Position<select id="editPos"><option>QB</option><option>RB</option><option>WR</option><option>TE</option><option>DST</option><option>K</option></select></label>
+      <label>Position<select id="editPos"><option>QB</option><option>RB</option><option>WR</option><option>TE</option><option>K</option><option>DST</option></select></label>
       <label>Custom Ranking<input id="editRank" type="number" min="1" /></label>
       <label>Tier<input id="editTier" type="number" min="1" /></label>
       <label>Notes<textarea id="editNotes" rows="4"></textarea></label>
