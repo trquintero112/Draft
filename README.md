@@ -1,3 +1,3 @@
-# Draft War Room v44
+# Draft War Room v45
 
-Reverted to v38 layout structure and fixed Edit Rankings drag/drop. Sleeper stars now stay inline and yellow for all sleeper picks, including existing Excel/added sleepers and manual sleepers.
+Full-width draft board with v38 layout preserved, fixed Edit Rankings drag/drop for desktop and iPhone, and inline yellow sleeper stars.
