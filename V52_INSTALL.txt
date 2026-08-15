@@ -1,0 +1,6 @@
+Upload all three files over the current site folder:
+- index.html
+- v52-edit-rankings-alignment-fix.js
+- v52-edit-rankings-alignment-fix.css
+
+This keeps the working v50/v51 functionality and only fixes Edit Rankings alignment plus the notes icon style.
