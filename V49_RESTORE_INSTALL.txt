@@ -1,0 +1,8 @@
+Upload only this index.html over your current index.html.
+
+This removes the v47/v48 overlay from the page load path and restores the last working data-loading chain:
+- styles.css?v=45
+- config.js?v=45
+- app.js?v=45
+
+You can leave the v46/v47/v48 overlay JS/CSS files in the folder; this index does not load them.
