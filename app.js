@@ -180,3 +180,96 @@ async function refreshSourceRankings(){
   refreshBestRecommendation();
   setStatus('Excel rankings and notes were forced into the site.','ok');
 }
+
+
+/* v34 EXCEL ONLY SOURCE OF TRUTH
+   This intentionally ignores old/original Supabase/local seed ranking rows.
+   The Excel file is the only source for player list, rank, tier, sources, and notes.
+   Supabase is used only to preserve live draft state: drafted, draftedBy, and pick. */
+let EXCEL_SEED_V34=[];
+let EXCEL_BY_ID_V34=new Map();
+let EXCEL_BY_NAME_V34=new Map();
+function excelKeyV34(v){return String(v||'').toLowerCase().trim();}
+async function loadExcelSeedV34(){
+  if(EXCEL_SEED_V34.length)return EXCEL_SEED_V34;
+  const data=await (await fetch('excel-seed-v34.json?v=34-' + Date.now())).json();
+  EXCEL_SEED_V34=normalizeRows(data.players||[]);
+  EXCEL_BY_ID_V34=new Map();EXCEL_BY_NAME_V34=new Map();
+  EXCEL_SEED_V34.forEach(p=>{EXCEL_BY_ID_V34.set(excelKeyV34(p.id||uid(p.name)),p);EXCEL_BY_NAME_V34.set(excelKeyV34(p.name),p);});
+  return EXCEL_SEED_V34;
+}
+function excelSeedForV34(p){return EXCEL_BY_ID_V34.get(excelKeyV34(p?.id||uid(p?.name)))||EXCEL_BY_NAME_V34.get(excelKeyV34(p?.name));}
+function buildExcelOnlyStateV34(existingRows=[]){
+  const existing=normalizeRows(existingRows||[]);
+  const byId=new Map(existing.map(p=>[excelKeyV34(p.id||uid(p.name)),p]));
+  const byName=new Map(existing.map(p=>[excelKeyV34(p.name),p]));
+  state.players=EXCEL_SEED_V34.map(sp=>{
+    const old=byId.get(excelKeyV34(sp.id||uid(sp.name)))||byName.get(excelKeyV34(sp.name));
+    return {
+      ...sp,
+      // Excel is source of truth for rank/tier/sources/notes.
+      custom_rank: sp.custom_rank,
+      tier: sp.tier,
+      sources: {...(sp.sources||{})},
+      player_info: {...(sp.player_info||{})},
+      notes: JSON.stringify(sp.player_info||{}),
+      drafted: !!old?.drafted,
+      draftedBy: old?.draftedBy||'',
+      pick: old?.pick??null
+    };
+  });
+  state.activePos=state.activePos||'ALL';
+  localSave(false);
+}
+function getInfoForPlayer(p){
+  const sp=excelSeedForV34(p);
+  return {...(sp?.player_info||{})};
+}
+async function init(){
+  bind();
+  await loadExcelSeedV34();
+  await connect();
+  render();
+  setupRankEditor();
+  refreshBestRecommendation();
+  selectionGuard();
+}
+async function loadLocalOrSeed(){
+  // Ignore previous local storage seed/rank rows. Preserve draft state only.
+  const saved=localStorage.getItem(STORE_KEY);
+  let oldRows=[];
+  if(saved){try{oldRows=(JSON.parse(saved).players||[]).map(p=>toDb(p));}catch(e){oldRows=[];}}
+  buildExcelOnlyStateV34(oldRows);
+}
+async function loadSeedRows(){return await loadExcelSeedV34();}
+async function loadFromSupabase(){
+  const {data,error}=await sb.from(TABLE).select('*').order('custom_rank',{ascending:true});
+  if(error)throw error;
+  buildExcelOnlyStateV34(data||[]);
+  // Push Excel-only source into Supabase immediately if permitted.
+  await persistMany(state.players,true);
+  setStatus('Loaded ONLY the Excel seed and pushed it to Supabase.','ok');
+}
+async function seedSupabase(){
+  if(!usingSupabase||!sb){alert('Supabase is not connected. Check config.js.');return;}
+  buildExcelOnlyStateV34(state.players.map(p=>toDb(p)));
+  await persistMany(state.players,true);
+  render();
+  if(!$('#rankEditorView')?.hidden)renderRankEditor();
+  refreshBestRecommendation();
+  setStatus('Supabase overwritten with Excel-only rankings, sources, and notes.','ok');
+}
+async function refreshSourceRankings(){
+  buildExcelOnlyStateV34(state.players.map(p=>toDb(p)));
+  await persistMany(state.players,true);
+  render();
+  if(!$('#rankEditorView')?.hidden)renderRankEditor();
+  refreshBestRecommendation();
+  setStatus('Excel-only rankings, sources, and notes reloaded.','ok');
+}
+function playerInfoHtml(p){
+  const info=getInfoForPlayer(p);
+  const rows=[['Consensus Rank',info['Consensus Rank']??p.custom_rank],['Consensus Tier',info['Consensus Tier']??('Tier '+p.tier)],['FantasyPros ECR',info['FantasyPros ECR']??''],['Draft Sharks (3D)',info['Draft Sharks (3D)']??''],['Rotoworld Top 200',info['Rotoworld Top 200']??''],['Avg ADP',info['Avg ADP']??'']];
+  const note=info['Key Player Notes & Analysis']||'';
+  return `<h2>${esc(p.name)}</h2><div class="player-info-sub"><span class="pos ${p.pos}">${esc(p.pos)}</span> <strong>${esc(p.team||'')}</strong></div><div class="player-info-grid">${rows.map(([k,v])=>`<div><span>${esc(k)}</span><strong>${esc(v??'')}</strong></div>`).join('')}</div><div class="player-info-notes"><h3>Key Player Notes & Analysis</h3><p>${esc(note||'No notes loaded from Excel for this player.')}</p></div>`;
+}

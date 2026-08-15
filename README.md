@@ -25,3 +25,10 @@
 - Rebuilt seed-rankings.json and data/seed-rankings.json from the Excel All Players Ranking tab.
 - On load, if Supabase/local rows are stale, the app now replaces the base ranking/tier/source/player notes with the Excel seed while preserving only drafted status, draftedBy, and pick.
 - No Supabase login is required in the browser UI if the publishable key has insert/update/select permissions through RLS. The app attempts the migration automatically on load, and Seed Supabase forces it again.
+
+
+### v34 Excel-only source of truth
+- Added excel-seed-v34.json generated directly from Fantasy_Football_2026_27_Draft_Kit.xlsx, All Players Ranking.
+- App now fetches excel-seed-v34.json directly and ignores old/local/Supabase ranking rows for rank, tier, sources, and notes.
+- Supabase preserves only live draft state: drafted, draftedBy, and pick.
+- On load, app attempts to push the Excel-only seed into Supabase automatically if permissions allow.
