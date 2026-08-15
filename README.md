@@ -37,9 +37,7 @@ Use columns:
 Each import source is stored in the `sources` object and contributes to the Consensus column.
 
 
-### Latest v5 updates
-- Draft Board is collapsible with an arrow, matching the My Draft style.
-- Best recommendation auto-refreshes after every pick, undo, rank edit, tier edit, source refresh, and SuperFlex toggle.
-- Recommendation logic now accounts for current roster composition and SuperFlex mode.
-- Added K and DST support in filters, editor, scarcity tiles, and seed data.
-- Added a SuperFlex toggle and QB-heavy recommendation logic when enabled.
+### Latest v6 updates
+- Removed SuperFlex toggle and SuperFlex-specific recommendation logic.
+- Added sourced Kicker and DST rankings into seed data using publicly available ranking snippets.
+- Added Reset All Draft button with two separate confirmations before clearing drafted status and pick numbers.

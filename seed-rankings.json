@@ -1839,67 +1839,9 @@
       "custom_rank": 121,
       "tier": 11,
       "sources": {
-        "Special Teams Seed": 121
-      },
-      "notes": "",
-      "drafted": false,
-      "draftedBy": ""
-    },
-    {
-      "id": "justin-tucker",
-      "name": "Justin Tucker",
-      "team": "BAL",
-      "pos": "K",
-      "rank": 122,
-      "custom_rank": 122,
-      "tier": 11,
-      "sources": {
-        "Special Teams Seed": 122
-      },
-      "notes": "",
-      "drafted": false,
-      "draftedBy": ""
-    },
-    {
-      "id": "jake-bates",
-      "name": "Jake Bates",
-      "team": "DET",
-      "pos": "K",
-      "rank": 123,
-      "custom_rank": 123,
-      "tier": 11,
-      "sources": {
-        "Special Teams Seed": 123
-      },
-      "notes": "",
-      "drafted": false,
-      "draftedBy": ""
-    },
-    {
-      "id": "cameron-dicker",
-      "name": "Cameron Dicker",
-      "team": "LAC",
-      "pos": "K",
-      "rank": 124,
-      "custom_rank": 124,
-      "tier": 11,
-      "sources": {
-        "Special Teams Seed": 124
-      },
-      "notes": "",
-      "drafted": false,
-      "draftedBy": ""
-    },
-    {
-      "id": "harrison-butker",
-      "name": "Harrison Butker",
-      "team": "KC",
-      "pos": "K",
-      "rank": 125,
-      "custom_rank": 125,
-      "tier": 11,
-      "sources": {
-        "Special Teams Seed": 125
+        "FantasyPros K": 1,
+        "Draft Sharks K": 1,
+        "SportsBrackets K": 1
       },
       "notes": "",
       "drafted": false,
@@ -1910,11 +1852,114 @@
       "name": "Ka'imi Fairbairn",
       "team": "HOU",
       "pos": "K",
+      "rank": 122,
+      "custom_rank": 122,
+      "tier": 11,
+      "sources": {
+        "FantasyPros K": 3,
+        "Draft Sharks K": 3,
+        "SportsBrackets K": 2
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "cameron-dicker",
+      "name": "Cameron Dicker",
+      "team": "LAC",
+      "pos": "K",
+      "rank": 123,
+      "custom_rank": 123,
+      "tier": 11,
+      "sources": {
+        "FantasyPros K": 2,
+        "Draft Sharks K": 2,
+        "SportsBrackets K": 3
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jason-myers",
+      "name": "Jason Myers",
+      "team": "SEA",
+      "pos": "K",
+      "rank": 124,
+      "custom_rank": 124,
+      "tier": 11,
+      "sources": {
+        "FantasyPros K": 5,
+        "SportsBrackets K": 4
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "cam-little",
+      "name": "Cam Little",
+      "team": "JAC",
+      "pos": "K",
+      "rank": 125,
+      "custom_rank": 125,
+      "tier": 11,
+      "sources": {
+        "FantasyPros K": 4,
+        "Draft Sharks K": 7,
+        "SportsBrackets K": 5
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "eddy-pineiro",
+      "name": "Eddy Pineiro",
+      "team": "SF",
+      "pos": "K",
       "rank": 126,
       "custom_rank": 126,
       "tier": 11,
       "sources": {
-        "Special Teams Seed": 126
+        "FantasyPros K": 6,
+        "Draft Sharks K": 6,
+        "SportsBrackets K": 6
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "tyler-loop",
+      "name": "Tyler Loop",
+      "team": "BAL",
+      "pos": "K",
+      "rank": 127,
+      "custom_rank": 127,
+      "tier": 11,
+      "sources": {
+        "FantasyPros K": 7,
+        "Draft Sharks K": 4,
+        "SportsBrackets K": 7
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "cairo-santos",
+      "name": "Cairo Santos",
+      "team": "CHI",
+      "pos": "K",
+      "rank": 128,
+      "custom_rank": 128,
+      "tier": 11,
+      "sources": {
+        "FantasyPros K": 10,
+        "Draft Sharks K": 5,
+        "SportsBrackets K": 8
       },
       "notes": "",
       "drafted": false,
@@ -1925,11 +1970,80 @@
       "name": "Evan McPherson",
       "team": "CIN",
       "pos": "K",
-      "rank": 127,
-      "custom_rank": 127,
-      "tier": 11,
+      "rank": 129,
+      "custom_rank": 129,
+      "tier": 12,
       "sources": {
-        "Special Teams Seed": 127
+        "FantasyPros K": 8,
+        "Draft Sharks K": 23,
+        "SportsBrackets K": 9
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jake-bates",
+      "name": "Jake Bates",
+      "team": "DET",
+      "pos": "K",
+      "rank": 130,
+      "custom_rank": 130,
+      "tier": 12,
+      "sources": {
+        "FantasyPros K": 9,
+        "Draft Sharks K": 9,
+        "SportsBrackets K": 10
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "harrison-mevis",
+      "name": "Harrison Mevis",
+      "team": "LAR",
+      "pos": "K",
+      "rank": 131,
+      "custom_rank": 131,
+      "tier": 12,
+      "sources": {
+        "FantasyPros K": 12,
+        "Draft Sharks K": 10,
+        "SportsBrackets K": 11
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "andy-borregales",
+      "name": "Andy Borregales",
+      "team": "NE",
+      "pos": "K",
+      "rank": 132,
+      "custom_rank": 132,
+      "tier": 12,
+      "sources": {
+        "FantasyPros K": 11,
+        "Draft Sharks K": 14,
+        "SportsBrackets K": 12
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "harrison-butker",
+      "name": "Harrison Butker",
+      "team": "KC",
+      "pos": "K",
+      "rank": 133,
+      "custom_rank": 133,
+      "tier": 12,
+      "sources": {
+        "FantasyPros K": 15,
+        "Draft Sharks K": 12
       },
       "notes": "",
       "drafted": false,
@@ -1940,101 +2054,76 @@
       "name": "Jake Elliott",
       "team": "PHI",
       "pos": "K",
-      "rank": 128,
-      "custom_rank": 128,
-      "tier": 11,
-      "sources": {
-        "Special Teams Seed": 128
-      },
-      "notes": "",
-      "drafted": false,
-      "draftedBy": ""
-    },
-    {
-      "id": "pittsburgh-steelers",
-      "name": "Pittsburgh Steelers",
-      "team": "PIT",
-      "pos": "DST",
-      "rank": 129,
-      "custom_rank": 129,
-      "tier": 11,
-      "sources": {
-        "Special Teams Seed": 129
-      },
-      "notes": "",
-      "drafted": false,
-      "draftedBy": ""
-    },
-    {
-      "id": "baltimore-ravens",
-      "name": "Baltimore Ravens",
-      "team": "BAL",
-      "pos": "DST",
-      "rank": 130,
-      "custom_rank": 130,
-      "tier": 11,
-      "sources": {
-        "Special Teams Seed": 130
-      },
-      "notes": "",
-      "drafted": false,
-      "draftedBy": ""
-    },
-    {
-      "id": "cleveland-browns",
-      "name": "Cleveland Browns",
-      "team": "CLE",
-      "pos": "DST",
-      "rank": 131,
-      "custom_rank": 131,
-      "tier": 11,
-      "sources": {
-        "Special Teams Seed": 131
-      },
-      "notes": "",
-      "drafted": false,
-      "draftedBy": ""
-    },
-    {
-      "id": "dallas-cowboys",
-      "name": "Dallas Cowboys",
-      "team": "DAL",
-      "pos": "DST",
-      "rank": 132,
-      "custom_rank": 132,
-      "tier": 11,
-      "sources": {
-        "Special Teams Seed": 132
-      },
-      "notes": "",
-      "drafted": false,
-      "draftedBy": ""
-    },
-    {
-      "id": "new-york-jets",
-      "name": "New York Jets",
-      "team": "NYJ",
-      "pos": "DST",
-      "rank": 133,
-      "custom_rank": 133,
-      "tier": 11,
-      "sources": {
-        "Special Teams Seed": 133
-      },
-      "notes": "",
-      "drafted": false,
-      "draftedBy": ""
-    },
-    {
-      "id": "san-francisco-49ers",
-      "name": "San Francisco 49ers",
-      "team": "SF",
-      "pos": "DST",
       "rank": 134,
       "custom_rank": 134,
+      "tier": 12,
+      "sources": {
+        "FantasyPros K": 19,
+        "Draft Sharks K": 20
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "houston-texans",
+      "name": "Houston Texans",
+      "team": "HOU",
+      "pos": "DST",
+      "rank": 135,
+      "custom_rank": 135,
       "tier": 11,
       "sources": {
-        "Special Teams Seed": 134
+        "SportsBrackets DST": 1,
+        "SI DST": 2
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "denver-broncos",
+      "name": "Denver Broncos",
+      "team": "DEN",
+      "pos": "DST",
+      "rank": 136,
+      "custom_rank": 136,
+      "tier": 11,
+      "sources": {
+        "SportsBrackets DST": 2,
+        "SI DST": 4
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "seattle-seahawks",
+      "name": "Seattle Seahawks",
+      "team": "SEA",
+      "pos": "DST",
+      "rank": 137,
+      "custom_rank": 137,
+      "tier": 11,
+      "sources": {
+        "SportsBrackets DST": 3,
+        "SI DST": 1
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "los-angeles-rams",
+      "name": "Los Angeles Rams",
+      "team": "LAR",
+      "pos": "DST",
+      "rank": 138,
+      "custom_rank": 138,
+      "tier": 11,
+      "sources": {
+        "SportsBrackets DST": 4,
+        "SI DST": 3
       },
       "notes": "",
       "drafted": false,
@@ -2045,11 +2134,124 @@
       "name": "Philadelphia Eagles",
       "team": "PHI",
       "pos": "DST",
-      "rank": 135,
-      "custom_rank": 135,
-      "tier": 11,
+      "rank": 139,
+      "custom_rank": 139,
+      "tier": 12,
       "sources": {
-        "Special Teams Seed": 135
+        "SportsBrackets DST": 5,
+        "SI DST": 6
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "new-england-patriots",
+      "name": "New England Patriots",
+      "team": "NE",
+      "pos": "DST",
+      "rank": 140,
+      "custom_rank": 140,
+      "tier": 12,
+      "sources": {
+        "SportsBrackets DST": 6,
+        "SI DST": 12
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "minnesota-vikings",
+      "name": "Minnesota Vikings",
+      "team": "MIN",
+      "pos": "DST",
+      "rank": 141,
+      "custom_rank": 141,
+      "tier": 12,
+      "sources": {
+        "SportsBrackets DST": 7,
+        "SI DST": 8
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "jacksonville-jaguars",
+      "name": "Jacksonville Jaguars",
+      "team": "JAC",
+      "pos": "DST",
+      "rank": 142,
+      "custom_rank": 142,
+      "tier": 12,
+      "sources": {
+        "SportsBrackets DST": 8,
+        "SI DST": 7
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "pittsburgh-steelers",
+      "name": "Pittsburgh Steelers",
+      "team": "PIT",
+      "pos": "DST",
+      "rank": 143,
+      "custom_rank": 143,
+      "tier": 13,
+      "sources": {
+        "SportsBrackets DST": 9,
+        "SI DST": 9
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "los-angeles-chargers",
+      "name": "Los Angeles Chargers",
+      "team": "LAC",
+      "pos": "DST",
+      "rank": 144,
+      "custom_rank": 144,
+      "tier": 13,
+      "sources": {
+        "SportsBrackets DST": 10,
+        "SI DST": 5
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "baltimore-ravens",
+      "name": "Baltimore Ravens",
+      "team": "BAL",
+      "pos": "DST",
+      "rank": 145,
+      "custom_rank": 145,
+      "tier": 13,
+      "sources": {
+        "SportsBrackets DST": 11,
+        "SI DST": 11
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "green-bay-packers",
+      "name": "Green Bay Packers",
+      "team": "GB",
+      "pos": "DST",
+      "rank": 146,
+      "custom_rank": 146,
+      "tier": 13,
+      "sources": {
+        "SportsBrackets DST": 12,
+        "SI DST": 17
       },
       "notes": "",
       "drafted": false,
@@ -2060,11 +2262,71 @@
       "name": "Kansas City Chiefs",
       "team": "KC",
       "pos": "DST",
-      "rank": 136,
-      "custom_rank": 136,
-      "tier": 11,
+      "rank": 147,
+      "custom_rank": 147,
+      "tier": 13,
       "sources": {
-        "Special Teams Seed": 136
+        "SI DST": 10
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "chicago-bears",
+      "name": "Chicago Bears",
+      "team": "CHI",
+      "pos": "DST",
+      "rank": 148,
+      "custom_rank": 148,
+      "tier": 13,
+      "sources": {
+        "SI DST": 13
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "buffalo-bills",
+      "name": "Buffalo Bills",
+      "team": "BUF",
+      "pos": "DST",
+      "rank": 149,
+      "custom_rank": 149,
+      "tier": 14,
+      "sources": {
+        "SI DST": 14
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "detroit-lions",
+      "name": "Detroit Lions",
+      "team": "DET",
+      "pos": "DST",
+      "rank": 150,
+      "custom_rank": 150,
+      "tier": 14,
+      "sources": {
+        "SI DST": 15
+      },
+      "notes": "",
+      "drafted": false,
+      "draftedBy": ""
+    },
+    {
+      "id": "san-francisco-49ers",
+      "name": "San Francisco 49ers",
+      "team": "SF",
+      "pos": "DST",
+      "rank": 151,
+      "custom_rank": 151,
+      "tier": 14,
+      "sources": {
+        "SI DST": 16
       },
       "notes": "",
       "drafted": false,
@@ -2082,6 +2344,11 @@
     "Footballguys",
     "RotoWire",
     "Establish The Run",
-    "Custom Sheet"
+    "Custom Sheet",
+    "FantasyPros K",
+    "Draft Sharks K",
+    "SportsBrackets K",
+    "SportsBrackets DST",
+    "SI DST"
   ]
 }
