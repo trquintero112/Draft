@@ -6,3 +6,8 @@
 - Draft Board: hard-press a player tile to view source rankings and notes.
 - Edit Rankings: tap the notepad button to view the same player info.
 - Long-press rows in Edit Rankings to reorder custom rankings.
+
+
+## v27 Supabase hydration fix
+- Merges draft-kit player_info from data/seed-rankings.json into existing Supabase rows by id/name.
+- Persists the merged notes JSON back to Supabase so FantasyPros ECR through Key Player Notes survive refreshes and devices.

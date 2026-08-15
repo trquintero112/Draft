@@ -51,3 +51,53 @@ function snapshotRanks(){return state.players.map(p=>({id:p.id,custom_rank:p.cus
 let dragGhost=null,touchState={};function isInteractive(el){return !!el.closest('input,button,select,textarea,.rank-tab,.rank-editor-actions-top')}function rankTouchStart(e){if(e.touches.length!==1||isInteractive(e.target))return;const row=e.currentTarget,t=e.touches[0];touchState={row,startX:t.clientX,startY:t.clientY,active:false,timer:setTimeout(()=>activateDrag(row,t.clientX,t.clientY),320)};row.classList.add('press-arming')}function rankTouchMove(e){if(!touchState.row)return;const t=e.touches[0],dx=Math.abs(t.clientX-touchState.startX),dy=Math.abs(t.clientY-touchState.startY);if(!touchState.active&&(dx>24||dy>24)){clearTimeout(touchState.timer);touchState.row.classList.remove('press-arming');touchState={};return}if(touchState.active){e.preventDefault();moveDrag(t.clientX,t.clientY)}}function rankTouchEnd(e){clearTimeout(touchState.timer);if(touchState.row)touchState.row.classList.remove('press-arming');if(touchState.active){e.preventDefault();finishDrag()}touchState={}}function rankTouchCancel(){rankTouchEnd({preventDefault(){}})}function rankPointerStart(e){if(('ontouchstart'in window)||isInteractive(e.target))return;if(e.button!==undefined&&e.button!==0)return;const row=e.currentTarget;e.preventDefault();activateDrag(row,e.clientX,e.clientY);const move=ev=>{ev.preventDefault();moveDrag(ev.clientX,ev.clientY)},up=()=>{document.removeEventListener('pointermove',move);document.removeEventListener('pointerup',up);finishDrag()};document.addEventListener('pointermove',move,{passive:false});document.addEventListener('pointerup',up,{once:true})}
 function activateDrag(row,x,y){if(rankEditor.dragging)return;rankEditor.dragging=true;touchState.active=true;rankEditor.dragId=row.dataset.rankId;pushUndo();if(navigator.vibrate)navigator.vibrate([22]);row.classList.remove('press-arming');row.classList.add('rank-placeholder');document.body.classList.add('rank-dragging');dragGhost=makeGhost(row,x,y);moveGhost(x,y)}function makeGhost(row,x,y){const r=row.getBoundingClientRect(),g=row.cloneNode(true);g.classList.add('rank-drag-ghost');g.style.width=r.width+'px';g.style.left=r.left+'px';g.style.top=r.top+'px';g.dataset.offsetX=x-r.left;g.dataset.offsetY=y-r.top;document.body.appendChild(g);return g}function moveGhost(x,y){if(!dragGhost)return;dragGhost.style.left=(x-Number(dragGhost.dataset.offsetX))+'px';dragGhost.style.top=(y-Number(dragGhost.dataset.offsetY))+'px'}function moveDrag(x,y){moveGhost(x,y);if(y<84)window.scrollBy(0,-18);if(y>window.innerHeight-84)window.scrollBy(0,18);const row=document.querySelector(`.rank-editor-row[data-rank-id="${rankEditor.dragId}"]`);if(!row)return;if(dragGhost)dragGhost.style.display='none';const el=document.elementFromPoint(x,y);if(dragGhost)dragGhost.style.display='';const target=el?.closest?.('.rank-editor-row');if(target&&target!==row&&target.parentNode===row.parentNode){const rect=target.getBoundingClientRect(),before=y<rect.top+rect.height/2;target.parentNode.insertBefore(row,before?target:target.nextSibling)}}async function finishDrag(){const row=document.querySelector(`.rank-editor-row[data-rank-id="${rankEditor.dragId}"]`);if(dragGhost){dragGhost.remove();dragGhost=null}if(row)row.classList.remove('rank-placeholder','press-arming');document.body.classList.remove('rank-dragging');rankEditor.dragging=false;await commitLiveOrder()}async function commitLiveOrder(){const ids=$$('#rankEditorRows .rank-editor-row').map(r=>r.dataset.rankId),vis=rankRows(),slots=vis.map(p=>p.custom_rank).sort((a,b)=>a-b);if(rankEditor.active==='ALL')ids.forEach((id,i)=>{const p=state.players.find(x=>x.id===id);if(p)p.custom_rank=i+1});else ids.forEach((id,i)=>{const p=state.players.find(x=>x.id===id);if(p)p.custom_rank=slots[i]});await persistMany(state.players);render();renderRankEditor();refreshBestRecommendation();setStatus('Custom ranking order saved.','ok')}async function rankTierChange(e){const p=state.players.find(x=>x.id===e.target.dataset.tierId);if(!p)return;pushUndo();p.tier=Number(e.target.value)||p.tier;await persistPlayer(p);render();renderRankEditor();refreshBestRecommendation();setStatus('Tier saved.','ok')}
 init();
+
+/* v27 robust draft-kit info hydration: works with existing Supabase rows */
+function playerKeyV27(p){return String(p?.id||uid(p?.name||'')).toLowerCase();}
+async function mergeSeedRows(addMissing=true,mergeSources=true){
+  const seed=await loadSeedRows();
+  const byId=new Map(state.players.map(p=>[playerKeyV27(p),p]));
+  const byName=new Map(state.players.map(p=>[String(p.name||'').toLowerCase(),p]));
+  seed.forEach(sp=>{
+    let p=byId.get(playerKeyV27(sp))||byName.get(String(sp.name||'').toLowerCase());
+    if(!p&&addMissing){state.players.push(sp);return;}
+    if(p){
+      p.sources={...(p.sources||{}),...(sp.sources||{})};
+      p.player_info={...(parseInfo(p.notes)||{}),...(p.player_info||{}),...(sp.player_info||{})};
+      p.notes=JSON.stringify(p.player_info||{});
+      p.pos=p.pos||sp.pos;
+      p.team=p.team||sp.team;
+      if(!Number.isFinite(Number(p.custom_rank))||Number(p.custom_rank)>=900)p.custom_rank=sp.custom_rank;
+      if(!Number.isFinite(Number(p.tier))||Number(p.tier)>=90)p.tier=sp.tier;
+    }
+  });
+}
+async function loadFromSupabase(){
+  const {data,error}=await sb.from(TABLE).select('*').order('custom_rank',{ascending:true});
+  if(error){setStatus('Supabase error: '+error.message,'bad');await loadLocalOrSeed();return;}
+  if(!data||!data.length){await loadLocalOrSeed();setStatus('Supabase connected, table empty. Select Seed Supabase to publish the starter board.','warn');return;}
+  const saved=localStorage.getItem(STORE_KEY),old=saved?JSON.parse(saved):{};
+  state.players=normalizeRows(data);state.activePos=old.activePos||'ALL';
+  await mergeSeedRows(true,true);
+  localSave(false);
+  // Persist merged draft-kit info back to Supabase so notes/ECR survive refreshes and other devices.
+  await persistMany(state.players);
+  setStatus('Draft kit player notes and source rankings loaded into Supabase.','ok');
+}
+async function refreshSourceRankings(){
+  await mergeSeedRows(true,true);
+  await persistMany(state.players);
+  render();
+  if(!$('#rankEditorView')?.hidden)renderRankEditor();
+  refreshBestRecommendation();
+  setStatus('Draft kit source rankings and player notes refreshed and saved.','ok');
+}
+async function seedSupabase(){
+  if(!usingSupabase||!sb){alert('Add your Supabase URL and publishable/anon key in config.js first.');return;}
+  await mergeSeedRows(true,true);
+  await persistMany(state.players);
+  await loadFromSupabase();
+  render();
+  if(!$('#rankEditorView')?.hidden)renderRankEditor();
+  refreshBestRecommendation();
+}
