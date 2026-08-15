@@ -11,7 +11,7 @@
 - Best Rec and Roster Scarcity are full width on mobile.
 
 
-## v12 mobile alignment patch only
+## v13 mobile alignment fix
 - Built from the v9 simplified build to avoid reintroducing older changes.
-- Only changed mobile CSS padding for top actions, Best Rec, Roster Scarcity, and Search/Filters.
-- Draft Sources, Source View, Notes, Undo, Export JSON, Export Excel, and Import Save remain removed.
+- Normalized mobile panel widths so Best Rec, Roster Scarcity, Search/Filters, Draft Board, and player cards share the same left/right edges.
+- Did not change HTML structure or app logic.
