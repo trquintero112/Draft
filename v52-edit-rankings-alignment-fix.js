@@ -1,5 +1,5 @@
 /* v52 Edit Rankings alignment fix
-   Keeps v50/v51 drag-drop functionality, removes duplicate position, aligns headers, and replaces the emoji note button with a clean text-free icon. */
+   Keeps drag-drop functionality, removes duplicate position, aligns headers, and uses a clean i notes icon. */
 (function(){
   let wired=false;
   let drag={row:null,ghost:null,id:null,offsetX:0,offsetY:0,timer:null,active:false,startX:0,startY:0};
