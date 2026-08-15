@@ -39,3 +39,9 @@
 ### v24 touch drag hotfix
 - Added touchstart/touchmove/touchend based drag support so long-pressing the player name/row works on iPhone, not just the handle.
 - Fixed undo event handling so one tap performs the undo.
+
+
+### v25 Safari touch refinement
+- Shortened long-press activation and increased movement tolerance for Safari.
+- Added visible press-arming feedback before pickup.
+- Reworked undo enablement so one tap should undo immediately after a move.
