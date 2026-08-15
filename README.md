@@ -32,3 +32,9 @@
 - App now fetches excel-seed-v34.json directly and ignores old/local/Supabase ranking rows for rank, tier, sources, and notes.
 - Supabase preserves only live draft state: drafted, draftedBy, and pick.
 - On load, app attempts to push the Excel-only seed into Supabase automatically if permissions allow.
+
+
+### v35 startup fix
+- Removed the earlier app startup call that ran before the Excel-only overrides were defined.
+- The app now starts once, after DOMContentLoaded, using the final Excel-only loading functions.
+- Uses excel-seed-v34.json as the primary data file and ignores old seed/local rows for rankings/notes.
