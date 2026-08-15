@@ -210,3 +210,144 @@ async function rankTierChange(e){
   setStatus('Tier saved.','ok');
 }
 setTimeout(()=>{setupRankEditor();},300);
+
+/* v23 override: long-press anywhere on player row, live placeholder, ghost tile, haptic, fixed undo */
+let rankDragGhostV23=null;
+function setupRankEditor(){
+  renderRankTabs();
+  const undoBtn=document.getElementById('undoRankChangeBtn');
+  if(undoBtn){
+    undoBtn.onclick=undoRankChange;
+    undoBtn.addEventListener('click',undoRankChange);
+  }
+  updateUndoButton();
+}
+function renderRankEditor(){
+  const wrap=$('#rankEditorRows');
+  if(!wrap)return;
+  const rows=rankRows();
+  wrap.innerHTML=rows.map(p=>`<div class="rank-editor-row" data-rank-id="${p.id}"><div class="rank-num"><span class="rank-drag" aria-label="Drag handle">☰</span><span>${p.custom_rank}</span></div><div class="rank-player-name">${esc(p.name)}</div><div class="rank-team">${esc(p.team||'')}</div><div><input class="rank-tier-input" type="number" min="1" value="${p.tier}" data-tier-id="${p.id}"></div></div>`).join('')||'<div class="rank-editor-empty">No players found for this tab.</div>';
+  wrap.querySelectorAll('.rank-editor-row').forEach(row=>{
+    row.addEventListener('pointerdown',startLongPressDrag);
+    row.addEventListener('contextmenu',e=>e.preventDefault());
+  });
+  wrap.querySelectorAll('.rank-tier-input').forEach(i=>{
+    i.addEventListener('pointerdown',e=>e.stopPropagation());
+    i.onchange=rankTierChange;
+  });
+  updateUndoButton();
+}
+function updateUndoButton(){
+  const b=$('#undoRankChangeBtn');
+  if(!b)return;
+  const hasUndo=rankEditor.undoStack&&rankEditor.undoStack.length>0;
+  b.disabled=!hasUndo;
+  b.classList.toggle('is-disabled',!hasUndo);
+}
+async function undoRankChange(e){
+  if(e)e.preventDefault();
+  const snap=rankEditor.undoStack.pop();
+  if(!snap){updateUndoButton();return;}
+  const map=new Map(snap.map(x=>[x.id,x]));
+  state.players.forEach(p=>{const old=map.get(p.id); if(old){p.custom_rank=old.custom_rank; p.tier=old.tier;}});
+  await persistMany(state.players);
+  render();
+  renderRankEditor();
+  refreshBestRecommendation();
+  setStatus('Last ranking edit undone.','ok');
+  updateUndoButton();
+}
+function startLongPressDrag(e){
+  if(e.button!==undefined&&e.button!==0)return;
+  if(e.target.closest('input,button,select,textarea'))return;
+  const row=e.currentTarget.closest('.rank-editor-row');
+  if(!row)return;
+  rankEditor.startX=e.clientX;
+  rankEditor.startY=e.clientY;
+  clearTimeout(rankEditor.pressTimer);
+  rankEditor.pressTimer=setTimeout(()=>activateDrag(row,e.pointerId,e.clientX,e.clientY),430);
+  const cancel=ev=>{
+    if(Math.abs(ev.clientX-rankEditor.startX)>9||Math.abs(ev.clientY-rankEditor.startY)>9){
+      clearTimeout(rankEditor.pressTimer);
+      cleanup();
+    }
+  };
+  const up=()=>{clearTimeout(rankEditor.pressTimer);cleanup();};
+  const cleanup=()=>{document.removeEventListener('pointermove',cancel);document.removeEventListener('pointerup',up);document.removeEventListener('pointercancel',up);};
+  document.addEventListener('pointermove',cancel,{passive:true});
+  document.addEventListener('pointerup',up,{once:true});
+  document.addEventListener('pointercancel',up,{once:true});
+}
+function makeDragGhost(row,x,y){
+  const rect=row.getBoundingClientRect();
+  const ghost=row.cloneNode(true);
+  ghost.classList.add('rank-drag-ghost');
+  ghost.style.width=rect.width+'px';
+  ghost.style.left=rect.left+'px';
+  ghost.style.top=rect.top+'px';
+  ghost.dataset.offsetX=x-rect.left;
+  ghost.dataset.offsetY=y-rect.top;
+  document.body.appendChild(ghost);
+  return ghost;
+}
+function moveDragGhost(x,y){
+  if(!rankDragGhostV23)return;
+  const ox=Number(rankDragGhostV23.dataset.offsetX||0),oy=Number(rankDragGhostV23.dataset.offsetY||0);
+  rankDragGhostV23.style.left=(x-ox)+'px';
+  rankDragGhostV23.style.top=(y-oy)+'px';
+}
+function cleanupDragGhost(){if(rankDragGhostV23){rankDragGhostV23.remove();rankDragGhostV23=null;}}
+function activateDrag(row,pointerId,x,y){
+  if(rankEditor.dragging)return;
+  rankEditor.dragging=true;
+  rankEditor.dragId=row.dataset.rankId;
+  pushUndo();
+  if(navigator.vibrate)navigator.vibrate(18);
+  row.classList.add('rank-placeholder','drop-line');
+  document.body.classList.add('rank-dragging');
+  rankDragGhostV23=makeDragGhost(row,x,y);
+  moveDragGhost(x,y);
+  row.setPointerCapture?.(pointerId);
+  const move=ev=>{
+    ev.preventDefault();
+    moveDragGhost(ev.clientX,ev.clientY);
+    if(ev.clientY<84)window.scrollBy(0,-16);
+    if(ev.clientY>window.innerHeight-84)window.scrollBy(0,16);
+    const ghost=rankDragGhostV23;
+    if(ghost)ghost.style.display='none';
+    const el=document.elementFromPoint(ev.clientX,ev.clientY);
+    if(ghost)ghost.style.display='';
+    const target=el?.closest?.('.rank-editor-row');
+    if(target&&target!==row&&target.parentNode===row.parentNode){
+      const rect=target.getBoundingClientRect();
+      const before=ev.clientY<rect.top+rect.height/2;
+      row.classList.add('drop-line');
+      target.parentNode.insertBefore(row,before?target:target.nextSibling);
+    }
+  };
+  const up=async ev=>{
+    document.removeEventListener('pointermove',move);
+    document.removeEventListener('pointerup',up);
+    document.removeEventListener('pointercancel',up);
+    cleanupDragGhost();
+    row.classList.remove('rank-placeholder','drop-line');
+    document.body.classList.remove('rank-dragging');
+    rankEditor.dragging=false;
+    await commitLiveOrder();
+  };
+  document.addEventListener('pointermove',move,{passive:false});
+  document.addEventListener('pointerup',up,{once:true});
+  document.addEventListener('pointercancel',up,{once:true});
+}
+async function rankTierChange(e){
+  const p=state.players.find(x=>x.id===e.target.dataset.tierId);
+  if(!p)return;
+  pushUndo();
+  p.tier=Number(e.target.value)||p.tier;
+  await persistPlayer(p);
+  render();
+  renderRankEditor();
+  refreshBestRecommendation();
+  setStatus('Tier saved.','ok');
+}
+setTimeout(()=>{setupRankEditor();},350);

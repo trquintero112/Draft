@@ -27,3 +27,10 @@
 - Fixed Undo Last Change wiring.
 - Added a floating ghost tile while dragging and a gold drop line/placeholder.
 - Kept live row movement while hard-pressing, with scrolling preserved outside the handle.
+
+
+### v23 drag improvements
+- Long-press can start from the whole player row except the tier input.
+- The selected player appears as a floating ghost tile.
+- A stronger gold placeholder/drop line shows exact placement.
+- Haptic feedback uses navigator.vibrate when supported by the browser/device.
