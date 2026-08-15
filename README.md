@@ -38,3 +38,10 @@
 - Removed the earlier app startup call that ran before the Excel-only overrides were defined.
 - The app now starts once, after DOMContentLoaded, using the final Excel-only loading functions.
 - Uses excel-seed-v34.json as the primary data file and ignores old seed/local rows for rankings/notes.
+
+
+### v36 custom rank and tier persistence
+- Excel remains the source for player list, source rankings, and player notes.
+- Custom Rank and Tier edits now persist across refreshes using local storage and Supabase.
+- Drag-and-drop ranking changes in Edit Rankings save as custom rank overrides.
+- Refresh Sources keeps your custom rank and tier edits while refreshing Excel notes/source rankings.

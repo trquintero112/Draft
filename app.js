@@ -282,3 +282,144 @@ function playerInfoHtml(p){
     });
   },{once:true});
 })();
+
+
+/* v36 custom rank and tier persistence
+   Excel is still the source for player list, source rankings, and notes.
+   User custom_rank and tier edits are now preserved across refreshes. */
+const CUSTOM_RANK_OVERRIDES_KEY_V36='fantasy-war-room-custom-rank-overrides-v36';
+function hasExcelPlayerInfoV36(row){
+  const info=row?.player_info||parseInfo(row?.notes)||{};
+  return info && info['FantasyPros ECR']!==undefined && info['Key Player Notes & Analysis']!==undefined;
+}
+function loadCustomOverridesV36(){
+  try{return JSON.parse(localStorage.getItem(CUSTOM_RANK_OVERRIDES_KEY_V36)||'{}');}catch(e){return{};}
+}
+function saveCustomOverridesV36(){
+  const overrides={};
+  (state.players||[]).forEach(p=>{
+    if(!p||!p.id)return;
+    overrides[p.id]={custom_rank:Number(p.custom_rank),tier:Number(p.tier)};
+  });
+  localStorage.setItem(CUSTOM_RANK_OVERRIDES_KEY_V36,JSON.stringify(overrides));
+}
+function applyCustomOverridesV36(){
+  const overrides=loadCustomOverridesV36();
+  (state.players||[]).forEach(p=>{
+    const ov=overrides[p.id];
+    if(ov){
+      if(Number.isFinite(Number(ov.custom_rank)))p.custom_rank=Number(ov.custom_rank);
+      if(Number.isFinite(Number(ov.tier)))p.tier=Number(ov.tier);
+    }
+  });
+}
+function buildExcelOnlyStateV34(existingRows=[]){
+  const existing=normalizeRows(existingRows||[]);
+  const byId=new Map(existing.map(p=>[excelKeyV34(p.id||uid(p.name)),p]));
+  const byName=new Map(existing.map(p=>[excelKeyV34(p.name),p]));
+  state.players=EXCEL_SEED_V34.map(sp=>{
+    const old=byId.get(excelKeyV34(sp.id||uid(sp.name)))||byName.get(excelKeyV34(sp.name));
+    const oldHasExcel=hasExcelPlayerInfoV36(old);
+    return {
+      ...sp,
+      // Excel remains source for player list, sources, and notes.
+      sources:{...(sp.sources||{})},
+      player_info:{...(sp.player_info||{})},
+      notes:JSON.stringify(sp.player_info||{}),
+      // Preserve user-edited custom rank and tier only after rows have been migrated to Excel info.
+      custom_rank:oldHasExcel&&Number.isFinite(Number(old.custom_rank))?Number(old.custom_rank):sp.custom_rank,
+      tier:oldHasExcel&&Number.isFinite(Number(old.tier))?Number(old.tier):sp.tier,
+      // Preserve live draft state.
+      drafted:!!old?.drafted,
+      draftedBy:old?.draftedBy||'',
+      pick:old?.pick??null
+    };
+  });
+  state.activePos=state.activePos||'ALL';
+  applyCustomOverridesV36();
+  localSave(false);
+}
+function localSave(stamp=true){
+  localStorage.setItem(STORE_KEY,JSON.stringify(state));
+  saveCustomOverridesV36();
+  if(stamp&&$('#lastSaved'))$('#lastSaved').textContent='Saved '+new Date().toLocaleTimeString();
+}
+async function persistPlayer(p){
+  saveCustomOverridesV36();
+  localSave();
+  if(!usingSupabase||!sb)return;
+  const {error}=await sb.from(TABLE).upsert(toDb(p));
+  if(error)setStatus('Supabase save failed: '+error.message,'bad');
+}
+async function persistMany(players=state.players,show=true){
+  saveCustomOverridesV36();
+  localSave();
+  if(!usingSupabase||!sb)return;
+  const {error}=await sb.from(TABLE).upsert(players.map(toDb));
+  if(error)setStatus('Supabase bulk save failed: '+error.message,'bad');
+  else if(show)setStatus('Saved custom ranks and tiers to Supabase.','ok');
+}
+function inlineUpdate(inp){
+  const p=state.players.find(x=>x.id===inp.dataset.id);
+  if(!p)return;
+  p[inp.dataset.field]=Number(inp.value);
+  saveCustomOverridesV36();
+  persistPlayer(p);
+  render();
+  refreshBestRecommendation();
+}
+async function rankTierChange(e){
+  const p=state.players.find(x=>x.id===e.target.dataset.tierId);
+  if(!p)return;
+  pushUndo();
+  p.tier=Number(e.target.value)||p.tier;
+  saveCustomOverridesV36();
+  await persistPlayer(p);
+  render();
+  renderRankEditor();
+  refreshBestRecommendation();
+}
+async function commitLiveOrder(){
+  const ids=$$('#rankEditorRows .rank-editor-row').map(r=>r.dataset.rankId),vis=rankRows(),slots=vis.map(p=>p.custom_rank).sort((a,b)=>a-b);
+  if(rankEditor.active==='ALL')ids.forEach((id,i)=>{const p=state.players.find(x=>x.id===id);if(p)p.custom_rank=i+1});
+  else ids.forEach((id,i)=>{const p=state.players.find(x=>x.id===id);if(p)p.custom_rank=slots[i]});
+  saveCustomOverridesV36();
+  await persistMany();
+  render();
+  renderRankEditor();
+  refreshBestRecommendation();
+}
+async function undoRankChange(e){
+  if(e){e.preventDefault();e.stopPropagation()}
+  const snap=rankEditor.undoStack.pop();
+  if(!snap){updateUndoButton();return}
+  const map=new Map(snap.map(x=>[x.id,x]));
+  state.players.forEach(p=>{const old=map.get(p.id);if(old){p.custom_rank=old.custom_rank;p.tier=old.tier}});
+  saveCustomOverridesV36();
+  await persistMany();
+  render();
+  renderRankEditor();
+  refreshBestRecommendation();
+  updateUndoButton();
+}
+async function seedSupabase(){
+  if(!usingSupabase||!sb){alert('Supabase is not connected. Check config.js.');return;}
+  // Keep current custom rank and tier overlays while publishing Excel-backed player info.
+  buildExcelOnlyStateV34(state.players.map(p=>toDb(p)));
+  saveCustomOverridesV36();
+  await persistMany(state.players,true);
+  render();
+  if(!$('#rankEditorView')?.hidden)renderRankEditor();
+  refreshBestRecommendation();
+  setStatus('Supabase saved with Excel notes plus your custom ranks and tiers.','ok');
+}
+async function refreshSourceRankings(){
+  // Refresh Excel source rankings/notes while keeping your custom rank and tier edits.
+  buildExcelOnlyStateV34(state.players.map(p=>toDb(p)));
+  saveCustomOverridesV36();
+  await persistMany(state.players,true);
+  render();
+  if(!$('#rankEditorView')?.hidden)renderRankEditor();
+  refreshBestRecommendation();
+  setStatus('Excel notes refreshed and your custom ranks/tiers were preserved.','ok');
+}
